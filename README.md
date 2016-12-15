@@ -32,12 +32,13 @@ For more information read the official [setup guide](//gohugo.io/themes/installi
 ### Example config.toml
 
 ```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "/"
 title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 
 [Author]
