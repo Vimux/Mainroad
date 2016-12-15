@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "/"
 title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
