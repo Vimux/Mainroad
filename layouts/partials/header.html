@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }}</title>
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ .Hugo.Generator }}
+{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+{{ if .RSSLink -}}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{- end }}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+	<script src="{{ .Site.BaseURL }}js/css3-mediaqueries.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+</head>
+<body id="mr-mobile" class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="mr-container mr-container-outer">
+		<div class="mr-header-mobile-nav clearfix"></div>
+			<header class="mr-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+				<div class="mr-container mr-container-inner mr-row clearfix">
+					<div class="mr-custom-header clearfix">
+						<div class="mr-site-identity">
+							<div class="mr-site-logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+								<div class="mr-header-text">
+									<a class="mr-header-text-link" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">
+										<h1 class="mr-header-title">{{ .Site.Title }}</h1>
+										{{ with .Site.Params.subtitle -}}<h2 class="mr-header-tagline">{{ . }}</h2>{{- end }}
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mr-main-nav-wrap">
+					{{ partial "menu.html" . }}
+				</div>
+			</header>
+		<div class="mr-wrapper clearfix">

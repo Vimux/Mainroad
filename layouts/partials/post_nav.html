@@ -1,0 +1,16 @@
+{{ if .Site.Params.post_navigation }}
+{{ if or (.Prev) (.Next) }}
+	<nav class="mr-post-nav mr-row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+		{{ if .Prev }}
+		<div class="mr-col-1-2 mr-post-nav-item mr-post-nav-prev">
+			<a href="{{.Prev.Permalink}}" rel="prev"><span>«Previous</span><p>{{.Prev.Title}}</p></a>
+		</div>
+		{{ end }}
+		{{ if .Next }}
+		<div class="mr-col-1-2 mr-post-nav-item mr-post-nav-next">
+			<a href="{{.Next.Permalink}}" rel="next"><span>Next»</span><p>{{.Next.Title}}</p></a>
+		</div>
+		{{ end }}
+	</nav>
+{{ end }}
+{{ end }}

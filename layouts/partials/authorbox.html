@@ -1,0 +1,13 @@
+{{ if .Site.Params.authorbox }}
+<div class="mr-author-box clearfix">
+	<figure class="mr-author-box-avatar">
+		<img alt="{{ .Site.Author.name }} avatar" src="{{ .Site.Author.avatar | absURL }}" class="avatar avatar-90 photo" height="90" width="90">
+	</figure>
+	<div class="mr-author-box-header">
+		<span class="mr-author-box-name">About {{ .Site.Author.name }}</span>
+	</div>
+	<div class="mr-author-box-bio">
+		{{ .Site.Author.bio }}
+	</div>
+</div>
+{{ end }}

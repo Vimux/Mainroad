@@ -1,0 +1,10 @@
+{{ if .Site.Params.widgets.recent_articles }}
+<div class="mr-widget widget_recent_entries">
+	<h4 class="mr-widget-title"><span class="mr-widget-title-inner">Recent Posts</span></h4>
+	<ul>
+		{{ range first 10 .Site.Pages }}
+		<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}

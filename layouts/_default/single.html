@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+<div class="mr-content" id="main-content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="entry-header clearfix">
+			<h1 class="entry-title">{{ .Title }}</h1>
+			<p class="mr-meta entry-meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="entry-meta-date updated" datetime="{{ .Date }}">{{.Date.Format "January 02, 2006"}}</time>
+				{{- if .Params.categories }}
+				<span class="entry-meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="meta-categories" href="{{ "/categories/" | relLangURL }}{{ . | urlize | lower }}" rel="category">{{ . }}</a>{{ end }}</span>
+				{{- end }}
+			</p>
+		</header>
+		<div class="entry-content clearfix">
+			{{ if .Params.thumbnail }}
+			<figure class="entry-thumbnail">
+				<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}">
+			</figure>
+			{{ end }}
+			{{ .Content }}
+		</div>
+		{{ partial "post_tags.html" . }}
+	</article>
+	{{ partial "authorbox.html" . }}
+	{{ partial "post_nav.html" . }}
+	{{ partial "comments.html" . }}
+</div>
+
+{{ partial "sidebar.html" . }}
+{{ partial "footer.html" . }}
