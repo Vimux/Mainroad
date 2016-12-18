@@ -6,7 +6,7 @@
 			<h1 class="page-title">{{ .Title }}</h1>
 		</header>
 		{{ end }}
-		{{ $paginator := .Paginate .Data.Pages }}
+		{{ $paginator := .Paginate ( where .Data.Pages "Section" "post") }}
 		{{ range $paginator.Pages }}
 		<article class="mr-loop-item post type-post hentry clearfix">
 			{{ if .Params.thumbnail }}
