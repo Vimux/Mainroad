@@ -19,7 +19,7 @@
 </head>
 <body id="mr-mobile" class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="mr-container mr-container-outer">
-        <img width="100%" src="{{ .Site.Params.header_image }}">
+        {{ with .Site.Params.widgets.header_image }}<img width="100%" src="{{ . }}">{{ end }}
 		<div class="mr-header-mobile-nav clearfix"></div>
 			<header class="mr-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 				<div class="mr-container mr-container-inner mr-row clearfix">
