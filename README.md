@@ -60,7 +60,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets]
     search = true # Enable "Search" widget
-    recent_articles = true # Enable "Recent arcticles" widget 
+    recent_articles = true # Enable "Recent arcticles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
 ```
@@ -69,7 +69,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 - [ ] Delete unused CSS
 - [ ] No ID in CSS
-- [ ] Responsive menu without JS and jQuery
+- [x] Responsive menu without jQuery
 - [ ] Delete unused JS
 - [ ] i18n support (Internationalization)
 - [ ] Detailed documentation (?)
