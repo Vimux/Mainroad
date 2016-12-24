@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,6 @@
 {{ if .RSSLink -}}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{- end }}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
 {{ "<!--[if lt IE 9]>" | safeHTML }}
 	<script src="{{ .Site.BaseURL }}js/css3-mediaqueries.js"></script>

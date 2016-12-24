@@ -1,11 +1,9 @@
-<nav class="mr-navigation mr-main-nav mr-container mr-container-inner clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<div class="menu">
-		<ul>
+<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
 		{{ if .Site.Menus.main }}
 		{{ range sort .Site.Menus.main }}
-			<li class="page_item"><a href="{{ .URL }}">{{ .Name | upper }}</a></li>
+			<li class="menu__item"><a class="menu__link" href="{{ .URL }}">{{ .Name | upper }}</a></li>
 		{{ end }}
 		{{ end }}
-		</ul>
-	</div>
+	</ul>
 </nav>
