@@ -780,16 +780,6 @@ a .pagelink {
 	text-align: right;
 }
 
-.mr-post-nav-prev img {
-	float: left;
-	margin-right: 15px;
-}
-
-.mr-post-nav-next img {
-	float: right;
-	margin-left: 15px;
-}
-
 /*** Footer ***/
 .mr-footer {
 	font-size: 13px;
@@ -2025,6 +2015,14 @@ textarea {
 		float: none;
 		display: inline-block;
 		margin: 0 0 20px;
+	}
+
+	.mr-post-nav-item {
+		text-align: center;
+	}
+
+	.mr-post-nav-prev {
+		padding-bottom: 25px;
 	}
 
 	.entry-content ul, .entry-content ol {
