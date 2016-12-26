@@ -567,6 +567,22 @@ select {
 	margin-bottom: 1.25rem;
 }
 
+.right {
+  float: right;
+  margin: 0px 0px 15px 15px;
+}
+
+.left {
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .entry-thumbnail img {
 	width: 100%;
 }
