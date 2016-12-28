@@ -9,6 +9,7 @@
 Adaptation has several changes:
 
 + Include Hugo internal templates (Open Graph, Disqus, Google Analytics)
++ New responsive menu without jQuery
 + SVG icons instead of font icons
 + Theme options are saved (Sidebar position, Author Box, Post Navigation) and available through config.toml file parameters
 + Other small changes
@@ -68,7 +69,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 ## TODO
 
 - [ ] Delete unused CSS
-- [ ] No ID in CSS
+- [x] No ID in CSS
 - [x] Responsive menu without jQuery
 - [ ] Delete unused JS
 - [ ] i18n support (Internationalization)
