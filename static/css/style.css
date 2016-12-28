@@ -90,12 +90,12 @@ body {
 	margin-right: 2.5%;
 }
 
-.mr-right-sb #main-content {
+.mr-right-sb .main-content {
 	float: left;
 	margin-right: 2.5%;
 }
 
-.mr-left-sb #main-content {
+.mr-left-sb .main-content {
 	float: right;
 	margin-left: 2.5%;
 }
@@ -1318,7 +1318,7 @@ textarea {
 		margin: 0 auto;
 	}
 
-	#mr-mobile .mr-container {
+	.mr-mobile .mr-container {
 		width: 100%;
 	}
 
@@ -1338,7 +1338,7 @@ textarea {
 		margin-bottom: 20px;
 	}
 
-	#mr-mobile .mr-footer-area {
+	.mr-mobile .mr-footer-area {
 		width: 31.66%;
 	}
 
@@ -1357,8 +1357,8 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-	.mr-custom-header, .mr-content, .mr-sidebar, .mr-right-sb #main-content,
-	.mr-left-sb #main-content, #mr-mobile .mr-footer-area {
+	.mr-custom-header, .mr-content, .mr-sidebar, .mr-right-sb .main-content,
+	.mr-left-sb .main-content, .mr-mobile .mr-footer-area {
 		float: none;
 		width: 100%;
 		margin: 0;
@@ -1385,29 +1385,29 @@ textarea {
 		display: block;
 	}
 
-	#mr-mobile .mr-custom-posts-small-title {
+	.mr-mobile .mr-custom-posts-small-title {
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
 
-	#mr-mobile .mr-posts-focus-wrap {
+	.mr-mobile .mr-posts-focus-wrap {
 		float: none;
 		width: 100%;
 		margin: 0;
 	}
 
-	#mr-mobile .mr-posts-focus-title-small {
+	.mr-mobile .mr-posts-focus-title-small {
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
 
-	#mr-mobile .mr-posts-focus-item {
+	.mr-mobile .mr-posts-focus-item {
 		padding-bottom: 20px;
 		margin-top: 20px;
 		border-bottom: 1px dotted #ebebeb;
 	}
 
-	#mr-mobile .mr-posts-focus-item-large {
+	.mr-mobile .mr-posts-focus-item-large {
 		margin: 0;
 	}
 
@@ -1417,11 +1417,11 @@ textarea {
 		margin: 0 20px 0 0;
 	}
 
-	#mr-mobile .mr-posts-focus-excerpt-small {
+	.mr-mobile .mr-posts-focus-excerpt-small {
 		display: block;
 	}
 
-	#mr-mobile .mr-posts-focus-title-large {
+	.mr-mobile .mr-posts-focus-title-large {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
@@ -1473,16 +1473,16 @@ textarea {
 	}
 
 	.mr-posts-large-title,
-	#mr-mobile .mr-posts-focus-title-large {
+	.mr-mobile .mr-posts-focus-title-large {
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
 
-	.mr-loop-thumb, #mr-mobile .mr-posts-focus-thumb-small {
+	.mr-loop-thumb, .mr-mobile .mr-posts-focus-thumb-small {
 		max-width: 80px;
 	}
 
-	.mr-loop-title, #mr-mobile .mr-posts-focus-title-small {
+	.mr-loop-title, .mr-mobile .mr-posts-focus-title-small {
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
@@ -1495,7 +1495,7 @@ textarea {
 	}
 
 	.mr-loop-excerpt, .mr-custom-posts-content .mr-excerpt,
-	.mr-posts-list-excerpt, #mr-mobile .mr-posts-focus-excerpt-small,
+	.mr-posts-list-excerpt, .mr-mobile .mr-posts-focus-excerpt-small,
 	.mr-posts-focus-caption-small {
 		display: none;
 	}

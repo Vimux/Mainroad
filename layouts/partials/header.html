@@ -16,7 +16,7 @@
 	<script src="{{ .Site.BaseURL }}js/css3-mediaqueries.js"></script>
 {{ "<![endif]-->" | safeHTML }}
 </head>
-<body id="mr-mobile" class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<body class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }} mr-mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="mr-container mr-container-outer">
 		<div class="mr-header-mobile-nav clearfix"></div>
 			<header class="mr-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
