@@ -37,6 +37,22 @@ table {
 	border-spacing: 0;
 }
 
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+:focus::-moz-placeholder {
+	color: transparent;
+}
+
+:focus:-moz-placeholder {
+	color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
 /*** Structure ***/
 html {
 	font-size: 100%;
