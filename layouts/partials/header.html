@@ -12,9 +12,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
-{{ "<!--[if lt IE 9]>" | safeHTML }}
-	<script src="{{ .Site.BaseURL }}js/css3-mediaqueries.js"></script>
-{{ "<![endif]-->" | safeHTML }}
 </head>
 <body class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }} mr-mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="mr-container mr-container-outer">
