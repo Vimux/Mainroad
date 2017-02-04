@@ -1142,6 +1142,7 @@ textarea {
 /*** Tag Cloud Widget ***/
 .widget__link--taglist {
 	display: inline-block;
+	font-size: 12px;
 	font-weight: 700;
 	color: #fff;
 	padding: 5px 10px;
