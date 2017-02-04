@@ -6,13 +6,21 @@
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
-Adaptation has several changes:
+**Adaptation has several changes:**
 
 + Include Hugo internal templates (Open Graph, Disqus, Google Analytics)
 + New responsive menu without jQuery
++ BEM-like class naming
 + SVG icons instead of font icons
 + Theme options are saved (Sidebar position, Author Box, Post Navigation) and available through config.toml file parameters
 + Other small changes
+
+**Browser support:**
+
++ **Desktop:** IE9+, Chrome, Firefox, Safari
++ **Mobile:** Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini
+
+Other browsers (like Opera on Blink engine) are also supported, but not tested. Support for older versions of Internet Explorer (IE8 and below) ended.
 
 ## Installation
 
