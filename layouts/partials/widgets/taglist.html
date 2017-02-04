@@ -1,11 +1,11 @@
 {{ if .Site.Params.widgets.tags }}
 {{ if isset .Site.Taxonomies "tags" }}
 {{ if not (eq (len .Site.Taxonomies.tags) 0) }}
-<div class="mr-widget widget_tag_cloud">
-	<h4 class="mr-widget-title"><span class="mr-widget-title-inner">Tags</span></h4>
-	<div class="tagcloud">
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
 		{{ range $name, $items := .Site.Taxonomies.tags }}
-			<a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}" class="tag-link" title="{{ $name }}" style="font-size: 12px;">{{ $name }}</a>
+			<a class="widget__link widget__link--taglist" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower }}" title="{{ $name }}" style="font-size: 12px;">{{ $name }}</a>
 		{{ end }}
 	</div>
 </div>
