@@ -6,9 +6,9 @@
 <title>{{ .Title }}</title>
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
-{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+{{- if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-{{ if .RSSLink -}}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{- end }}
+{{- if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
@@ -20,7 +20,7 @@
 				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
 					<a class="logo__link" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">
 						<h1 class="logo__title">{{ .Site.Title }}</h1>
-						{{ with .Site.Params.subtitle -}}<h2 class="logo__tagline">{{ . }}</h2>{{- end }}
+						{{ with .Site.Params.subtitle }}<h2 class="logo__tagline">{{ . }}</h2>{{ end }}
 					</a>
 				</div>
 			</div>

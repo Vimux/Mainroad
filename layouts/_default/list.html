@@ -1,21 +1,21 @@
 {{ partial "header.html" . }}
 
 	<div class="main-content loop content" role="main">
-		{{ if not .IsHome }}
+		{{- if not .IsHome }}
 		<header class="page-header">
 			<h1 class="page-header__title">{{ .Title }}</h1>
 		</header>
-		{{ end }}
-		{{ $paginator := .Paginate ( where .Data.Pages "Section" "post") }}
-		{{ range $paginator.Pages }}
+		{{- end }}
+		{{- $paginator := .Paginate ( where .Data.Pages "Section" "post") }}
+		{{- range $paginator.Pages }}
 		<article class="loop__item post clearfix">
-			{{ if .Params.thumbnail }}
+			{{- if .Params.thumbnail }}
 			<figure class="loop__thumbnail">
 				<a href="{{ .Permalink }}">
 					<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" />
 				</a>
 			</figure>
-			{{ end }}
+			{{- end }}
 			<div class="loop__content clearfix">
 				<header class="loop__header">
 					<h3 class="loop__title post__title ">
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</article>
-		{{ end }}
+		{{- end }}
 
 		{{ partial "pagination.html" . }}
 	</div>

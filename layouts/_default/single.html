@@ -15,11 +15,11 @@
 			</p>
 		</header>
 		<div class="post__content clearfix">
-			{{ if .Params.thumbnail }}
+			{{- if .Params.thumbnail }}
 			<figure class="post__thumbnail">
 				<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}">
 			</figure>
-			{{ end }}
+			{{- end }}
 			{{ .Content }}
 		</div>
 		{{ partial "post_tags.html" . }}

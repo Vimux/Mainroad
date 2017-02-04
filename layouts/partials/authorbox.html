@@ -1,4 +1,4 @@
-{{ if .Site.Params.authorbox }}
+{{- if .Site.Params.authorbox }}
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
 		<img alt="{{ .Site.Author.name }} avatar" src="{{ .Site.Author.avatar | absURL }}" class="avatar" height="90" width="90">
@@ -10,4 +10,4 @@
 		{{ .Site.Author.bio }}
 	</div>
 </div>
-{{ end }}
+{{- end }}
