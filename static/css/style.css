@@ -596,7 +596,7 @@ select {
 }
 
 .post__content a {
-	font-weight: 600;
+	font-weight: 700;
 	color: #e64946;
 }
 
@@ -874,7 +874,7 @@ td, th {
 }
 
 th {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 /*** Forms ***/
