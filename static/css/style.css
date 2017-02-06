@@ -451,7 +451,6 @@ select {
 }
 
 .js .menu--collapse {
-	clip: rect(0 0 0 0);
 	max-height: 0;
 	position: absolute;
 	display: block;
@@ -497,11 +496,11 @@ select {
 }
 
 @media screen and (min-width: 767px) {
-	.js .menu--collapse {
+	.js .menu {
 		position: relative;
 	}
 
-	.js .menu--collapse.closed {
+	.js .menu.closed {
 		max-height: none;
 	}
 
@@ -511,11 +510,12 @@ select {
 
 	.menu {
 		border-bottom: 5px solid #e64946;
+		min-height: 42px;
 	}
 
 	.menu__item {
-	float: left;
-	position: relative;
+		float: left;
+		position: relative;
 	}
 }
 
