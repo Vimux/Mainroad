@@ -79,7 +79,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 - [ ] Delete unused CSS
 - [x] No ID in CSS
 - [x] Responsive menu without jQuery
-- [ ] Delete unused JS
+- [x] Delete unused JS
 - [ ] i18n support (Internationalization)
 - [ ] Detailed documentation (?)
 - [ ] Social media widget (?)
