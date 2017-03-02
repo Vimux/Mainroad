@@ -65,6 +65,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = true
     post_navigation = true
+    favicon = "img/favicon.ico"
 
 
 [Params.widgets]
