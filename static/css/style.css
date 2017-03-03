@@ -13,8 +13,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,	section {		
- 	display: block;		
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
 ol, ul {
@@ -439,7 +440,6 @@ select {
 .menu--collapse.opened {
 	max-height: 9999px;
 }
-
 
 .opened.menu__list {
 	border-top: 1px solid #e64946;
