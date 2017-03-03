@@ -549,8 +549,7 @@ select {
 
 .post__content h1, .post__content h2, .post__content h3, .post__content h4,
 .post__content h5, .post__content h6, .post__content p,
-.post__content blockquote, .post__content .row,
-.post__content {
+.post__content blockquote, .post__content .row {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
