@@ -76,7 +76,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 ## TODO
 
-- [ ] Delete unused CSS
+- [x] Delete unused CSS
 - [x] No ID in CSS
 - [x] Responsive menu without jQuery
 - [x] Delete unused JS
