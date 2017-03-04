@@ -72,6 +72,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     recent_articles = true # Enable "Recent arcticles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
+        tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 ```
 
 ## TODO
