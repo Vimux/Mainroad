@@ -5,7 +5,7 @@ description = "Mainroad is a responsive, clean and content-focused Hugo theme."
 homepage = "//github.com/vimux/mainroad/"
 tags = ["blog", "responsive", "widgets", "rss", "disqus", "wordpress"]
 features = ["blog", "responsive", "widgets", "rss", "disqus", "wordpress"]
-min_version = 0.17
+min_version = 0.19
 
 [author]
   name = "Vimux"
