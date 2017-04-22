@@ -69,7 +69,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets]
     search = true # Enable "Search" widget
-    recent_articles = true # Enable "Recent arcticles" widget
+    recent_articles = true # Enable "Recent articles" widget
+    recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
         tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
