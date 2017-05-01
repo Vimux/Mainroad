@@ -13,7 +13,7 @@
 		</div>
 
 		{{- if .IsHome }}
-			{{- $paginator := .Paginate (where .Data.Pages "Section" "post") }}
+			{{- $paginator := .Paginate ( where .Data.Pages "Section" "in" ($.Param "postSections" | default (slice "post")) ) }}
 			{{- range $paginator.Pages }}
 				{{ partial "list_item.html" . }}
 			{{- end }}
