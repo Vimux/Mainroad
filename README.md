@@ -73,7 +73,13 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
-        tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+    tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+    social = true # Enable "Social" widget
+    social_facebook = "username"
+    social_twitter = "username"
+    social_linkedin = "username"
+    social_github = "username"
+    social_email = "example@example.com"
 ```
 
 ## TODO
@@ -82,9 +88,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 - [x] No ID in CSS
 - [x] Responsive menu without jQuery
 - [x] Delete unused JS
+- [x] Social media widget
 - [ ] i18n support (Internationalization)
 - [ ] Detailed documentation (?)
-- [ ] Social media widget (?)
 - [ ] Enhanced version of recent posts widget (?)
 - [ ] Tabbed widget (?)
 

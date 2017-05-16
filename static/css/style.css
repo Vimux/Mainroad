@@ -108,10 +108,25 @@ body {
 }
 
 /*** Animation ***/
-.menu__item, .tags__item, .widget__link--taglist {
+.menu__item, .tags__item, .widget__link--taglist, .btn {
 	-webkit-transition: 0.25s ease-out;
 	-moz-transition: 0.25s ease-out;
 	transition: 0.25s ease-out;
+}
+
+.btn {
+	display: block;
+	font-weight: 700;
+	padding: 5px 10px;
+	margin: 0 0 8px 0;
+	white-space: nowrap;
+	color: #fff;
+	background: #2a2a2a;
+}
+
+.btn:hover {
+	color: #fff;
+	background: #e64946;
 }
 
 /*** Columns ***/
@@ -523,6 +538,11 @@ select {
 .icon-time, .icon-category {
 	fill: #c4c4c4;
 	vertical-align: middle;
+}
+
+.widget-social__link-icon {
+	vertical-align: middle;
+	margin: 0 5px 0 0;
 }
 
 .meta-categories__link, .post__meta-date, .loop__meta-date {
