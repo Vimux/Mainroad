@@ -36,6 +36,10 @@ table {
 	border-spacing: 0;
 }
 
+b, strong {
+	font-weight: 700;
+}
+
 :focus::-webkit-input-placeholder {
 	color: transparent;
 }
