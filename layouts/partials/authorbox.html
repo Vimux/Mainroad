@@ -1,13 +1,19 @@
 {{- if .Site.Params.authorbox }}
 <div class="authorbox clearfix">
+	{{- with .Site.Author.avatar }}
 	<figure class="authorbox__avatar">
-		<img alt="{{ .Site.Author.name }} avatar" src="{{ .Site.Author.avatar | absURL }}" class="avatar" height="90" width="90">
+		<img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | absURL }}" class="avatar" height="90" width="90">
 	</figure>
+	{{- end }}
+	{{- with .Site.Author.name }}
 	<div class="authorbox__header">
-		<span class="authorbox__name">About {{ .Site.Author.name }}</span>
+		<span class="authorbox__name">About {{ . }}</span>
 	</div>
+	{{- end }}
+	{{- with .Site.Author.bio }}
 	<div class="authorbox__description">
-		{{ .Site.Author.bio }}
+		{{ . }}
 	</div>
+	{{- end }}
 </div>
 {{- end }}
