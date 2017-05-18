@@ -111,6 +111,16 @@ body {
 	margin-left: 2.5%;
 }
 
+.warning {
+	border: 1px solid #ddd;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.warning__icon {
+	margin-bottom: 20px;
+}
+
 /*** Animation ***/
 .menu__item, .tags__item, .widget__link--taglist, .btn {
 	-webkit-transition: 0.25s ease-out;
