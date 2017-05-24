@@ -29,6 +29,13 @@
 				<div class="loop__excerpt">
 					{{ .Summary }}
 				</div>
+				{{- if .Site.Params.readmore }}
+				{{- if .Truncated }}
+				<div class="loop__footer">
+					<a class="loop__footer-readmore btn" href="{{ .RelPermalink }}">Read more…</a>
+				</div>
+				{{- end }}
+				{{- end }}
 			</div>
 		</article>
 		{{- end }}

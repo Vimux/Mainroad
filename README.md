@@ -62,6 +62,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     subtitle = "Just another site" # Subtitle of your site
     description = " John Doe's Personal blog about everything" # Description of your site
     opengraph = true
+    readmore = false # Show "Read more" button in list if true
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = true
     post_navigation = true

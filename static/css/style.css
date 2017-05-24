@@ -128,11 +128,10 @@ body {
 	transition: 0.25s ease-out;
 }
 
+/*** Button ***/
 .btn {
-	display: block;
 	font-weight: 700;
 	padding: 5px 10px;
-	margin: 0 0 8px 0;
 	white-space: nowrap;
 	color: #fff;
 	background: #2a2a2a;
@@ -554,11 +553,6 @@ select {
 	vertical-align: middle;
 }
 
-.widget-social__link-icon {
-	vertical-align: middle;
-	margin: 0 5px 0 0;
-}
-
 .meta-categories__link, .post__meta-date, .loop__meta-date {
 	vertical-align: middle;
 }
@@ -703,6 +697,11 @@ select {
 .loop__thumbnail img {
 	width: 100%;
 	max-width: 235px;
+}
+
+.loop__footer-readmore {
+	float: right;
+	margin-top: 10px;
 }
 
 /*** Pagination ***/
@@ -942,6 +941,16 @@ textarea {
 	margin-bottom: 1.25rem;
 	text-transform: uppercase;
 	border-bottom: 3px solid #e64946;
+}
+
+.widget-social__link {
+	display: block;
+	margin: 0 0 8px 0;
+}
+
+.widget-social__link-icon {
+	vertical-align: middle;
+	margin: 0 5px 0 0;
 }
 
 /*** Default WordPress Widgets ***/
