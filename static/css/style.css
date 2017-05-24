@@ -932,6 +932,10 @@ textarea {
 	overflow: hidden;
 }
 
+.widget:last-child {
+	margin-bottom: 0;
+}
+
 .widget__title {
 	position: relative;
 	font-size: 16px;
