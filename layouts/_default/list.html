@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
 
 	<div class="main-content list content" role="main">
-		{{- if not .IsHome }}
+		{{- if not .IsHome}}
+		{{- with .Title }}
 		<header class="page-header">
 			<h1 class="page-header__title">{{ .Title }}</h1>
 		</header>
+		{{- end }}
 		{{- end }}
 		<div class="page-content">
 			{{ .Content }}
