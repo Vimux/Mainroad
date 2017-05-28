@@ -1,50 +1,31 @@
 {{ partial "header.html" . }}
 
-	<div class="main-content loop content" role="main">
+	<div class="main-content list content" role="main">
 		{{- if not .IsHome }}
 		<header class="page-header">
 			<h1 class="page-header__title">{{ .Title }}</h1>
 		</header>
 		{{- end }}
-		{{- $paginator := .Paginate ( where .Data.Pages "Section" "post") }}
-		{{- range $paginator.Pages }}
-		<article class="loop__item post clearfix">
-			{{- if .Params.thumbnail }}
-			<figure class="loop__thumbnail">
-				<a href="{{ .Permalink }}">
-					<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" />
-				</a>
-			</figure>
+		<div class="page-content">
+			{{ .Content }}
+		</div>
+
+		{{- if .IsHome }}
+			{{- $paginator := .Paginate (where .Data.Pages "Section" "post") }}
+			{{- range $paginator.Pages }}
+				{{ partial "list_item.html" . }}
 			{{- end }}
-			<div class="loop__content clearfix">
-				<header class="loop__header">
-					<h3 class="loop__title post__title ">
-						<a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
-					</h3>
-					<div class="loop__meta meta">
-						<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-						<time class="loop__meta-date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{.Date.Format "January 02, 2006"}}</time>
-					</div>
-				</header>
-				<div class="loop__excerpt">
-					{{ .Summary }}
-				</div>
-				{{- if .Site.Params.readmore }}
-				{{- if .Truncated }}
-				<div class="loop__footer">
-					<a class="loop__footer-readmore btn" href="{{ .RelPermalink }}">Read more…</a>
-				</div>
-				{{- end }}
-				{{- end }}
-			</div>
-		</article>
-		{{- end }}
-		{{- if eq $paginator.TotalNumberOfElements 0 }}
+			{{- if eq $paginator.TotalNumberOfElements 0 }}
 			<div class="warning">
 				<svg class="warning__icon icon icon-files" viewBox="0 0 384 384" width="96" height="96" xmlns="http://www.w3.org/2000/svg" fill="#ddd"><path d="m368 64h-224-16v16 288 16h16 224 16v-16-288-16zm-16 288h-192v-256h192zm-320-320h192v16h32v-32-16h-16-224-16v16 288 16h16 96v-32h-80zm144 272h160v-32h-160zm0-64h160v-32h-160zm0-64h160v-32h-160zm-128 64h64v-32h-64zm0-64h64v-32h-64zm0-64h64v-32h-64z"/></svg>
 				<h3 class="warning__headline">You don't have any posts yet!</h3>
 				<p class="warning__text">As posts are added in content/post folder, they'll appear here.</p>
 			</div>
+		{{- end }}
+		{{ else }}
+			{{- range .Paginator.Pages }}
+				{{ partial "list_item.html" . }}
+			{{- end }}
 		{{- end }}
 
 		{{ partial "pagination.html" . }}

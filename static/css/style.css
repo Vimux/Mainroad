@@ -526,6 +526,11 @@ select {
 	font-size: 1.75rem;
 }
 
+.page-content {
+	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
+}
+
 .meta {
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -553,7 +558,7 @@ select {
 	vertical-align: middle;
 }
 
-.meta-categories__link, .post__meta-date, .loop__meta-date {
+.meta-categories__link, .post__meta-date, .list__meta-date {
 	vertical-align: middle;
 }
 
@@ -667,8 +672,8 @@ select {
 	font-weight: 700;
 }
 
-/*** Loop content ***/
-.loop__item {
+/*** List content ***/
+.list__item {
 	padding-bottom: 20px;
 	padding-bottom: 1.25rem;
 	margin-bottom: 20px;
@@ -676,30 +681,30 @@ select {
 	border-bottom: 1px solid #ebebeb;
 }
 
-.loop__header {
+.list__header {
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
 }
 
-.loop__meta {
+.list__meta {
 	margin-top: 5px;
 }
 
-.loop__excerpt {
+.list__excerpt {
 	overflow: hidden;
 }
 
-.loop__thumbnail {
+.list__thumbnail {
 	float: left;
 	margin-right: 20px;
 }
 
-.loop__thumbnail img {
+.list__thumbnail img {
 	width: 100%;
 	max-width: 235px;
 }
 
-.loop__footer-readmore {
+.list__footer-readmore {
 	float: right;
 	margin-top: 10px;
 }
@@ -1115,22 +1120,22 @@ textarea {
 		margin-top: 25px;
 	}
 
-	.loop__thumbnail {
+	.list__thumbnail {
 		max-width: 80px;
 	}
 
-	.loop__title {
+	.list__title {
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
 
-	.loop__meta {
+	.list__meta {
 		display: block;
 		font-size: 11px;
 		font-size: 0.6875rem;
 	}
 
-	.loop__excerpt {
+	.list__excerpt {
 		display: none;
 	}
 }
