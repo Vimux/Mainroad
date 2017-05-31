@@ -8,10 +8,11 @@
 		</header>
 		{{- end }}
 		{{- end }}
+		{{- with .Content }}
 		<div class="page-content">
-			{{ .Content }}
+			{{ . }}
 		</div>
-
+		{{- end }}
 		{{- if .IsHome }}
 			{{- $postSections := ($.Param "postSections" | default (slice "post")) }}
 			{{- $paginator := .Paginate ( where .Data.Pages "Section" "in" $postSections ) }}
