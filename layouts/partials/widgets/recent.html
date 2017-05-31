@@ -4,7 +4,7 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- $recent_articles_num := (.Site.Params.widgets.recent_articles_num | default 10) }}
-			{{- range first $recent_articles_num (where .Site.RegularPages "Section" "post") }}
+			{{- range first $recent_articles_num (where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "post"))) }}
 			<li class="widget__item"><a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{- end }}
 		</ul>
