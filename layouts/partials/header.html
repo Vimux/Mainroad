@@ -10,16 +10,16 @@
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 {{ if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
-<link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
+<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 </head>
 <body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }} mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="container container-outer">
 		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 			<div class="container container-inner clearfix">
 				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-					<a class="logo__link" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">
+					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
 						<h1 class="logo__title">{{ .Site.Title }}</h1>
 						{{ with .Site.Params.subtitle }}<h2 class="logo__tagline">{{ . }}</h2>{{ end }}
 					</a>

@@ -2,14 +2,14 @@
 	{{- if .Params.thumbnail }}
 	<figure class="list__thumbnail">
 		<a href="{{ .Permalink }}">
-			<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}" />
+			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
 		</a>
 	</figure>
 	{{- end }}
 	<div class="list__content clearfix">
 		<header class="list__header">
 			<h3 class="list__title post__title ">
-				<a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+				<a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
 			</h3>
 			{{- if not .Date.IsZero }}
 			<div class="list__meta meta">

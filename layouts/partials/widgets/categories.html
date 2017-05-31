@@ -6,7 +6,7 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- range $name, $items := .Site.Taxonomies.categories }}
-			<li class="widget__item"><a class="widget__link" href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ $name | title }}</a></li>
+			<li class="widget__item"><a class="widget__link" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title }}</a></li>
 			{{- end }}
 		</ul>
 	</div>
