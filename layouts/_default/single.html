@@ -13,7 +13,7 @@
 				{{- if .Params.categories }}
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-					{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="meta-categories__link" href="{{ "/categories/" | relLangURL }}{{ . | urlize | lower }}" rel="category">{{ . }}</a>{{ end }}</span>
+					{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="meta-categories__link" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}" rel="category">{{ . }}</a>{{ end }}</span>
 				{{- end }}
 			</p>
 			{{- end }}
