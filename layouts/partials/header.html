@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
 <script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
 <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+{{ template "_internal/google_analytics_async.html" . }}
 </head>
 <body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }} mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="container container-outer">
