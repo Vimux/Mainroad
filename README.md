@@ -68,8 +68,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     post_navigation = true
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
-	font_override = false # Use fonts specified in 'css/fonts.css' instead of HTML hard-coded Open Sans
-	googlefonts_dns_prefetch = false # If using 'font_override' do DNS prefetching for Google fonts
+    font_override = false # Use fonts specified in 'css/fonts.css' instead of HTML hard-coded Open Sans
+    googlefonts_dns_prefetch = false # If using 'font_override' do DNS prefetching for Google fonts
 
 
 [Params.widgets]
