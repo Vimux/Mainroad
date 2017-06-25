@@ -68,7 +68,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     post_navigation = true
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
-
+    #dateformat = "2006-01-02" # change the format of dates
 
 [Params.widgets]
     search = true # Enable "Search" widget
