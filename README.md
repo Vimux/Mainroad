@@ -70,6 +70,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
     #dateformat = "2006-01-02" # change the format of dates
 
+
 [Params.widgets]
     search = true # Enable "Search" widget
     recent_articles = true # Enable "Recent articles" widget
