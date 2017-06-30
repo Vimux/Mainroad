@@ -1,10 +1,7 @@
-{{- if .Site.Params.widgets.social }}
+{{- if or .Site.Params.widgets.social_facebook .Site.Params.widgets.social_twitter .Site.Params.widgets.social_linkedin .Site.Params.widgets.social_github .Site.Params.widgets.social_email }}
 <div class="widget-social widget">
 	<h4 class="widget-social__title widget__title">Social</h4>
 	<div class="widget-social__content widget__content">
-		{{- if and (not .Site.Params.widgets.social_facebook) (not .Site.Params.widgets.social_twitter) (not .Site.Params.widgets.social_linkedin) (not .Site.Params.widgets.social_github) (not .Site.Params.widgets.social_email) }}
-		<p class="widget-social__warning"><strong>WARNING:</strong><br>Please add at least one social media source in config.toml file.</p>
-		{{- end }}
 		{{- with .Site.Params.widgets.social_facebook }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
