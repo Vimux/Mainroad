@@ -1,8 +1,8 @@
 # Mainroad
 
-**Mainroad** is a responsive, simple, clean and content-focused [Hugo](//gohugo.io/) theme based on the [MH Magazine lite](//wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](//www.mhthemes.com/).
+**Mainroad** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](https://www.mhthemes.com/).
 
-**[Alternate Demo (Best)](//hugothemes.gitlab.io/mainroad/)** | [Standart Demo](http://themes.gohugo.io/theme/mainroad/)
+**[Alternate Demo (Best)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](http://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
@@ -36,7 +36,7 @@ Next, open `config.toml` in the base of the Hugo site and ensure the theme optio
 theme = "mainroad"
 ```
 
-For more information read the official [setup guide](//gohugo.io/themes/installing/) of Hugo.
+For more information read the official [setup guide](https://gohugo.io/themes/installing-and-using-themes/) of Hugo.
 
 ## Configuration
 
@@ -78,7 +78,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
-    social_facebook = "username" # Enable "Social" widget, if any of "social_*" set a value
+
+    # Enable "Social" widget, if any of "social_*" set a value
+    social_facebook = "username"
     social_twitter = "username"
     social_linkedin = "username"
     social_github = "username"
@@ -99,8 +101,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 ## Contributing
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](//github.com/Vimux/mainroad/pulls).
+Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/mainroad/pulls).
 
 ## License
 
-This theme is released under the [GPLv2 license](//github.com/Vimux/mainroad/blob/master/LICENSE.md) (inherited from the original MH Magazine lite WordPress theme).
+This theme is released under the [GPLv2 license](https://github.com/Vimux/mainroad/blob/master/LICENSE.md) (inherited from the original MH Magazine lite WordPress theme).
