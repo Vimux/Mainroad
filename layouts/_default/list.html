@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-	<div class="main-content list content" role="main">
+	<main class="main-content list content" role="main">
 		{{- if not .IsHome}}
 		{{- with .Title }}
 		<header class="page-header">
@@ -33,7 +33,7 @@
 		{{- end }}
 
 		{{ partial "pagination.html" . }}
-	</div>
+	</main>
 
 {{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}

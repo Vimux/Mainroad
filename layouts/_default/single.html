@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<div class="main-content content" role="main" itemprop="mainContentOfPage">
+<main class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
 			<h1 class="post__title">{{ .Title }}</h1>
@@ -34,7 +34,7 @@
 	{{ partial "authorbox.html" . }}
 	{{ partial "post_nav.html" . }}
 	{{ partial "comments.html" . }}
-</div>
+</main>
 
 {{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}
