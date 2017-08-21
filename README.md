@@ -2,7 +2,7 @@
 
 **Mainroad** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](https://www.mhthemes.com/).
 
-**[Alternate Demo (Best)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](http://themes.gohugo.io/theme/mainroad/)
+**[Alternate Demo (Best)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
@@ -40,7 +40,7 @@ For more information read the official [setup guide](https://gohugo.io/themes/in
 
 ## Configuration
 
-### Example config.toml
+### Config.toml example
 
 ```toml
 baseurl = "/"
@@ -51,30 +51,27 @@ theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
-
-[Author]
+[Author] # Used in authorbox
     name = "John Doe"
     bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
     avatar = "img/avatar.png"
 
-
 [Params]
-    subtitle = "Just another site" # Subtitle of your site
-    description = " John Doe's Personal blog about everything" # Description of your site
-    opengraph = true
+    subtitle = "Just another site" # Subtitle of your site. Used in site header
+    description = " John Doe's Personal blog about everything" # Description of your site. Used in meta description
+    opengraph = true # Enable OpenGraph if true
     readmore = false # Show "Read more" button in list if true
     leftsidebar = false # Move sidebar to the left side if true
-    authorbox = true
-    post_navigation = true
+    authorbox = true # Show authorbox at bottom of pages if true
+    post_navigation = true # Show post navigation at bottom of pages if true
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
     #dateformat = "2006-01-02" # change the format of dates
 
-
 [Params.widgets]
     search = true # Enable "Search" widget
     recent_articles = true # Enable "Recent articles" widget
-    recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
@@ -87,17 +84,19 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     social_email = "example@example.com"
 ```
 
-## TODO
+### Front Matter example
 
-- [x] Delete unused CSS
-- [x] No ID in CSS
-- [x] Responsive menu without jQuery
-- [x] Delete unused JS
-- [x] Social media widget
-- [ ] i18n support (Internationalization)
-- [ ] Detailed documentation (?)
-- [ ] Enhanced version of recent posts widget (?)
-- [ ] Tabbed widget (?)
+```toml
++++
+title = "Example article title"
+date = "2017-08-21"
+description = "Example article description" Optional
+thumbnail = "img/placeholder.jpg" # Optional, thumbnail
+disable_comments = false # Optional, disable Disqus comments if true
++++
+```
+
+For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
 
 ## Contributing
 
