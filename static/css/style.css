@@ -598,12 +598,12 @@ select {
 	margin: 0;
 }
 
-.post__content a {
+.post__content a, .list__excerpt a, .warning a {
 	font-weight: 700;
 	color: #e64946;
 }
 
-.post__content a:hover {
+.post__content a:hover, .list__excerpt a:hover, .warning a:hover {
 	color: #e64946;
 	text-decoration: underline;
 }
