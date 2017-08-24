@@ -75,6 +75,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
     # Enable "Social" widget, if any of "social_*" set a value
     social_facebook = "username"
     social_twitter = "username"
