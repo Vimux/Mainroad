@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-	<div class="main-content list content" role="main">
+	<main class="main-content list content" role="main">
 		{{- if not .IsHome}}
 		{{- with .Title }}
 		<header class="page-header">
@@ -17,7 +17,7 @@
 			{{- $postSections := ($.Param "postSections" | default (slice "post")) }}
 			{{- $paginator := .Paginate ( where .Data.Pages "Section" "in" $postSections ) }}
 			{{- range $paginator.Pages }}
-				{{ partial "list_item.html" . }}
+				{{- .Render "summary" }}
 			{{- end }}
 			{{- if eq $paginator.TotalNumberOfElements 0 }}
 			<div class="warning">
@@ -28,12 +28,12 @@
 		{{- end }}
 		{{ else }}
 			{{- range .Paginator.Pages }}
-				{{ partial "list_item.html" . }}
+				{{- .Render "summary" }}
 			{{- end }}
 		{{- end }}
 
 		{{ partial "pagination.html" . }}
-	</div>
+	</main>
 
 {{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}
