@@ -5,7 +5,7 @@
 	{{ partial "widgets/social.html" . }}
 	{{ partial "widgets/taglist.html" . }}
 
-	{{- if and (not .Site.Params.widgets.search) (not .Site.Params.widgets.recent) (not .Site.Params.widgets.categories) (not .Site.Params.widgets.social) (not .Site.Params.widgets.taglist) }}
+	{{- if and (not .Site.Params.widgets.search) (not .Site.Params.widgets.recent_articles) (not .Site.Params.widgets.categories) (not .Site.Params.widgets.social) (not .Site.Params.widgets.taglist) }}
 	<p class="sidebar__warning"><strong>WARNING:</strong><br>Please activate at least one sidebar widget.</p>
 	{{- end }}
 </aside>
