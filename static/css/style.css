@@ -255,7 +255,20 @@ small {
 	font-size: 0.75rem;
 }
 
+code {
+	font-family: "Consolas", Courier New, Courier, monospace;
+	padding: 0 5px;
+	color: #c33;
+	background-color: #f5f5f5;
+	border: 1px solid #ebebeb;
+	white-space: nowrap;
+	white-space: -o-nowrap;
+	white-space: -moz-nowrap;
+	white-space: -webkit-nowrap;
+}
+
 pre {
+	display: block;
 	font-family: "Consolas", Courier New, Courier, monospace;
 	color: #000;
 	margin-bottom: 20px;
@@ -268,6 +281,14 @@ pre {
 	white-space: -o-pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -webkit-pre-wrap;
+}
+
+pre code {
+	padding: 0;
+	border: 0;
+	background: inherit;
+	color: inherit;
+	white-space: inherit;
 }
 
 kbd {
