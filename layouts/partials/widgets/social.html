@@ -1,8 +1,8 @@
-{{- if or .Site.Params.widgets.social_facebook .Site.Params.widgets.social_twitter .Site.Params.widgets.social_linkedin .Site.Params.widgets.social_github .Site.Params.widgets.social_email }}
+{{- if .Site.Params.widgets.social }}
 <div class="widget-social widget">
 	<h4 class="widget-social__title widget__title">Social</h4>
 	<div class="widget-social__content widget__content">
-		{{- with .Site.Params.widgets.social_facebook }}
+		{{- with .Site.Params.widgets.social.facebook }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
                 <span class="fa-stack">
@@ -12,7 +12,7 @@
 			</a>
 		</div>
 		{{ end -}}
-		{{- with .Site.Params.widgets.social_twitter }}
+        {{- with .Site.Params.widgets.social.twitter }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/{{ . }}" target="_blank">
                 <span class="fa-stack">
@@ -22,7 +22,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_linkedin }}
+        {{- with .Site.Params.widgets.social.linkedin }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}" target="_blank">
                 <span class="fa-stack">
@@ -32,7 +32,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_github }}
+        {{- with .Site.Params.widgets.social.github }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/{{ . }}" target="_blank">
                 <span class="fa-stack">
@@ -42,7 +42,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_email }}
+        {{- with .Site.Params.widgets.social.email }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
 				<span class="fa-stack">
@@ -52,6 +52,67 @@
 			</a>
 		</div>
 		{{- end }}
+        {{- with .Site.Params.widgets.social.gitlab }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Gitlab" rel="noopener noreferrer" href="https://gitlib.com/{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-gitlab fa-stack-2x" aria-hidden="true"></i>
+                </span>
+                <span>Gitlab</span>
+            </a>
+		</div>
+		{{- end }}
+        {{- with .Site.Params.widgets.social.googleplus }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Google+" rel="noopener noreferrer" href="https://plus.google.com/+{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-google-plus-official fa-stack-2x" aria-hidden="true"></i>
+                </span>
+                <span>Google+</span>
+            </a>
+		</div>
+		{{- end }}
+        {{- with .Site.Params.widgets.social.instagram }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://instagram.com/{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-instagram fa-stack-2x" aria-hidden="true"></i>
+                </span>
+                <span>Instagram</span>
+            </a>
+		</div>
+		{{- end }}
+        {{- with .Site.Params.widgets.social.quora }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Quora" rel="noopener noreferrer" href="https://quora.com/profile/{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-quora fa-stack-1x" aria-hidden="true"></i>
+                </span>
+                <span>Quora</span>
+            </a>
+		</div>
+		{{- end }}
+        {{- with .Site.Params.widgets.social.stackoverflow }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Stack Overflow" rel="noopener noreferrer" href="https://stackoverflow.com/users/{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-stack-overflow fa-stack-2x" aria-hidden="true"></i>
+                </span>
+                <span>Stack Overflow</span>
+            </a>
+		</div>
+		{{- end }}
+        {{- with .Site.Params.widgets.social.weibo }}
+        <div class="widget-social__item widget__item">
+            <a class="widget-social__link widget__link btn" title="Weibo" rel="noopener noreferrer" href="http://weibo.com/{{ . }}" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-weibo fa-stack-2x" aria-hidden="true"></i>
+                </span>
+                <span>Weibo</span>
+            </a>
+        </div>
+        {{- end }}
 	</div>
 </div>
 {{- end }}
