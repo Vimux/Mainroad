@@ -76,12 +76,18 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
-    # Enable "Social" widget, if any of "social_*" set a value
-    social_facebook = "username"
-    social_twitter = "username"
-    social_linkedin = "username"
-    social_github = "username"
-    social_email = "example@example.com"
+    [Params.widgets.social] # Enable "Social" widget
+        facebook = "username"
+        twitter = "username"
+        linkedin = "username"
+        github = "pennbay"
+        email = "example@example.com"
+        gitlab = "username"
+        googleplus = "username"
+        instagram = "username"
+        quora = "username"
+        stackoverflow = "userid"
+        weibo = "username"
 ```
 
 ### Front Matter example
