@@ -7,6 +7,8 @@
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
 {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+{{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
+
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 {{ if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
