@@ -1,0 +1,24 @@
+#backTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    overflow: hidden;
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4d647b; /* Set a background color */
+    color: #CCC; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    /*Rotate */
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#backTopBtn:hover {
+    color: #FFF;
+}
