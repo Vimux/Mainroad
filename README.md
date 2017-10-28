@@ -82,6 +82,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     social_linkedin = "username"
     social_github = "username"
     social_email = "example@example.com"
+    social_google_plus = "profileid"
 ```
 
 ### Front Matter example
