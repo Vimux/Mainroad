@@ -67,6 +67,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
     #dateformat = "2006-01-02" # change the format of dates
+    #sitestyle = "css/sitestyle.css" # local site style overrides
 
 [Params.widgets]
     search = true # Enable "Search" widget
@@ -94,6 +95,7 @@ date = "2017-08-21"
 description = "Example article description"
 thumbnail = "img/placeholder.jpg" # Optional, thumbnail
 disable_comments = false # Optional, disable Disqus comments if true
+authorbox = true # enable authorbox if globally disabled
 +++
 ```
 

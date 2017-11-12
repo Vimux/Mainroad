@@ -12,6 +12,9 @@
 {{ if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
+{{ with .Site.Params.sitestyle }}
+<link rel="stylesheet" href="{{ . | relURL }}" type="text/css" media="all" />
+{{ end }}
 <script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
 <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 {{ template "_internal/google_analytics_async.html" . }}
