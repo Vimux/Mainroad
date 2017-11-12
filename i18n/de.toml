@@ -6,6 +6,8 @@ other = "Diese Seite ist verschoben oder gelöscht worden, oder es gab sie nie."
 other = "Nächster"
 [pagination_previous]
 other = "Vorheriger"
+[read_more]
+other = "Mehr…"
 [footer_copyright_credits]
 other = "Generiert mit <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> und <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad theme</a>."
 [recent_posts_header]
