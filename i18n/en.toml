@@ -1,0 +1,8 @@
+[footer_copyright_credits]
+other = "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad theme</a>."
+[recent_posts_header]
+other = "Recent Posts"
+[social_header]
+other = "Social"
+[authorbox_about]
+other = "About {{ . }}"
