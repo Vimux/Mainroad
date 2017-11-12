@@ -1,3 +1,7 @@
+[page_404_headline]
+other = "404. Das gibts doch garnicht."
+[page_404_text]
+other = "Diese Seite ist verschoben oder gelöscht worden, oder es gab sie nie."
 [footer_copyright_credits]
 other = "Generiert mit <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> und <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad theme</a>."
 [recent_posts_header]
