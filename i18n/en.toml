@@ -1,0 +1,22 @@
+[page_404_headline]
+other = "404. Page not found"
+[page_404_text]
+other = "The page you were looking for appears to have been moved, deleted or does not exist."
+[pagination_next]
+other = "Next"
+[pagination_previous]
+other = "Previous"
+[read_more]
+other = "Read more…"
+[footer_copyright_credits]
+other = "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad theme</a>."
+[recent_posts_header]
+other = "Recent Posts"
+[social_header]
+other = "Social"
+[categories_header]
+other = "Categories"
+[taglist_header]
+other = "Tags"
+[authorbox_about]
+other = "About {{ . }}"

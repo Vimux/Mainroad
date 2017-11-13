@@ -1,6 +1,6 @@
 {{- if .Site.Params.widgets.recent_articles }}
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">{{ i18n "recent_posts_header" }}</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- $recent_articles_num := (.Site.Params.widgets.recent_articles_num | default 10) }}

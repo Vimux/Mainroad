@@ -1,0 +1,22 @@
+[page_404_headline]
+other = "404. Das gibts doch garnicht."
+[page_404_text]
+other = "Diese Seite ist verschoben oder gelöscht worden, oder es gab sie nie."
+[pagination_next]
+other = "Nächster"
+[pagination_previous]
+other = "Vorheriger"
+[read_more]
+other = "Mehr…"
+[footer_copyright_credits]
+other = "Generiert mit <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> und <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad theme</a>."
+[recent_posts_header]
+other = "Neuste Beiträge"
+[social_header]
+other = "Kontakt"
+[categories_header]
+other = "Kategorie"
+[taglist_header]
+other = "Tags"
+[authorbox_about]
+other = "Über {{ .Count }}"
