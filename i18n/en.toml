@@ -14,5 +14,9 @@ other = "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\"
 other = "Recent Posts"
 [social_header]
 other = "Social"
+[categories_header]
+other = "Categories"
+[taglist_header]
+other = "Tags"
 [authorbox_about]
 other = "About {{ . }}"
