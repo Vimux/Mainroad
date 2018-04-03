@@ -348,6 +348,12 @@ address {
 	margin-bottom: 1.25rem;
 }
 
+hr {
+	border: 0;
+	margin: 0 0 20px;
+	border-top: 1px solid #dadada;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
