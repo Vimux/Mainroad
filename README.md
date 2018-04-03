@@ -87,14 +87,20 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 ### Front Matter example
 
-```toml
-+++
-title = "Example article title"
-date = "2017-08-21"
-description = "Example article description"
-thumbnail = "img/placeholder.jpg" # Optional, thumbnail
-disable_comments = false # Optional, disable Disqus comments if true
-+++
+```yaml
+---
+title: "Example article title"
+date: "2017-08-21"
+description: "Example article description"
+thumbnail: "img/placeholder.jpg" # Optional, thumbnail
+disable_comments: false # Optional, disable Disqus comments if true
+categories:
+  - "Category 1"
+  - "Category 2"
+tags:
+  - "Test"
+  - "Another test"
+---
 ```
 
 For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
