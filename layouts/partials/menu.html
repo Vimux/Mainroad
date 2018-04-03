@@ -1,5 +1,5 @@
 {{- if .Site.Menus.main }}
-<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<nav class="menu">
 	<ul class="menu__list">
 		{{- $currentNode := . }}
 		{{- range sort .Site.Menus.main }}
@@ -10,5 +10,5 @@
 	</ul>
 </nav>
 {{ else -}}
-<hr class="divider">
+<div class="divider"></div>
 {{- end }}

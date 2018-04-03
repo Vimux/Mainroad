@@ -1,6 +1,6 @@
 {{- if .Site.Params.post_navigation }}
 {{- if or (.PrevInSection) (.NextInSection) }}
-<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<nav class="post-nav row clearfix">
 	{{- if .PrevInSection }}
 	<div class="post-nav__item post-nav__item--prev col-1-2">
 		<a class="post-nav__link" href="{{.PrevInSection.RelPermalink}}" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">{{.PrevInSection.Title}}</p></a>
