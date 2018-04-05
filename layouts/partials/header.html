@@ -17,10 +17,10 @@
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 	{{ template "_internal/google_analytics_async.html" . }}
 </head>
-<body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }} mobile">
+<body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }}">
 	<div class="container container-outer">
 		<header class="header">
-			<div class="container container-inner clearfix">
+			<div class="container container-inner">
 				<div class="logo" role="banner">
 					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
 						<h1 class="logo__title">{{ .Site.Title }}</h1>
