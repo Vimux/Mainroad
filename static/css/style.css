@@ -683,12 +683,6 @@ select {
 	border-bottom: 1px solid #ebebeb;
 }
 
-.authorbox .screen-reader-text {
-	position: absolute;
-	top: -9999rem;
-	left: -9999rem;
-}
-
 .authorbox__avatar {
 	float: left;
 	padding: 3px;
@@ -844,13 +838,6 @@ iframe, embed, object, video {
 	margin: 0.3125rem 0 1.25rem 1.25rem;
 }
 
-.screen-reader-text {
-	position: absolute;
-	top: -9999rem;
-	left: -9999rem;
-	overflow: hidden;
-}
-
 /*** Tables ***/
 table {
 	width: 100%;
@@ -928,12 +915,6 @@ textarea {
 
 .widget-search__form .widget-search__submit {
 	display: none;
-}
-
-.widget-search__form .screen-reader-text {
-	position: absolute;
-	left: -9999px;
-	overflow: hidden;
 }
 
 .widget-search__form .widget-search__field {
