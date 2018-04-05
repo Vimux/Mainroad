@@ -718,10 +718,6 @@ select {
 	margin-top: 5px;
 }
 
-.list__excerpt {
-	overflow: hidden;
-}
-
 .list__thumbnail {
 	float: left;
 	margin-right: 20px;
@@ -1149,9 +1145,5 @@ textarea {
 		display: block;
 		font-size: 11px;
 		font-size: 0.6875rem;
-	}
-
-	.list__excerpt {
-		display: none;
 	}
 }
