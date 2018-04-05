@@ -788,16 +788,17 @@ select {
 	padding: 10px 25px;
 	border-top: 3px solid #999;
 	background: #2a2a2a;
-}
-
-.footer__copyright {
+	color: #999;
 	font-size: 12px;
 	font-size: 0.75rem;
-	color: #999;
 }
 
 .footer__copyright a {
 	color: #ffffff;
+}
+
+.footer__copyright a:hover {
+	text-decoration: underline;
 }
 
 /*** Images / Video ***/
