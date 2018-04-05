@@ -10,7 +10,7 @@
 	{{- end }}
 	{{- with .Site.Author.name }}
 	<div class="authorbox__header">
-		<span class="authorbox__name">About {{ . }}</span>
+		<span class="authorbox__name">{{ T "authorbox_name" . }}</span>
 	</div>
 	{{- end }}
 	{{- with .Site.Author.bio }}

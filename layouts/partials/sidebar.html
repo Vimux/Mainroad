@@ -6,6 +6,6 @@
 	{{ partial "widgets/taglist.html" . }}
 
 	{{- if and (not .Site.Params.widgets.search) (not .Site.Params.widgets.recent_articles) (not .Site.Params.widgets.categories) (not .Site.Params.widgets.social) (not .Site.Params.widgets.taglist) }}
-	<p class="sidebar__warning"><strong>WARNING:</strong><br>Please activate at least one sidebar widget.</p>
+	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
 	{{- end }}
 </aside>
