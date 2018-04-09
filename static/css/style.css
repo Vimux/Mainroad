@@ -14,6 +14,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+em {
+	font-style: italic;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
