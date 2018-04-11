@@ -10,7 +10,9 @@
 	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	{{ if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
