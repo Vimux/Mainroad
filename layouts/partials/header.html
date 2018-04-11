@@ -25,8 +25,8 @@
 			<div class="container container-inner">
 				<div class="logo" role="banner">
 					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
-						<h1 class="logo__title">{{ .Site.Title }}</h1>
-						{{ with .Site.Params.subtitle }}<h2 class="logo__tagline">{{ . }}</h2>{{ end }}
+						<div class="logo__title">{{ .Site.Title }}</div>
+						{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
 					</a>
 				</div>
 			</div>

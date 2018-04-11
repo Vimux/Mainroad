@@ -40,6 +40,10 @@ b, strong {
 	font-weight: 700;
 }
 
+i, em {
+	font-style: italic;
+}
+
 :focus::-webkit-input-placeholder {
 	color: transparent;
 }
@@ -70,6 +74,7 @@ body {
 	line-height: 1.6;
 	background: #f7f7f7;
 	word-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
 }
 
 .container, .container-inner {
@@ -132,7 +137,7 @@ body {
 .btn {
 	font-weight: 700;
 	padding: 5px 10px;
-	white-space: nowrap;
+	white-space: pre-line;
 	color: #fff;
 	background: #2a2a2a;
 }
@@ -304,9 +309,12 @@ blockquote {
 	font-size: 0.9375rem;
 	line-height: 1.6;
 	font-style: italic;
-	color: #666;
 	padding: 5px 0 5px 15px;
 	border-left: 5px solid #e64946;
+}
+
+blockquote footer {
+	text-align: right;
 }
 
 sup {
@@ -412,13 +420,16 @@ select {
 .logo__title {
 	font-size: 32px;
 	font-size: 2rem;
+	font-weight: 700;
 	line-height: 1;
+	color: #000;
 }
 
 .logo__tagline {
 	display: inline-block;
 	font-size: 14px;
 	font-size: 0.875rem;
+	font-weight: 700;
 	line-height: 1;
 	color: #e64946;
 	padding-top: 10px;
@@ -471,7 +482,6 @@ select {
 	padding: 10px 15px;
 	display: block;
 	color: #fff;
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
 	font-weight: 700;
 }
 
@@ -529,6 +539,10 @@ select {
 		float: left;
 		position: relative;
 	}
+
+	.menu__link {
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+	}
 }
 
 /*** Posts/Pages ***/
@@ -570,12 +584,12 @@ select {
 	vertical-align: middle;
 }
 
-.icon-category {
-	margin-left: 15px;
-}
-
 .meta-categories__list, .post__meta-date, .list__meta-date, .post__meta-lastmod, .list__meta-lastmod {
 	vertical-align: middle;
+}
+
+.meta-categories {
+	margin-left: 15px;
 }
 
 .post__meta {
@@ -1028,7 +1042,7 @@ textarea {
 		text-align: center;
 	}
 
-	.logo__title, .post__title {
+	.logo__title {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
@@ -1053,8 +1067,9 @@ textarea {
 		margin: 0;
 	}
 
-	.post__meta-categories {
-		display: none;
+	.meta-categories {
+		display: block;
+		margin-left: 0;
 	}
 
 	.authorbox {
@@ -1092,8 +1107,8 @@ textarea {
 	}
 
 	.list__title {
-		font-size: 14px;
-		font-size: 0.875rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.list__meta {
