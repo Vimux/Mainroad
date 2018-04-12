@@ -14,7 +14,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 /*** Animation ***/
-.menu__item, .pagination__item, .tags__item, .btn {
+.menu__item, .btn {
 	-webkit-transition: background-color 0.25s ease-out;
 	-moz-transition: background-color 0.25s ease-out;
 	transition: background-color 0.25s ease-out;
@@ -181,7 +181,7 @@ body {
 }
 
 .col-1-5 {
-	width: 18.00%;
+	width: 18%;
 }
 
 .col-1-6 {
@@ -200,7 +200,7 @@ body {
 	display: block;
 }
 
-.clearfix:after {
+.clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -273,7 +273,7 @@ pre {
 	color: #000;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
-	padding: 0px;
+	padding: 0;
 	padding: 1.25rem;
 	white-space: pre-wrap;
 	white-space: -o-pre-wrap;
@@ -580,7 +580,7 @@ select {
 	vertical-align: middle;
 }
 
-.meta-categories__list, .post__meta-date, .list__meta-date, .post__meta-lastmod, .list__meta-lastmod {
+.meta-categories__list, .meta-date, .meta-lastmod {
 	vertical-align: middle;
 }
 
@@ -638,7 +638,6 @@ select {
 
 .tags__item {
 	float: left;
-	font-weight: 700;
 	margin: 0 6px 6px 0;
 	margin: 0 0.375rem 0.375rem 0;
 	background: #2a2a2a;
@@ -651,7 +650,6 @@ select {
 
 .tags__link, .tags__link:hover {
 	display: block;
-	color: #fff;
 	padding: 10px 15px;
 }
 
@@ -771,24 +769,6 @@ select {
 	text-align: right;
 }
 
-/*** Footer ***/
-.footer {
-	padding: 10px 25px;
-	border-top: 3px solid #999;
-	background: #2a2a2a;
-	color: #999;
-	font-size: 12px;
-	font-size: 0.75rem;
-}
-
-.footer__copyright a {
-	color: #fff;
-}
-
-.footer__copyright a:hover {
-	text-decoration: underline;
-}
-
 /*** Images / Video ***/
 img {
 	max-width: 100%;
@@ -895,45 +875,6 @@ textarea {
 	background: #f5f5f5;
 }
 
-/*** Searchform ***/
-.widget-search__form input {
-	font-size: 11px;
-	line-height: 1;
-}
-
-.widget-search__form .widget-search__submit {
-	display: none;
-}
-
-.widget-search__form .widget-search__field {
-	position: relative;
-	padding: 10px;
-	margin: 0;
-	border: 1px solid #ebebeb;
-	background: #fff;
-	cursor: pointer;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-}
-
-.widget-search__field:active, .widget-search__field:focus {
-	cursor: text;
-}
-
-.widget-search__form {
-	display: block;
-	margin: 0 auto;
-	padding: 5%;
-	background: #f5f5f5;
-}
-
-.widget-search__form .widget-search__field {
-	display: block;
-	margin: 0 auto;
-	width: 90%;
-}
-
 /*** Widgets ***/
 .widget {
 	margin-bottom: 25px;
@@ -955,17 +896,6 @@ textarea {
 	border-bottom: 3px solid #e64946;
 }
 
-.widget-social__link {
-	display: block;
-	margin: 0 0 8px 0;
-}
-
-.widget-social__link-icon {
-	vertical-align: middle;
-	margin: 0 5px 0 0;
-}
-
-/*** Widgets ***/
 .widget__item {
 	display: block;
 	padding: 5px 0;
@@ -976,6 +906,58 @@ textarea {
 	padding-top: 0;
 }
 
+/*** Search widget ***/
+.widget-search__form {
+	display: block;
+	margin: 0 auto;
+	padding: 5%;
+	background: #f5f5f5;
+}
+
+.widget-search__form input {
+	font-size: 11px;
+	line-height: 1;
+}
+
+.widget-search__form .widget-search__submit {
+	display: none;
+}
+
+.widget-search__field {
+	display: block;
+	width: 90%;
+	position: relative;
+	padding: 10px;
+	margin: 0 auto;
+	border: 1px solid #ebebeb;
+	background: #fff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.widget-search__field:active, .widget-search__field:focus {
+	cursor: text;
+}
+
+/*** Social widget ***/
+.widget-social__item {
+	border: 0;
+	padding: 0;
+}
+
+.widget-social__link {
+	display: block;
+	margin: 0 0 8px;
+	white-space: normal;
+}
+
+.widget-social__link-icon {
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+
 /*** Tags Widget ***/
 .widget-taglist__link {
 	display: inline-block;
@@ -984,13 +966,22 @@ textarea {
 	text-transform: uppercase;
 }
 
-/*** Recent Posts Widget ***/
-.widget-recent .post-date {
-	display: block;
-	font-size: 11px;
-	font-size: 0.6875rem;
+/*** Footer ***/
+.footer {
+	padding: 10px 25px;
+	border-top: 3px solid #999;
+	background: #2a2a2a;
 	color: #999;
-	margin-bottom: 5px;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+
+.footer__copyright a {
+	color: #fff;
+}
+
+.footer__copyright a:hover {
+	text-decoration: underline;
 }
 
 /*** Media Queries ***/
@@ -1046,10 +1037,6 @@ textarea {
 	.sidebar {
 		margin-top: 20px;
 	}
-
-	.post__meta {
-		padding: 5px 0;
-	}
 }
 
 @media screen and (max-width: 620px) {
@@ -1092,10 +1079,6 @@ textarea {
 
 	.post__content ul ul, .post__content ol ol {
 		margin: 0 0 0 20px;
-	}
-
-	.single-post .post-nav__item--next {
-		margin-top: 25px;
 	}
 
 	.list__thumbnail {
