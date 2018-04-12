@@ -2,6 +2,10 @@
 - id: read_more
   translation: Read more…
 
+# Post meta
+- id: meta_lastmod
+  translation: Last Modified
+
 # Post nav
 - id: post_nav_prev
   translation: Previous
