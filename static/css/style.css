@@ -86,9 +86,7 @@ body {
 
 .container-outer {
 	margin: 25px auto;
-	-webkit-box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
-	-moz-box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
-	box-shadow: 0 0 10 rgba(50, 50, 50, 0.17);
+	box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
 }
 
 .wrapper {
@@ -297,8 +295,6 @@ kbd {
 	background: #f5f5f5;
 	border: 1px solid #aaa;
 	border-radius: 0.1875em;
-	-moz-box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
-	-webkit-box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
 	box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
 	text-shadow: 0 0.0625em 0 #fff;
 }
