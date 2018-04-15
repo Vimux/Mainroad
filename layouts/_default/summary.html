@@ -13,7 +13,7 @@
 			</h3>
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
 		</header>
-		<div class="list__excerpt">
+		<div class="list__excerpt post__content">
 			{{ .Summary }}
 		</div>
 		{{- if .Site.Params.readmore }}
