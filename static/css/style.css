@@ -218,6 +218,15 @@ mark {
 	background-color: #fd5;
 }
 
+figure {
+	margin: 0 0 20px;
+	margin: 0 0 1.25rem;
+}
+
+figcaption {
+	color: #999;
+}
+
 pre,
 code,
 kbd,
