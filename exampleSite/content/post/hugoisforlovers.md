@@ -1,19 +1,16 @@
-+++
-title = "Getting Started with Hugo"
-description = ""
-tags = [
-    "go",
-    "golang",
-    "hugo",
-    "development",
-]
-date = "2014-04-02"
-categories = [
-    "Development",
-    "golang",
-]
-menu = "main"
-+++
+---
+title: Getting Started with Hugo
+date: 2014-04-02
+tags:
+  - "go"
+  - "golang"
+  - "hugo"
+  - "development"
+categories:
+  - "Development"
+  - "golang"
+menu: main
+---
 
 ## Step 1. Install Hugo
 
