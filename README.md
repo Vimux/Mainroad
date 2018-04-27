@@ -108,7 +108,7 @@ For more information about front matter variables read [Hugo Front Matter](https
 
 ## Contributing
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/mainroad/pulls).
+Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/mainroad/pulls), but please respect the following [contributing guide](https://github.com/Vimux/Mainroad/wiki/Contributing).
 
 ## License
 
