@@ -101,6 +101,7 @@ categories:
 tags:
   - "Test"
   - "Another test"
+toc: true # Optional, enable table of content
 ---
 ```
 
