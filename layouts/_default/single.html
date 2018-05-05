@@ -12,6 +12,7 @@
 				<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
 			</figure>
 			{{- end }}
+			{{ partial "tableOfContents.html" . }}
 			{{ .Content }}
 		</div>
 		{{ partial "post_tags.html" . }}
