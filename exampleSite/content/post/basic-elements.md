@@ -15,7 +15,7 @@ The main purpose of this article is to make sure that all basic HTML Elements ar
 
 ## Headings
 
-Let's start with all possible headings. The HTML `<h1>` — `<h6>` elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>` is the lowest.
+Let's start with all possible headings. The HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>` is the lowest.
 
 # Heading 1
 ## Heading 2
@@ -34,8 +34,6 @@ Elements can have attributes, which control how the elements work. For example, 
 
 ## List Types
 
-
-
 ### Ordered List
 
 1. First item
@@ -47,7 +45,6 @@ Elements can have attributes, which control how the elements work. For example, 
 * List item
 * Another item
 * And another item
-
 
 ### Nested list
 
@@ -85,53 +82,48 @@ HTML also supports definition lists.
   <dd>Typically aged in wooden barrels for between two and eleven months...</dd>
 </dl>
 
-## Block quotes
+## Blockquotes
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+
+> Quoted text.
+> This line is part of the same quote.
+> Also you can *put* **Markdown** into a blockquote.
+
+Blockquote with a citation.
 
 <blockquote>
   <p>My goal wasn't to make a ton of money. It was to build good computers. I only started the company when I realized I could be an engineer forever.</p>
   <footer>— <cite>Steve Wozniak</cite></footer>
 </blockquote>
 
+According to Mozilla's website, <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 was released in 2004 and became a big success.</q>
 
-<p>According to Mozilla's website, <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 was released in 2004 and became a big success.</q></p>
+## Tables
 
-## Table
+Tables aren't part of the core Markdown spec, but Hugo supports them.
 
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Make</th>
-      <th>Model</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Honda</td>
-      <td>Accord</td>
-      <td>2009</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Toyota</td>
-      <td>Camry</td>
-      <td>2012</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Hyundai</td>
-      <td>Elantra</td>
-      <td>2010</td>
-    </tr>
-  </tbody>
-</table>
+| ID  | Make      | Model   | Year |
+| --- | --------- | ------- | ---- |
+| 1   | Honda     | Accord  | 2009 |
+| 2   | Toyota    | Camry   | 2012 |
+| 3   | Hyundai   | Elantra | 2010 |
+
+Colons can be used to align columns.
+
+| Tables      | Are           | Cool         |
+|:----------- |:-------------:| ------------:|
+| align: left | align: center | align: right |
+| align: left | align: center | align: right |
+| align: left | align: center | align: right |
+
+You can also use inline Markdown.
+
+| Inline     | Markdown  | In                | Table      |
+| ---------- | --------- | ----------------- | ---------- |
+| *italics*  | **bold**  | ~~Strikethrough~~ | `code`     |
 
 ## Code
-
 
 ```html
 <!DOCTYPE html>
