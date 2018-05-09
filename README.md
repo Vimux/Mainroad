@@ -2,18 +2,17 @@
 
 **Mainroad** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](https://www.mhthemes.com/).
 
-**[Alternate Demo (Best)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
+**[Demo (Best)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
-**Adaptation has several changes:**
+**Features:**
 
-+ Include Hugo internal templates (Open Graph, Disqus, Google Analytics)
-+ New responsive menu without jQuery
++ Hugo internal templates (Open Graph, Twitter Cards, Disqus, Google Analytics)
++ Responsive menu without jQuery
 + BEM-like class naming
-+ SVG icons instead of font icons
-+ Theme options are saved (Sidebar position, Author Box, Post Navigation) and available through config.toml file parameters
-+ Other small changes
++ SVG icons
++ Theme options (Sidebar position, Author Box, Post Navigation) available through config.toml file parameters
 
 **Browser support:**
 
@@ -112,4 +111,4 @@ Have you found a bug or got an idea for a new feature? Feel free to use the [iss
 
 ## License
 
-This theme is released under the [GPLv2 license](https://github.com/Vimux/mainroad/blob/master/LICENSE.md) (inherited from the original MH Magazine lite WordPress theme).
+This theme is released under the [GPLv2 license](https://github.com/Vimux/mainroad/blob/master/LICENSE.md).
