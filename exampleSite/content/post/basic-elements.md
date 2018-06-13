@@ -121,7 +121,7 @@ You can also use inline Markdown.
 
 | Inline     | Markdown  | In                | Table      |
 | ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~Strikethrough~~ | `code`     |
+| *italics*  | **bold**  | ~~strikethrough~~ | `code`     |
 
 ## Code
 
@@ -159,7 +159,7 @@ H<sub>2</sub>O
 
 C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>
 
-X <sup>n</sup> + Y <sup>n</sup> = Z <sup>n</sup>
+X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 Press <kbd>X</kbd> to win. Or press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F</kbd></kbd> to show FPS counter.
 
