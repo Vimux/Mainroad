@@ -1,4 +1,4 @@
-{{- if .Site.Params.authorbox }}
+{{- if .Param "authorbox" }}
 <div class="authorbox clearfix">
 	{{- if and (not .Site.Author.avatar) (not .Site.Author.name) (not .Site.Author.bio) }}
 	<p class="authorbox__warning"><strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.</p>
