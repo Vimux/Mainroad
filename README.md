@@ -57,7 +57,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params]
     subtitle = "Just another site" # Subtitle of your site. Used in site header
-    description = " John Doe's Personal blog about everything" # Description of your site. Used in meta description
+    description = " John Doe's Personal blog about everything" # Site description. Used in meta description
     opengraph = true # Enable OpenGraph if true
     twitter_cards = true # Enable Twitter Cards if true
     readmore = false # Show "Read more" button in list if true
@@ -67,6 +67,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
     #dateformat = "2006-01-02" # change the format of dates
+    #mathjax: true # Enable MathJax
+    #mathjaxPath: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js" # Specify MathJax path
+    #mathjaxConfig: "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
 [Params.widgets]
     search = true # Enable "Search" widget
