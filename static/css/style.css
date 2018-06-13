@@ -420,7 +420,7 @@ select {
 }
 
 .logo__link {
-	margin: 5px 0;
+	display: inline-block;
 	text-transform: uppercase;
 }
 
