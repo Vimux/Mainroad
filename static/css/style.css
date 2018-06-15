@@ -727,6 +727,68 @@ select {
 	fill: #fff;
 }
 
+/* Table of Contents */
+.toc {
+	margin-bottom: 20px;
+	font-weight: 700;
+	color: #7a8288;
+	background: #fff;
+	border-color: #ebebeb;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+}
+
+.toc__title {
+	padding: 5px 10px;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background: #2a2a2a;
+}
+
+.toc__menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+.toc__menu ul ul ul a {
+	padding-left: 25px;
+}
+
+.toc__menu ul ul ul ul a {
+	padding-left: 45px;
+}
+
+.toc__menu ul ul ul ul ul a {
+	padding-left: 65px;
+}
+
+.toc__menu ul ul ul ul ul ul a {
+	padding-left: 85px;
+}
+
+.toc__menu li {
+	margin: 0;
+}
+
+.toc__menu a {
+	display: block;
+	padding: 5px 10px;
+	color: #e64946;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.toc__menu a:hover {
+	text-decoration: underline;
+}
+
 /* Author Box */
 .authorbox {
 	padding: 25px 0;

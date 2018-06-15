@@ -6,6 +6,10 @@
 - id: meta_lastmod
   translation: Last Modified
 
+# Table of Contents
+- id: toc_title
+  translation: Page content
+
 # Post nav
 - id: post_nav_prev
   translation: Previous
