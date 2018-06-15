@@ -9,17 +9,18 @@
 **Features:**
 
 + Hugo internal templates (Open Graph, Twitter Cards, Disqus, Google Analytics)
-+ Responsive menu without jQuery
-+ BEM-like class naming
++ Responsive menu
 + SVG icons
 + Theme options (Sidebar position, Author Box, Post Navigation) available through config.toml file parameters
++ Table of Contents
++ MathJax
 
 **Browser support:**
 
-+ **Desktop:** IE9+, Chrome, Firefox, Safari
++ **Desktop:** IE10+, Chrome, Firefox, Safari
 + **Mobile:** Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini
 
-Other browsers (like Opera on Blink engine) are also supported, but not tested. Support for older versions of Internet Explorer (IE8 and below) ended.
+Other browsers (like Opera on Blink engine) are also supported, but not tested. Support for older versions of Internet Explorer (IE9 and below) ended.
 
 ## Installation
 
@@ -63,6 +64,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     readmore = false # Show "Read more" button in list if true
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = true # Show authorbox at bottom of pages if true
+    toc = true # Enable Table of Contents
     post_navigation = true # Show post navigation at bottom of pages if true
     postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
@@ -98,6 +100,8 @@ description: "Example article description"
 thumbnail: "img/placeholder.jpg" # Optional, thumbnail
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
+toc: true # Optional, enable Table of Contents for specific post
+mathjax: true # Optional, enable MathJax for specific post
 categories:
   - "Category 1"
   - "Category 2"
