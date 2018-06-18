@@ -896,6 +896,10 @@ select {
 	text-align: right;
 }
 
+.post-nav__link {
+	display: block;
+}
+
 /* Images / Video */
 img {
 	width: auto\9; /* ie8 */
