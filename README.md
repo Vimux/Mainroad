@@ -85,6 +85,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   social_facebook = "username"
   social_twitter = "username"
   social_linkedin = "username"
+  social_telegram = "username"
   social_github = "username"
   social_email = "example@example.com"
   social_google_plus = "profileid"
