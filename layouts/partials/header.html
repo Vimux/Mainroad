@@ -22,7 +22,7 @@
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
 </head>
-<body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }}">
+<body class="body">
 	<div class="container container-outer">
 		<header class="header">
 			<div class="container container-inner">
@@ -35,4 +35,4 @@
 			</div>
 			{{ partial "menu.html" . }}
 		</header>
-		<div class="wrapper clearfix">
+		<div class="wrapper">

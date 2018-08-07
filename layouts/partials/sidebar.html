@@ -1,4 +1,12 @@
-<aside class="sidebar">
+{{- if or (and (eq .Kind "home") (in (.Param "homeLayout") "sidebar")) (and (eq .Kind "page") (in (.Param "singleLayout") "sidebar")) ((and (or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") (eq .Kind "section")) (in (.Param "listLayout") "sidebar"))) }}
+<aside class="sidebar
+	{{- if eq .Kind "home" -}}
+		{{- if in (.Param "homeLayout") "left sidebar" }} sidebar--left{{ end }}
+	{{- else if eq .Kind "page" }}
+		{{- if in (.Param "singleLayout") "left sidebar" }} sidebar--left{{ end }}
+	{{- else }}
+		{{- if in (.Param "listLayout") "left sidebar" }} sidebar--left{{ end }}
+	{{- end }}">
 	{{ partial "widgets/search.html" . }}
 	{{ partial "widgets/recent.html" . }}
 	{{ partial "widgets/categories.html" . }}
@@ -9,3 +17,4 @@
 	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
 	{{- end }}
 </aside>
+{{- end }}

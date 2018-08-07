@@ -52,16 +52,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.body-right-sidebar .main {
-	float: left;
-	margin-right: 2.5%;
-}
-
-.body-left-sidebar .main {
-	float: right;
-	margin-left: 2.5%;
-}
-
 .container,
 .container-inner {
 	position: relative;
@@ -76,18 +66,25 @@ body {
 }
 
 .wrapper {
+	display: flex;
 	padding: 25px;
 	background: #fff;
 }
 
 .content {
-	width: 65.83%;
-	overflow: hidden;
+	flex: 1 0 65.83%;
+	order: 1;
 }
 
 .sidebar {
-	float: left;
-	width: 31.66%;
+	flex: 1 0 31.66%;
+	order: 2;
+	margin: 0 0 0 2.5%;
+}
+
+.sidebar--left {
+	order: 0;
+	margin: 0 2.5% 0 0;
 }
 
 .clearfix {
@@ -1078,6 +1075,10 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+	.wrapper {
+		display: block;
+	}
+
 	.content,
 	.sidebar,
 	.body .main {

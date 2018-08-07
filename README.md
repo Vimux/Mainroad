@@ -62,7 +62,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
-  leftsidebar = false # Move sidebar to the left side if true
+  homeLayout = "content + sidebar" # Configure home page layout
+  listLayout = "content + sidebar" # Configure layout for list pages
+  singleLayout = "content + sidebar" # Configure layout for single pages
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
@@ -113,6 +115,14 @@ tags:
 ```
 
 For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
+
+### Appearance Layouts
+
+**Mainroad** comes with several appearance layout options for home, list and single pages.
+
+Use `homeLayout`, `listLayout` or `singleLayout` parameters in site config to configure home, list and single pages appearance layouts.
+
+Available values: `content`, `content + sidebar`, `content + left sidebar`
 
 ## Contributing
 
