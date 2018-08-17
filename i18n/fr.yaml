@@ -1,0 +1,63 @@
+# General
+- id: read_more
+  translation: "Lire la suite…"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Dernière modification"
+
+# Table of Contents
+- id: toc_title
+  translation: Sommaire
+
+# Post nav
+- id: post_nav_prev
+  translation: Précédent
+
+- id: post_nav_next
+  translation: Suivant
+
+# Authorbox
+- id: authorbox_name
+  translation: "À propos {{ .Count }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: Attention
+
+- id: sidebar_recommendation
+  translation: "Activez au moins un widget pour la barre latérale."
+
+# Search widget
+- id: search_placeholder
+  translation: Rechercher...
+
+# Categories widget
+- id: categories_title
+  translation: Catégories
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Articles récents"
+
+# Social widget
+- id: social_title
+  translation: Social
+
+# Tags List widget
+- id: tags_title
+  translation: Mots-clefs
+
+# Footer
+- id: footer_credits
+  translation: "Produit par <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> et le thème <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. Page introuvable."
+
+- id: 404_text
+  translation: "La page que vous recherchez a apparemment été supprimée, déplacée, ou n'existe pas."
+
+- id: 404_linktext
+  translation: "Accueil"
