@@ -14,6 +14,6 @@ insert_final_newline = false
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{json,yml,toml,md,babelrc,eslintrc,stylelintrc}]
+[*.{json,yaml,yml,toml,md,babelrc,eslintrc,stylelintrc}]
 indent_style = space
 indent_size = 2
