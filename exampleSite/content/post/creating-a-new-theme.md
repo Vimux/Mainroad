@@ -21,7 +21,7 @@ $ echo this is a command
 this is a command
 
 ## edit the file
-$vi foo.md
+$ vi foo.md
 +++
 date = "2014-09-28"
 title = "creating a new theme"
@@ -939,7 +939,7 @@ $ cat public/index.html
     <h1><a href="http://localhost:1313/post/first-post/">first</a></h1>
 <script>document.write('<script src="http://'
         + (location.host || 'localhost').split(':')[0]
-		+ ':1313/livereload.js?mindelay=10"></'
+        + ':1313/livereload.js?mindelay=10"></'
         + 'script>')</script></body>
 </html>
 ```
@@ -987,8 +987,8 @@ Knowing that hugo is using the slug to generate the file name, the simplest solu
 ```
 $ vi config.toml
 [permalinks]
-	page = "/:title/"
-	about = "/:filename/"
+  page = "/:title/"
+  about = "/:filename/"
 ```
 
 Generate the web site and verify that this didn't work. Hugo lets "slug" or "URL" override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.
@@ -1008,7 +1008,7 @@ $ vi themes/zafta/layouts/partials/header.html
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{{ .Title }}</title>
+  <title>{{ .Title }}</title>
 </head>
 <body>
 :wq
