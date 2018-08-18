@@ -587,6 +587,14 @@ select {
 	border-bottom: 1px dotted #ebebeb;
 }
 
+.post__title {
+	margin: 0;
+}
+
+.post__subtitle {
+	margin-bottom:0 ;
+}
+
 .post__thumbnail {
 	max-width: 1030px;
 	margin: 0 0 20px;
