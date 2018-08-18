@@ -543,7 +543,6 @@ select {
 .meta {
 	font-size: 13px;
 	font-size: .8125rem;
-	vertical-align: baseline;
 }
 
 .meta,
@@ -559,32 +558,28 @@ select {
 	margin-right: 5px;
 }
 
-.icon-time,
-.icon-category {
+.meta_list li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.meta_list .icon {
+	height: 1.1em;
 	vertical-align: middle;
 	fill: #c4c4c4;
-}
-
-.meta-categories__list,
-.meta-date,
-.meta-lastmod {
-	vertical-align: middle;
-}
-
-.meta-categories {
-	margin-left: 15px;
-}
-
-.post__title {
-	margin: 0;
+	stroke: #c4c4c4;
+	margin-bottom: 0.2em;
 }
 
 .post__meta {
 	padding: 5px 0;
-	margin-top: 10px;
 	margin-top: .625rem;
 	border-top: 1px dotted #ebebeb;
 	border-bottom: 1px dotted #ebebeb;
+}
+
+.post__title {
+	margin: 0;
 }
 
 .post__thumbnail {
