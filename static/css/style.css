@@ -588,10 +588,11 @@ select {
 }
 
 .post__title {
-	margin: 0;
+	margin-bottom: 0;
 }
 
 .post__subtitle {
+	margin-top:0.2em ;
 	margin-bottom:0 ;
 }
 
