@@ -62,9 +62,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
-  homeLayout = "content + sidebar" # Configure home page layout
-  listLayout = "content + sidebar" # Configure layout for list pages
-  singleLayout = "content + sidebar" # Configure layout for single pages
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
@@ -75,15 +72,18 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
+[Params.sidebar]
+  home = "right" # Configure home page layout
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
 [Params.widgets]
-  search = true # Enable "Search" widget
-  recent_articles = true # Enable "Recent articles" widget
-  recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
-  categories = true # Enable "Categories" widget
-  tags = true # Enable "Tags" widget
+  recent_many = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
-  # Enable "Social" widget, if any of "social_*" set a value
+  # Enable parts of social widget
   social_facebook = "username"
   social_twitter = "username"
   social_linkedin = "username"
@@ -118,11 +118,18 @@ For more information about front matter variables read [Hugo Front Matter](https
 
 ### Appearance Layouts
 
-**Mainroad** comes with several appearance layout options for home, list and single pages.
+**Mainroad** comes with a configurable sidebar. Use the
+`[Params.sidebar]` section to configure it. Its position can be
+specified for home list and single pages individually. Use the keys
+`home`, `list` and `single` with values `"left"`, `"right"` or `false`.
 
-Use `homeLayout`, `listLayout` or `singleLayout` parameters in site config to configure home, list and single pages appearance layouts.
+The widgets and their order can be specified using the `widgets` key
+with a list of widget names as value. You can add your own widgets, by
+placing template under `layouts/partials/widgets/<name>.html`.
 
-Available values: `content`, `content + sidebar`, `content + left sidebar`
+Some widget need additional configuration. Have a look at the
+`[Params.widgets]` section in the example configuration above.
+
 
 ## Contributing
 
