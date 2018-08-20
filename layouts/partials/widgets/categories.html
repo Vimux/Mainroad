@@ -1,4 +1,3 @@
-{{- if .Site.Params.widgets.categories }}
 {{- if isset .Site.Taxonomies "categories" }}
 {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
 <div class="widget-categories widget">
@@ -11,6 +10,5 @@
 		</ul>
 	</div>
 </div>
-{{- end }}
 {{- end }}
 {{- end }}
