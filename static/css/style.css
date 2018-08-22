@@ -83,6 +83,7 @@ body {
 	-ms-flex-order: 1;
 	-webkit-order: 1;
 	order: 1;
+	min-width: 0;
 }
 
 .sidebar {
@@ -92,6 +93,7 @@ body {
 	-ms-flex-order: 2;
 	-webkit-order: 2;
 	order: 2;
+	min-width: 0;
 	margin: 0 0 0 2.5%;
 }
 
