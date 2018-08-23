@@ -2,7 +2,8 @@
 title: About Hugo
 date: 2014-04-09
 authorbox: false
-singleLayout: content
+sidebar: "left"
+widgets: ["search"]
 menu: main
 ---
 

@@ -117,13 +117,13 @@ tags:
 
 For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
 
-### Appearance Layouts
+### Sidebar
 
-**Mainroad** comes with a configurable sidebar. Use the `[Params.sidebar]` section to configure it. Its position can be specified for home list and single pages individually. Use the keys `home`, `list` and `single` with values `"left"`, `"right"` or `false`.
+**Mainroad** comes with a configurable sidebar that can be on the left, on the right, or disabled. The default layout can be specified in the `[Params.sidebar]` section of the configuration. The position can be specified for home, list and single pages individually. Use the keys `home`, `list` and `single` with values `"left"`, `"right"` or `false`. The layout can be configured per page, by setting the `sidebar` parameter with one of the same values in the page's front matter.
 
-The widgets and their order can be specified using the `widgets` key with a list of widget names as value. You can add your own widgets, by placing a template under `layouts/partials/widgets/<name>.html`.
+The sidebar consists of multiple widgets. Widgets can be enabled individually using the `widgets` key with a list of widget names as value. You can add your own widgets, by placing a template under `layouts/partials/widgets/<name>.html`. The list of widgets can be overwritten from a page's front matter.
 
-Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `Params.widgets.social` section in the example configuration above.
+Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]` sections in the example configuration above.
 
 
 ## Contributing

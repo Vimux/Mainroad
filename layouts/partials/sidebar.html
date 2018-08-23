@@ -1,18 +1,22 @@
-{{- if or (and (eq .Kind "home") .Site.Params.sidebar.home) (and (eq .Kind "page") .Site.Params.sidebar.single) ((and (or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") (eq .Kind "section")) .Site.Params.sidebar.list)) }}
-{{- if .Param.sidebar.widgets }}
-<aside class="sidebar
-{{- if eq .Kind "home" -}}
-{{- if eq .Param.sidebar.home "left" }} sidebar--left{{ end }}
-{{- else if eq .Kind "page" }}
-{{- if eq .Param.sidebar.single "left" }} sidebar--left{{ end }}
+{{- $s := newScratch }}
+{{- if eq .Kind "home" -}}{{ $s.Set "sb" .Site.Params.sidebar.home }}
+{{- else if eq .Kind "page" -}}{{ $s.Set "sb" .Site.Params.sidebar.single }}
+{{- else -}}{{- $s.Set "sb" .Site.Params.sidebar.list }}{{ end }}
+{{- if isset .Params "sidebar" -}}{{ $s.Set "sb" .Params.sidebar }}{{ end }}
+{{- $sidebar := $s.Get "sb" }}
+{{- $s.Set "w" .Site.Params.sidebar.widgets }}
+{{- if isset .Params "widgets" -}}{{ $s.Set "w"  .Params.widgets }}{{ end }}
+{{- $widgets := $s.Get "w" }}
+{{- if $sidebar -}}
+<aside class="sidebar{{ if eq $sidebar "left" }} sidebar--left{{ end }}">
+{{- if $widgets -}}
+	{{- $root := . }}
+	{{- range $widget := $widgets }}
+	{{- $p := printf "widgets/%s.html" $widget }}
+	{{- partial $p $root }}
+	{{- end }}
 {{- else }}
-{{- if eq .Param.sidebar.list "left" }} sidebar--left{{ end }}
-{{- end }}">
-	{{ $root := . }}
-	{{ range $widget := .Param.sidebar.widgets }}
-	{{ $p := printf "widgets/%s.html" $widget }}
-	{{ partial $p $root }}
-	{{ end }}
-</aside>
+	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
 {{- end }}
+</aside>
 {{- end }}
