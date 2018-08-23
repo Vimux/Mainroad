@@ -22,11 +22,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   postSections = ["post"]
 
 [Params.sidebar]
-  home =   "right" # Configure home page layout
-  list =   "right" # Configure layout for list pages
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
+  # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist"]
 
 [Params.widgets]
-  recent_num = 10 # How many posts in the recent articles widget?
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)

@@ -73,24 +73,25 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
 [Params.sidebar]
-  home = "right" # Configure home page layout
+  home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social"]
 
 [Params.widgets]
-  recent_many = 5 # Set the number of articles in the "Recent articles" widget
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
+[Params.widgets.social]
   # Enable parts of social widget
-  social_facebook = "username"
-  social_twitter = "username"
-  social_linkedin = "username"
-  social_telegram = "username"
-  social_github = "username"
-  social_email = "example@example.com"
-  social_google_plus = "profileid"
+  facebook = "username"
+  twitter = "username"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  email = "example@example.com"
+  google_plus = "profileid"
 ```
 
 ### Front Matter example
@@ -118,17 +119,11 @@ For more information about front matter variables read [Hugo Front Matter](https
 
 ### Appearance Layouts
 
-**Mainroad** comes with a configurable sidebar. Use the
-`[Params.sidebar]` section to configure it. Its position can be
-specified for home list and single pages individually. Use the keys
-`home`, `list` and `single` with values `"left"`, `"right"` or `false`.
+**Mainroad** comes with a configurable sidebar. Use the `[Params.sidebar]` section to configure it. Its position can be specified for home list and single pages individually. Use the keys `home`, `list` and `single` with values `"left"`, `"right"` or `false`.
 
-The widgets and their order can be specified using the `widgets` key
-with a list of widget names as value. You can add your own widgets, by
-placing template under `layouts/partials/widgets/<name>.html`.
+The widgets and their order can be specified using the `widgets` key with a list of widget names as value. You can add your own widgets, by placing a template under `layouts/partials/widgets/<name>.html`.
 
-Some widget need additional configuration. Have a look at the
-`[Params.widgets]` section in the example configuration above.
+Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `Params.widgets.social` section in the example configuration above.
 
 
 ## Contributing

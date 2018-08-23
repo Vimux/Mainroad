@@ -2,7 +2,7 @@
 	<h4 class="widget__title">{{ T "recent_title" }}</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			{{- $recent_articles_num := (.Site.Params.widgets.recent_many | default 10) }}
+			{{- $recent_articles_num := (.Site.Params.widgets.recent_num | default 10) }}
 			{{- range first $recent_articles_num (where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "post"))) }}
 			<li class="widget__item"><a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{- end }}
