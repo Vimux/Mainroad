@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	{{ .Hugo.Generator }}
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{- if not .Site.IsServer }}
+		{{ template "_internal/google_analytics_async.html" . }}
+	{{- end }}
+</head>
+<body class="body">
+	<div class="container container-outer">
+		<header class="header">
+			<div class="container container-inner">
+				<div class="logo" role="banner">
+					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+						<div class="logo__left">
+							{{ with .Site.Params.logo }}
+							<img class="logo__artwork" src="{{ . | relLangURL }}" />
+							{{ end }}
+						</div>
+						<div class="logo__right">
+							<div class="logo__title">{{ .Site.Title }}</div>
+							{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
+						</div>
+					</a>
+				</div>
+			</div>
+			{{ partial "menu.html" . }}
+		</header>
+		<div class="wrapper flex">
+			{{ block "main" . }}
+			{{ with .Content }}
+			<div class="page-content">
+				{{ . }}
+			</div>
+			{{ end }}
+			{{ end }}
+			{{ partial "sidebar.html" . }}
+		</div><!-- .wrapper -->
+		<footer class="footer">
+			<div class="container container-inner">
+				<div class="footer__copyright">&copy; {{ now.Format "2006" }} {{ .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
+			</div>
+		</footer>
+	</div><!-- .container-outer -->
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "{{ T "menu_label" }}",
+	});
+</script>
+{{- partial "mathjax.html" . -}}
+</body>
+</html>
