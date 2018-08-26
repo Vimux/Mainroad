@@ -587,11 +587,8 @@ select {
 	border-bottom: 1px dotted #ebebeb;
 }
 
-.post__title {
-	margin-bottom: 0;
-}
-
 .post__subtitle {
+	font-weight: bold;
 	margin-top:0.2em ;
 	margin-bottom:0 ;
 }
