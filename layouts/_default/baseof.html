@@ -28,15 +28,8 @@
 			<div class="container container-inner">
 				<div class="logo" role="banner">
 					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
-						<div class="logo__left">
-							{{ with .Site.Params.logo }}
-							<img class="logo__artwork" src="{{ . | relLangURL }}" />
-							{{ end }}
-						</div>
-						<div class="logo__right">
-							<div class="logo__title">{{ .Site.Title }}</div>
-							{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
-						</div>
+						<div class="logo__title">{{ .Site.Title }}</div>
+						{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
 					</a>
 				</div>
 			</div>
