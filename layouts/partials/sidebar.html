@@ -1,19 +1,20 @@
 {{- $s := newScratch }}
-{{- if eq .Kind "home" -}}{{ $s.Set "sb" .Site.Params.sidebar.home }}
-{{- else if eq .Kind "page" -}}{{ $s.Set "sb" .Site.Params.sidebar.single }}
-{{- else -}}{{- $s.Set "sb" .Site.Params.sidebar.list }}{{ end }}
-{{- if isset .Params "sidebar" -}}{{ $s.Set "sb" .Params.sidebar }}{{ end }}
+{{- if eq .Kind "home" -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.home .Params.sidebar) }}
+{{- else if eq .Kind "page" -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.single .Params.sidebar) }}
+{{- else -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.list .Params.sidebar) }}
+{{ end }}
 {{- $sidebar := $s.Get "sb" }}
-{{- $s.Set "w" .Site.Params.sidebar.widgets }}
-{{- if isset .Params "widgets" -}}{{ $s.Set "w"  .Params.widgets }}{{ end }}
-{{- $widgets := $s.Get "w" }}
+
 {{- if $sidebar -}}
 <aside class="sidebar{{ if eq $sidebar "left" }} sidebar--left{{ end }}">
-{{- if $widgets -}}
-	{{- $root := . }}
-	{{- range $widget := $widgets }}
-	{{- $p := printf "widgets/%s.html" $widget }}
-	{{- partial $p $root }}
+{{- $root := . }}
+{{- with (default .Site.Params.sidebar.widgets .Params.widgets) -}}
+	{{- range $widget := . }}
+		{{- $p := printf "widgets/%s.html" $widget }}
+		{{- partial $p $root }}
 	{{- end }}
 {{- else }}
 	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
