@@ -589,8 +589,8 @@ select {
 
 .post__subtitle {
 	font-weight: bold;
-	margin-top:0.2em ;
-	margin-bottom:0 ;
+	margin-top: 0.2rem;
+	margin-bottom: 0;
 }
 
 .post__thumbnail {
