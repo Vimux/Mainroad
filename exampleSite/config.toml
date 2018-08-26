@@ -17,16 +17,17 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
-  homeLayout = "content + sidebar" # Configure home page layout
-  listLayout = "content + sidebar" # Configure layout for list pages
-  singleLayout = "content + sidebar" # Configure layout for single pages
   authorbox = true
   post_navigation = true
   postSections = ["post"]
 
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
+
 [Params.widgets]
-  search = true # Enable "Search" widget
-  recent_articles = true # Enable "Recent arcticles" widget
-  categories = true # Enable "Categories" widget
-  tags = true # Enable "Tags" widget
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)

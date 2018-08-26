@@ -62,9 +62,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
-  homeLayout = "content + sidebar" # Configure home page layout
-  listLayout = "content + sidebar" # Configure layout for list pages
-  singleLayout = "content + sidebar" # Configure layout for single pages
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
@@ -75,22 +72,26 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
 [Params.widgets]
-  search = true # Enable "Search" widget
-  recent_articles = true # Enable "Recent articles" widget
-  recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
-  categories = true # Enable "Categories" widget
-  tags = true # Enable "Tags" widget
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
-  # Enable "Social" widget, if any of "social_*" set a value
-  social_facebook = "username"
-  social_twitter = "username"
-  social_linkedin = "username"
-  social_telegram = "username"
-  social_github = "username"
-  social_email = "example@example.com"
-  social_google_plus = "profileid"
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "username"
+  twitter = "username"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  email = "example@example.com"
+  google_plus = "profileid"
 ```
 
 ### Front Matter example
@@ -116,13 +117,14 @@ tags:
 
 For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
 
-### Appearance Layouts
+### Sidebar
 
-**Mainroad** comes with several appearance layout options for home, list and single pages.
+**Mainroad** comes with a configurable sidebar that can be on the left, on the right, or disabled. The default layout can be specified in the `[Params.sidebar]` section of the configuration. The position can be specified for home, list and single pages individually. Use the keys `home`, `list` and `single` with values `"left"`, `"right"` or `false`. The layout can be configured per page, by setting the `sidebar` parameter with one of the same values in the page's front matter.
 
-Use `homeLayout`, `listLayout` or `singleLayout` parameters in site config to configure home, list and single pages appearance layouts.
+The sidebar consists of multiple widgets. Widgets can be enabled individually using the `widgets` key with a list of widget names as value. You can add your own widgets, by placing a template under `layouts/partials/widgets/<name>.html`. The list of widgets can be overwritten from a page's front matter.
 
-Available values: `content`, `content + sidebar`, `content + left sidebar`
+Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]` sections in the example configuration above.
+
 
 ## Contributing
 
