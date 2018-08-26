@@ -571,15 +571,16 @@ select {
 	margin-bottom: 0.2em;
 }
 
+.post__title {
+	margin: 0;
+}
+
 .post__meta {
 	padding: 5px 0;
+	margin-top: 10px;
 	margin-top: .625rem;
 	border-top: 1px dotted #ebebeb;
 	border-bottom: 1px dotted #ebebeb;
-}
-
-.post__title {
-	margin: 0;
 }
 
 .post__thumbnail {
