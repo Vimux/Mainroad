@@ -247,8 +247,17 @@ figure {
 	margin: 0 0 1.25rem;
 }
 
+figcaption h4 {
+	color: #666;
+	font-size: .9rem;
+	margin: 0;
+}
+
 figcaption {
-	color: #999;
+	padding-top: 5px;
+	color: #666;
+	font-size: .75rem;
+	font-weight: 700;
 }
 
 pre,
