@@ -558,17 +558,21 @@ select {
 	margin-right: 5px;
 }
 
-.meta_list li {
+.meta li {
 	display: inline;
 	margin-right: 15px;
 }
 
-.meta_list .icon {
+.meta li .icon {
 	height: 1.1em;
 	vertical-align: middle;
 	fill: #c4c4c4;
 	stroke: #c4c4c4;
 	margin-bottom: 0.2em;
+}
+
+.post__meta ul {
+	padding-left: 8px;
 }
 
 .post__title {
