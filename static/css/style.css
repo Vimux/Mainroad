@@ -854,7 +854,6 @@ select {
 .post-nav__caption {
 	display: block;
 	margin-bottom: 5px;
-	overflow: hidden;
 	font-weight: 700;
 	line-height: 1;
 	text-transform: uppercase;
