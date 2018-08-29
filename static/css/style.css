@@ -1029,6 +1029,9 @@ textarea {
 	border: 1px solid #ebebeb;
 	border-radius: 0;
 	outline-offset: -2px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
 	-webkit-appearance: none;
 }
 
