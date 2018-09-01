@@ -24,34 +24,19 @@
 </head>
 <body class="body">
 	<div class="container container-outer">
-		<header class="header">
-			<div class="container container-inner">
-				<div class="logo" role="banner">
-					<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
-						<div class="logo__title">{{ .Site.Title }}</div>
-						{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
-					</a>
-				</div>
-			</div>
-			{{ partial "menu.html" . }}
-		</header>
+		{{ partial "header" . }}
 		<div class="wrapper flex">
 			{{ block "main" . }}
-			{{ with .Content }}
-			<div class="page-content">
-				{{ . }}
-			</div>
-			{{ end }}
+				{{ with .Content }}
+				<div class="page-content">
+					{{ . }}
+				</div>
+				{{ end }}
 			{{ end }}
 			{{ partial "sidebar.html" . }}
-		</div><!-- .wrapper -->
-		<footer class="footer">
-			<div class="container container-inner">
-				<div class="footer__copyright">&copy; {{ now.Format "2006" }} {{ .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
-			</div>
-		</footer>
-	</div><!-- .container-outer -->
-
+		</div>
+		{{ partial "footer" . }}
+	</div>
 <script>
 	var navigation = responsiveNav(".menu", {
 		navClass: "menu--collapse",
