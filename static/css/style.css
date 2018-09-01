@@ -587,7 +587,7 @@ select {
 	border-bottom: 1px dotted #ebebeb;
 }
 
-.post__subtitle {
+.post__lead {
 	font-weight: 700;
 	font-size: 0.75rem;
 	margin-top: 0.2rem;

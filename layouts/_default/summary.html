@@ -13,9 +13,9 @@
 					{{ .Title }}
 					</a>
 				</h3>
-				{{- if .Params.subtitle }}
-				<p class="list__subtitle post__subtitle">
-				{{ .Params.subtitle }}
+				{{- if .Params.lead }}
+				<p class="list__lead post__lead">
+				{{ .Params.lead }}
 				</p>
 				{{- end }}
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
