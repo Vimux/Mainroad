@@ -589,6 +589,15 @@ select {
 	border-bottom: 1px dotted #ebebeb;
 }
 
+.post__lead {
+	margin-top: 4px;
+	margin-top: .25rem;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: italic;
+}
+
 .post__thumbnail {
 	max-width: 1030px;
 	margin: 0 0 20px;
@@ -1197,6 +1206,11 @@ textarea {
 	.list__title {
 		font-size: 16px;
 		font-size: 1rem;
+	}
+
+	.list__lead {
+		font-size: 14px;
+		font-size: .875rem;
 	}
 
 	.list__meta {
