@@ -1,12 +1,11 @@
-{{- $s := newScratch }}
+{{- $sidebar := false }}
 {{- if eq .Kind "home" -}}
-	{{ $s.Set "sb" (default .Site.Params.sidebar.home .Params.sidebar) }}
+	{{ $sidebar = (default .Site.Params.sidebar.home .Params.sidebar) }}
 {{- else if eq .Kind "page" -}}
-	{{ $s.Set "sb" (default .Site.Params.sidebar.single .Params.sidebar) }}
+	{{ $sidebar = (default .Site.Params.sidebar.single .Params.sidebar) }}
 {{- else -}}
-	{{ $s.Set "sb" (default .Site.Params.sidebar.list .Params.sidebar) }}
+	{{ $sidebar = (default .Site.Params.sidebar.list .Params.sidebar) }}
 {{ end }}
-{{- $sidebar := $s.Get "sb" }}
 
 {{- if $sidebar -}}
 <aside class="sidebar{{ if eq $sidebar "left" }} sidebar--left{{ end }}">
