@@ -13,10 +13,8 @@
 					{{ .Title }}
 					</a>
 				</h3>
-				{{- if .Params.lead }}
-				<p class="list__lead post__lead">
-				{{ .Params.lead }}
-				</p>
+				{{- with .Params.lead }}
+				<p class="list__lead post__lead">{{ . }}</p>
 				{{- end }}
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
 		</header>
