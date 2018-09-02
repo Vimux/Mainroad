@@ -588,10 +588,12 @@ select {
 }
 
 .post__lead {
-	font-weight: 700;
-	font-size: 0.75rem;
-	margin-top: 0.2rem;
+	margin-top: 4px;
+	margin-top: .25rem;
 	margin-bottom: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: italic;
 }
 
 .post__thumbnail {
@@ -1202,6 +1204,11 @@ textarea {
 	.list__title {
 		font-size: 16px;
 		font-size: 1rem;
+	}
+
+	.list__lead {
+		font-size: 14px;
+		font-size: .875rem;
 	}
 
 	.list__meta {
