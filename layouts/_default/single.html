@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<main class="main content">
+<main class="main">
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>
@@ -12,7 +12,7 @@
 		</figure>
 		{{- end }}
 		{{- partial "post_toc.html" . -}}
-		<div class="post__content clearfix">
+		<div class="content clearfix">
 			{{ .Content }}
 		</div>
 		{{ partial "post_tags.html" . }}

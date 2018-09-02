@@ -76,7 +76,7 @@ body {
 	display: flex;
 }
 
-.content {
+.main {
 	-webkit-flex: 1 0 65.83%;
 	-ms-flex: 1 0 65.83%;
 	flex: 1 0 65.83%;
@@ -537,7 +537,7 @@ select {
 	font-size: 1.75rem;
 }
 
-.page-content {
+.list .content {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
@@ -599,63 +599,63 @@ select {
 	width: 100%;
 }
 
-.post__content a,
+.content a,
 .warning a {
 	font-weight: 700;
 	color: #e64946;
 }
 
-.post__content a:hover,
+.content a:hover,
 .warning a:hover {
 	color: #e64946;
 	text-decoration: underline;
 }
 
-.post__content .alignnone {
+.content .alignnone {
 	display: block;
 	margin: 20px 0;
 	margin: 1.25rem 0;
 }
 
-.post__content .aligncenter {
+.content .aligncenter {
 	display: block;
 	margin: 20px auto;
 	margin: 1.25rem auto;
 }
 
-.post__content .alignleft {
+.content .alignleft {
 	display: inline;
 	float: left;
 	margin: 5px 20px 20px 0;
 	margin: .3125rem 1.25rem 1.25rem 0;
 }
 
-.post__content .alignright {
+.content .alignright {
 	display: inline;
 	float: right;
 	margin: 5px 0 20px 20px;
 	margin: .3125rem 0 1.25rem 1.25rem;
 }
 
-.post__content ul {
+.content ul {
 	list-style: square;
 }
 
-.post__content ol {
+.content ol {
 	list-style: decimal;
 }
 
-.post__content ul,
-.post__content ol {
+.content ul,
+.content ol {
 	margin: 0 0 20px 40px;
 }
 
-.post__content ul ul,
-.post__content ol ol {
+.content ul ul,
+.content ol ol {
 	margin: 0 0 0 40px;
 }
 
-.post__content li {
+.content li {
 	margin-bottom: 5px;
 }
 
@@ -1122,7 +1122,6 @@ textarea {
 		display: block;
 	}
 
-	.content,
 	.sidebar,
 	.body .main {
 		float: none;
