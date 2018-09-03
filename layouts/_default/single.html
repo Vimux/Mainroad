@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <main class="main content">
 	<article class="post">
 		<header class="post__header">
@@ -24,6 +23,4 @@
 	{{ partial "post_nav.html" . }}
 	{{ partial "comments.html" . }}
 </main>
-
-{{ partial "sidebar.html" . }}
-{{ partial "footer.html" . }}
+{{ end }}
