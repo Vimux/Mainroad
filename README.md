@@ -91,6 +91,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   telegram = "username"
   github = "username"
   gitlab = "username"
+  bitbucket = "username"
   email = "example@example.com"
   google_plus = "profileid"
 ```
