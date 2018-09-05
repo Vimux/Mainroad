@@ -8,6 +8,8 @@ menu: main
 
 Hugo is a static site engine written in Go.
 
+{{< figure src="https://images.unsplash.com/photo-1536007164800-b7f11331f35c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2fea553f92753fc4768ec28d8c619968&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" attr="(the source)" caption="this is the caption">}}
+
 
 It makes use of a variety of open source projects including:
 
