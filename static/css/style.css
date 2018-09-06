@@ -248,7 +248,14 @@ figure {
 }
 
 figcaption {
-	color: #999;
+	margin-top: 4px;
+	margin-top: .25rem;
+	color: #666;
+}
+
+figcaption h4 {
+	margin: 0;
+	color: inherit;
 }
 
 pre,
@@ -550,7 +557,7 @@ select {
 
 .meta,
 .meta a {
-	color: #999;
+	color: #666;
 }
 
 .meta a:hover {
