@@ -8,9 +8,14 @@
 	{{- end }}
 	<div class="list__content clearfix">
 		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
-			</h3>
+				<h3 class="list__title post__title ">
+					<a href="{{ .RelPermalink }}" rel="bookmark">
+					{{ .Title }}
+					</a>
+				</h3>
+				{{- with .Params.lead }}
+				<p class="list__lead post__lead">{{ . }}</p>
+				{{- end }}
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
 		</header>
 		<div class="list__excerpt post__content">

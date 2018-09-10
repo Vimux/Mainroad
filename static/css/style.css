@@ -248,7 +248,14 @@ figure {
 }
 
 figcaption {
-	color: #999;
+	margin-top: 4px;
+	margin-top: .25rem;
+	color: #666;
+}
+
+figcaption h4 {
+	margin: 0;
+	color: inherit;
 }
 
 pre,
@@ -550,7 +557,7 @@ select {
 
 .meta,
 .meta a {
-	color: #999;
+	color: #666;
 }
 
 .meta a:hover {
@@ -587,6 +594,15 @@ select {
 	margin-top: .625rem;
 	border-top: 1px dotted #ebebeb;
 	border-bottom: 1px dotted #ebebeb;
+}
+
+.post__lead {
+	margin-top: 4px;
+	margin-top: .25rem;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: italic;
 }
 
 .post__thumbnail {
@@ -1196,6 +1212,11 @@ textarea {
 	.list__title {
 		font-size: 16px;
 		font-size: 1rem;
+	}
+
+	.list__lead {
+		font-size: 14px;
+		font-size: .875rem;
 	}
 
 	.list__meta {
