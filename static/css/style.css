@@ -52,15 +52,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.container,
-.container-inner {
+.container {
 	position: relative;
 	width: 100%;
 	max-width: 1080px;
 	margin: 0 auto;
 }
 
-.container-outer {
+.container--outer {
 	margin: 25px auto;
 	box-shadow: 0 0 10px rgba(50, 50, 50, .17);
 }
@@ -1101,22 +1100,15 @@ textarea {
 
 /*** Media Queries ***/
 @media screen and (max-width: 1475px) {
-	.container {
+	.container--outer {
 		width: 95%;
-	}
-
-	.container-inner {
-		width: 100%;
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.container-outer {
-		margin: 0 auto;
-	}
-
-	.container {
+	.container--outer {
 		width: 100%;
+		margin: 0 auto;
 	}
 
 	.wrapper,
