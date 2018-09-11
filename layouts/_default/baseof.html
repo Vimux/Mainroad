@@ -26,13 +26,15 @@
 	<div class="container container--outer">
 		{{ partial "header" . }}
 		<div class="wrapper flex">
+			<section class="primary">
 			{{ block "main" . }}
 				{{ with .Content }}
-				<div class="page-content">
+				<div class="content main__content clearfix">
 					{{ . }}
 				</div>
 				{{ end }}
 			{{ end }}
+			</section>
 			{{ partial "sidebar.html" . }}
 		</div>
 		{{ partial "footer" . }}

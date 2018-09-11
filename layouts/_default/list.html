@@ -1,18 +1,18 @@
 {{ define "main" }}
-<main class="main list content" role="main">
+<main class="main list" role="main">
 	{{- with .Title }}
-	<header class="page-header">
-		<h1 class="page-header__title">{{ . }}</h1>
+	<header class="main__header">
+		<h1 class="main__title">{{ . }}</h1>
 	</header>
 	{{- end }}
 	{{- with .Content }}
-	<div class="page-content">
+	<div class="content main__content clearfix">
 		{{ . }}
 	</div>
 	{{- end }}
 	{{- range .Paginator.Pages }}
 		{{- .Render "summary" }}
 	{{- end }}
-	{{ partial "pagination.html" . }}
 </main>
+{{ partial "pagination.html" . }}
 {{ end }}

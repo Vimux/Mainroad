@@ -1,7 +1,7 @@
 {{ define "main" }}
-<main class="main list content" role="main">
+<main class="main list" role="main">
 	{{- with .Content }}
-	<div class="page-content">
+	<div class="content main__content clearfix">
 		{{ . }}
 	</div>
 	{{- end }}
@@ -17,6 +17,6 @@
 			<p class="warning__text">As posts are added in <b>{{ replaceRE ",([^,]*)$" " or $1" (delimit (apply $postSections "printf" "content/%s" ".") ", ") }}</b> folder{{ if gt (len $postSections) 1 }}s{{ end }}, they'll appear here.</p>
 		</div>
 	{{ end }}
-	{{ partial "pagination.html" . }}
 </main>
+{{ partial "pagination.html" . }}
 {{ end }}
