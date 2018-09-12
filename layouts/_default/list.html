@@ -1,12 +1,12 @@
 {{ define "main" }}
-<main class="main list content" role="main">
+<main class="main list" role="main">
 	{{- with .Title }}
 	<header class="page-header">
 		<h1 class="page-header__title">{{ . }}</h1>
 	</header>
 	{{- end }}
 	{{- with .Content }}
-	<div class="page-content">
+	<div class="content clearfix">
 		{{ . }}
 	</div>
 	{{- end }}
