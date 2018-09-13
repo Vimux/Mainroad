@@ -1093,10 +1093,28 @@ textarea {
 	border-top: 3px solid #999;
 }
 
+.footer-inner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.footer__menu {
+	order: 1;
+}
+
+.footer__menu li {
+	display: inline;
+	padding-left: 8px;
+	padding-left: 0.5rem;
+}
+
+.footer__menu a,
 .footer__copyright a {
 	color: #fff;
 }
 
+.footer__menu a:hover,
 .footer__copyright a:hover {
 	text-decoration: underline;
 }
@@ -1121,6 +1139,27 @@ textarea {
 
 	.widget {
 		margin-bottom: 20px;
+	}
+
+	.footer-inner {
+		display: block;
+	}
+
+	.footer__menu {
+		padding-bottom: 8px;
+		padding-bottom: 0.5rem;
+	}
+
+	.footer__menu ul {
+		text-align: center
+	}
+
+	.footer__menu li {
+		display: inline;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
 	}
 
 	.footer__copyright {
