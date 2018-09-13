@@ -517,8 +517,11 @@ select {
 	}
 
 	.menu {
-		min-height: 42px;
 		border-bottom: 5px solid #e64946;
+	}
+
+	.menu__list {
+		min-height: 42px;
 	}
 
 	.menu__item {
