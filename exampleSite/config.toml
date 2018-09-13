@@ -26,8 +26,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "recent", "categories", "taglist", "sidenav"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+  sidenav_title = "Side Menu" # The title of the sidebar menu widget
