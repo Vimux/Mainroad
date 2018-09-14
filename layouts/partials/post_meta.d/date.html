@@ -1,0 +1,19 @@
+{{if not .Date.IsZero -}}
+<li>
+	<svg class="icon" viewBox="0 0 64 64">
+		<circle fill="none" stroke-width="6" cx="32" cy="32" r="29" />
+		<line fill="none" stroke-width="4" x1="32" y1="32" x2="32" y2="10" />
+		<line fill="none" stroke-width="4" x1="32" y1="32" x2="48" y2="48" />
+	</svg>
+	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+		{{ .Date.Format ( .Site.Params.dateformat | default "January 02, 2006") }}
+	</time>
+</li>
+{{- end }}
+{{- if ne .Date .Lastmod }}
+<li>
+	<time class="post__meta-lastmod meta-lastmod" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+		({{ T "meta_lastmod" }}: {{.Lastmod.Format ( .Site.Params.dateformat | default "January 02, 2006")}})
+	</time>
+</li>
+{{- end }}
