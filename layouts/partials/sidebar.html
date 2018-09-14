@@ -1,20 +1,23 @@
-{{- if or (and (eq .Kind "home") (in (.Param "homeLayout") "sidebar")) (and (eq .Kind "page") (in (.Param "singleLayout") "sidebar")) ((and (or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") (eq .Kind "section")) (in (.Param "listLayout") "sidebar"))) }}
-<aside class="sidebar
-	{{- if eq .Kind "home" -}}
-		{{- if in (.Param "homeLayout") "left sidebar" }} sidebar--left{{ end }}
-	{{- else if eq .Kind "page" }}
-		{{- if in (.Param "singleLayout") "left sidebar" }} sidebar--left{{ end }}
-	{{- else }}
-		{{- if in (.Param "listLayout") "left sidebar" }} sidebar--left{{ end }}
-	{{- end }}">
-	{{ partial "widgets/search.html" . }}
-	{{ partial "widgets/recent.html" . }}
-	{{ partial "widgets/categories.html" . }}
-	{{ partial "widgets/social.html" . }}
-	{{ partial "widgets/taglist.html" . }}
+{{- $s := newScratch }}
+{{- if eq .Kind "home" -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.home .Params.sidebar) }}
+{{- else if eq .Kind "page" -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.single .Params.sidebar) }}
+{{- else -}}
+	{{ $s.Set "sb" (default .Site.Params.sidebar.list .Params.sidebar) }}
+{{ end }}
+{{- $sidebar := $s.Get "sb" }}
 
-	{{- if and (not .Site.Params.widgets.search) (not .Site.Params.widgets.recent_articles) (not .Site.Params.widgets.categories) (not .Site.Params.widgets.social) (not .Site.Params.widgets.taglist) }}
-	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
+{{- if $sidebar -}}
+<aside class="sidebar{{ if eq $sidebar "left" }} sidebar--left{{ end }}">
+{{- $root := . }}
+{{- with (default .Site.Params.sidebar.widgets .Params.widgets) -}}
+	{{- range $widget := . }}
+		{{- $p := printf "widgets/%s.html" $widget }}
+		{{- partial $p $root }}
 	{{- end }}
+{{- else }}
+	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
+{{- end }}
 </aside>
 {{- end }}

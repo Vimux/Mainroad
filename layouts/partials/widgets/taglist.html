@@ -1,4 +1,3 @@
-{{- if .Site.Params.widgets.tags }}
 {{- if isset .Site.Taxonomies "tags" }}
 {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
 <div class="widget-taglist widget">
@@ -9,6 +8,5 @@
 		{{- end }}
 	</div>
 </div>
-{{- end }}
 {{- end }}
 {{- end }}

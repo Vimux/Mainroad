@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	{{ .Hugo.Generator }}
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	{{ with .OutputFormats.Get "rss" -}}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{ end -}}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{- if not .Site.IsServer }}
+		{{ template "_internal/google_analytics_async.html" . }}
+	{{- end }}
+</head>
+<body class="body">
+	<div class="container container--outer">
+		{{ partial "header" . }}
+		<div class="wrapper flex">
+			<section class="primary">
+			{{ block "main" . }}
+				{{ with .Content }}
+				<div class="content main__content clearfix">
+					{{ . }}
+				</div>
+				{{ end }}
+			{{ end }}
+			</section>
+			{{ partial "sidebar.html" . }}
+		</div>
+		{{ partial "footer" . }}
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "{{ T "menu_label" }}",
+	});
+</script>
+{{- partial "mathjax.html" . -}}
+</body>
+</html>

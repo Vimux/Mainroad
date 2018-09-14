@@ -1,8 +1,7 @@
-{{- if or .Site.Params.widgets.social_facebook .Site.Params.widgets.social_twitter .Site.Params.widgets.social_linkedin .Site.Params.widgets.social_github .Site.Params.widgets.social_google_plus .Site.Params.widgets.social_email }}
 <div class="widget-social widget">
 	<h4 class="widget-social__title widget__title">{{ T "social_title" }}</h4>
 	<div class="widget-social__content widget__content">
-		{{- with .Site.Params.widgets.social_facebook }}
+		{{- with .Site.Params.widgets.social.facebook }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-facebook" viewBox="0 0 352 352" width="24" height="24" fill="#fff"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
@@ -10,7 +9,7 @@
 			</a>
 		</div>
 		{{ end -}}
-		{{- with .Site.Params.widgets.social_twitter }}
+		{{- with .Site.Params.widgets.social.twitter }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
@@ -18,7 +17,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_linkedin }}
+		{{- with .Site.Params.widgets.social.linkedin }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-linkedin" viewBox="0 0 352 352" width="24" height="24" fill="#fff"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
@@ -26,7 +25,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_telegram }}
+		{{- with .Site.Params.widgets.social.telegram }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-telegram" viewBox="0 0 132 110" width="24" height="24"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
@@ -34,7 +33,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_github }}
+		{{- with .Site.Params.widgets.social.github }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-github" viewBox="0 0 384 374" width="24" height="24" fill="#fff"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
@@ -42,7 +41,15 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_google_plus }}
+		{{- with .Site.Params.widgets.social.gitlab }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/{{ . }}" target="_blank">
+				<svg class="widget-social__link-icon icon-gitlab" viewBox="0 0 265 265" width="24" height="24" fill="#fff"><path d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"/></svg>
+				<span>GitLab</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.google_plus }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Google Plus" rel="noopener noreferrer" href="https://plus.google.com/{{ . }}" target="_blank">
 				<svg class="widget-social__link-icon icon-googleplus" viewBox="0 0 512 512" width="24" height="24" fill="#fff"><path d="M0 279c-2-92 66-170 156-173 43-2 83 15 115 45l-43 45C201 177 167 164 132 177c-53 19-81 81-62 136s79 85 132 64c28-11 45-38 53-64l-92 0v-60H320c0 49-4 98-34 136-60 70-162 77-228 15C22 373 2 328 0 279L0 279zM418 205h47l0 49H512v49h-47l0 49h-47v-49h-47v-49h47V205z"/></svg>
@@ -50,7 +57,7 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social_email }}
+		{{- with .Site.Params.widgets.social.email }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
 				<svg class="widget-social__link-icon icon-mail" viewBox="0 0 416 288" width="24" height="24" fill="#fff"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
@@ -60,4 +67,3 @@
 		{{- end }}
 	</div>
 </div>
-{{- end }}

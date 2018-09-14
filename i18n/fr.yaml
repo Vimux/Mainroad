@@ -2,6 +2,9 @@
 - id: read_more
   translation: "Lire la suite…"
 
+- id: menu_label
+  translation: Menu
+
 # Post meta
 - id: meta_lastmod
   translation: "Dernière modification"
