@@ -569,6 +569,11 @@ select {
 	margin-right: 5px;
 }
 
+.icon-time,
+.icon-category {
+	fill: #c4c4c4;
+}
+
 .meta li {
 	display: inline;
 	margin-right: 15px;
@@ -577,8 +582,6 @@ select {
 .meta li .icon {
 	height: 1.1em;
 	vertical-align: middle;
-	fill: #c4c4c4;
-	stroke: #c4c4c4;
 	margin-bottom: 0.2em;
 }
 

@@ -65,6 +65,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
+  post_meta = ["date", "categories"] # Specify which post meta data to show
   postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
   #postSections = ["blog", "news"] # alternative that shows more than one section's pages
   #dateformat = "2006-01-02" # change the format of dates
