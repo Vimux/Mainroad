@@ -59,6 +59,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Params]
   subtitle = "Just another site" # Subtitle of your site. Used in site header
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  #copyright = "John Doe" # copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
