@@ -72,6 +72,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjax = true # Enable MathJax
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  #silence_no_posts_warning = true # Disables warning message when there are no posts
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
