@@ -566,24 +566,23 @@ select {
 	color: #e64946;
 }
 
-.meta .icon {
-	margin-right: 5px;
+.meta__item {
+	display: inline;
+	margin-left: 15px;
 }
 
-.icon-time,
-.icon-category {
+.meta__item:first-child {
+	margin-left: 0;
+}
+
+.meta__icon {
+	margin-right: 5px;
 	vertical-align: middle;
 	fill: #c4c4c4;
 }
 
-.meta-categories__list,
-.meta-date,
-.meta-lastmod {
+.meta__text {
 	vertical-align: middle;
-}
-
-.meta-categories {
-	margin-left: 15px;
 }
 
 .post__title {
@@ -1161,7 +1160,7 @@ textarea {
 		width: 88%;
 	}
 
-	.meta-categories {
+	.meta__item {
 		display: block;
 		margin-left: 0;
 	}
