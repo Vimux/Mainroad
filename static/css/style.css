@@ -589,7 +589,7 @@ select {
 	margin: 0;
 }
 
-.post__meta {
+.post__meta:not(:empty) {
 	padding: 5px 0;
 	margin-top: 10px;
 	margin-top: .625rem;
@@ -819,7 +819,7 @@ select {
 	margin-bottom: .625rem;
 }
 
-.list__meta {
+.list__meta:not(:empty) {
 	margin-top: 5px;
 }
 
