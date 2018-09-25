@@ -554,6 +554,7 @@ select {
 .meta {
 	font-size: 13px;
 	font-size: .8125rem;
+	vertical-align: baseline;
 }
 
 .meta,
@@ -565,35 +566,30 @@ select {
 	color: #e64946;
 }
 
-.meta .icon {
-	margin-right: 5px;
+.meta__item {
+	display: inline;
+	margin-left: 15px;
 }
 
-.icon-time,
-.icon-category {
+.meta__item:first-child {
+	margin-left: 0;
+}
+
+.meta__icon {
+	margin-right: 5px;
+	vertical-align: middle;
 	fill: #c4c4c4;
 }
 
-.meta li {
-	display: inline;
-	margin-right: 15px;
-}
-
-.meta li .icon {
-	height: 1.1em;
+.meta__text {
 	vertical-align: middle;
-	margin-bottom: 0.2em;
-}
-
-.post__meta ul {
-	padding-left: 8px;
 }
 
 .post__title {
 	margin: 0;
 }
 
-.post__meta {
+.post__meta:not(:empty) {
 	padding: 5px 0;
 	margin-top: 10px;
 	margin-top: .625rem;
@@ -823,7 +819,7 @@ select {
 	margin-bottom: .625rem;
 }
 
-.list__meta {
+.list__meta:not(:empty) {
 	margin-top: 5px;
 }
 
@@ -1164,7 +1160,7 @@ textarea {
 		width: 88%;
 	}
 
-	.meta-categories {
+	.meta__item {
 		display: block;
 		margin-left: 0;
 	}

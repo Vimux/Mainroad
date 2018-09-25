@@ -1,12 +1,10 @@
-<ul class="meta_list">
-{{ $root := . }}
-{{ with .Param "post_meta" }}
-	{{ range $field := . }}
-		{{ $p := printf "post_meta.d/%s.html" $field }}
-		{{ partial $p $root }}
-	{{ end }}
-{{ else }}
-	{{ partial "post_meta.d/date.html" $root }}
-	{{ partial "post_meta.d/categories.html" $root }}
-{{ end }}
-</ul>
+{{- $root := . -}}
+{{- with .Param "post_meta" -}}
+	{{- range $field := . -}}
+		{{- $p := printf "post_meta/%s.html" $field -}}
+		{{- partial $p $root -}}
+	{{- end -}}
+{{- else -}}
+	{{- partial "post_meta/date.html" $root -}}
+	{{- partial "post_meta/categories.html" $root -}}
+{{- end -}}
