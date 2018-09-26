@@ -19,7 +19,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   readmore = false # Show "Read more" button in list if true
   authorbox = true
   post_navigation = true
-  post_meta = ["date", "categories"] # Specify which post meta data to show
   postSections = ["post"]
 
 [Params.sidebar]
