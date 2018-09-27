@@ -1,0 +1,9 @@
+{{- if not .Date.IsZero }}
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+	<time class="meta__text" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{.Date.Format ( .Site.Params.dateformat | default "January 02, 2006")}}</time>
+{{- if ne .Date .Lastmod }}
+	<time class="meta__text" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}"> ({{ T "meta_lastmod" }}: {{.Lastmod.Format ( .Site.Params.dateformat | default "January 02, 2006")}})</time>
+{{- end }}
+</div>
+{{ end -}}
