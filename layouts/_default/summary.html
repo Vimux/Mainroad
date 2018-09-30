@@ -15,14 +15,16 @@
 		{{- with .Params.lead }}
 		<p class="list__lead post__lead">{{ . }}</p>
 		{{- end }}
-		{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
+		{{ with partial "post_meta.html" . -}}
+		<div class="list__meta meta">{{ . }}</div>
+		{{- end }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		{{ .Summary }}
 	</div>
 	{{- if .Site.Params.readmore }}
 	{{- if .Truncated }}
-	<div class="list__footer">
+	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
 	</div>
 	{{- end }}

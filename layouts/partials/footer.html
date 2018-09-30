@@ -14,7 +14,7 @@
 		</div>
 		{{- end }}
 		<div class="footer__copyright">
-			&copy; {{ now.Format "2006" }} {{ .Site.Title }}.
+			&copy; {{ now.Format "2006" }} {{  .Site.Params.copyright | default .Site.Title  }}.
 			<span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span>
 		</div>
 	</div>
