@@ -1,0 +1,66 @@
+# General
+- id: read_more
+  translation: Читать далее…
+
+- id: menu_label
+  translation: Меню
+
+# Post meta
+- id: meta_lastmod
+  translation: Последние измененные
+
+# Table of Contents
+- id: toc_title
+  translation: Содержимое страницы
+
+# Post nav
+- id: post_nav_prev
+  translation: Назад
+
+- id: post_nav_next
+  translation: Вперед
+
+# Authorbox
+- id: authorbox_name
+  translation: Об авторе {{ .Count }}
+
+# Sidebar
+- id: sidebar_warning
+  translation: ВНИМАНИЕ
+
+- id: sidebar_recommendation
+  translation: Пожалуйста, активируйте как минимум один виджет боковой панели.
+
+# Search widget
+- id: search_placeholder
+  translation: ПОИСК...
+
+# Categories widget
+- id: categories_title
+  translation: Категории
+
+# Recent Posts widget
+- id: recent_title
+  translation: Недавние публикации
+
+# Social widget
+- id: social_title
+  translation: Социальные сети
+
+# Tags List widget
+- id: tags_title
+  translation: Ярлыки
+
+# Footer
+- id: footer_credits
+  translation: "Сгенерировано с использованием <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> и темы <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: 404. Страница не найдена
+
+- id: 404_text
+  translation: "Страница, которую вы искали, по-видимому, была перемещена, удалена или не существовала вообще. Пожалуйста, используйте поиск или перейдите на"
+
+- id: 404_linktext
+  translation: "главную страницу"
