@@ -1092,9 +1092,10 @@ textarea {
 	border-top: 3px solid #999;
 }
 
-.footer-inner {
-	display: flex;
+.footer__container {
+	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 
@@ -1150,15 +1151,15 @@ textarea {
 	}
 
 	.footer__menu ul {
-		text-align: center
+		text-align: center;
 	}
 
 	.footer__menu li {
 		display: inline;
-		padding-left: 4px;
 		padding-right: 4px;
-		padding-left: 0.25rem;
 		padding-right: 0.25rem;
+		padding-left: 4px;
+		padding-left: 0.25rem;
 	}
 
 	.footer__copyright {
