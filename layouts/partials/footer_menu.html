@@ -3,9 +3,7 @@
 	<ul>
 		{{ range . }}
 		<li>
-			<a class="footer__link" href="{{ .URL }}">
-				{{ .Pre }}<span>{{ .Name }}</span>
-			</a>
+			<a class="footer__link" href="{{ .URL }}">{{ .Name }}</a>
 		</li>
 		{{ end }}
 	</ul>
