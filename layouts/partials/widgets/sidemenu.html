@@ -1,8 +1,8 @@
-<div class="widget-sidenav widget">
-	<h4 class="widget__title">{{ .Site.Params.widgets.sidenav_title }}</h4>
+<div class="widget-sidemenu widget">
+	<h4 class="widget__title">{{ T "menu_label" }}</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			{{ range .Site.Menus.sidenav }}
+			{{ range .Site.Menus.side }}
 				<li class="widget__item">
 					<a class="widget__link" href="{{ .URL }}">{{ .Name }}</a>
 				</li>
