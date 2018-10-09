@@ -5,6 +5,18 @@
 - id: menu_label
   translation: Menu
 
+# Posts list
+- id: posts_list_warning_headline
+  translation: You don't have any posts yet
+
+- id: posts_list_warning_text_l
+  translation: As posts are added in
+
+- id: posts_list_warning_text_r
+  translation:
+    one: folder, they'll appear here
+    other: folders, they'll appear here
+
 # Post meta
 - id: meta_lastmod
   translation: Last Modified

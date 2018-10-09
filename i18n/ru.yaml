@@ -5,6 +5,18 @@
 - id: menu_label
   translation: Меню
 
+# Posts list
+- id: posts_list_warning_headline
+  translation: У вас не создано ни одного поста
+
+- id: posts_list_warning_text_l
+  translation: Посты, добавляемые в
+
+- id: posts_list_warning_text_r
+  translation:
+    one: папку, появятся тут
+    other: папки, появятся тут
+
 # Post meta
 - id: meta_lastmod
   translation: Последние измененные
