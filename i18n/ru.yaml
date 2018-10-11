@@ -5,6 +5,9 @@
 - id: menu_label
   translation: Меню
 
+- id: sidemenu_title
+  translation: Меню
+
 # Post meta
 - id: meta_lastmod
   translation: Последние измененные
