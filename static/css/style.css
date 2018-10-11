@@ -1099,23 +1099,15 @@ textarea {
 	justify-content: space-between;
 }
 
-.footer__menu {
+.footer__links {
 	order: 1;
 }
 
-.footer__menu li {
-	display: inline;
-	padding-left: 8px;
-	padding-left: 0.5rem;
-}
-
-.footer__menu a,
-.footer__copyright a {
+.footer a {
 	color: #fff;
 }
 
-.footer__menu a:hover,
-.footer__copyright a:hover {
+.footer a:hover {
 	text-decoration: underline;
 }
 
@@ -1141,25 +1133,14 @@ textarea {
 		margin-bottom: 20px;
 	}
 
-	.footer-inner {
+	.footer__container {
 		display: block;
 	}
 
-	.footer__menu {
+	.footer__links {
 		padding-bottom: 8px;
 		padding-bottom: 0.5rem;
-	}
-
-	.footer__menu ul {
 		text-align: center;
-	}
-
-	.footer__menu li {
-		display: inline;
-		padding-right: 4px;
-		padding-right: 0.25rem;
-		padding-left: 4px;
-		padding-left: 0.25rem;
 	}
 
 	.footer__copyright {

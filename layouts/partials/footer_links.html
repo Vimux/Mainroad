@@ -1,0 +1,10 @@
+{{ with .Site.Menus.footer -}}
+<div class="footer__links">
+	{{- range first 1 . }}
+	<a class="footer__link" href="{{ .URL }}">{{ .Name }}</a>
+	{{- end }}
+	{{- range after 1 . }}
+	| <a class="footer__link" href="{{ .URL }}">{{ .Name }}</a>
+	{{- end }}
+</div>
+{{- end }}
