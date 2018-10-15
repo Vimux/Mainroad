@@ -134,7 +134,7 @@ Some widget respect optional configuration. Have a look at the `[Params.widgets]
 
 ### Menus
 
-**Mainroad** supports multiple menus. The `main` menu is fully responsive and displayed right under the site header. The secondary menus `side` and `footer` are displayed in a sidebar widget and the page footer. In order to add a page to a menu, add a `menu = <menu>` stanza to the pages frontmatter. You can also add a page to many menus by providing a list, e.g. `menu = [main, side, footer]`. Don't forget to enable the `sidemenu` widget in the widget configuration if you want to use the `side` menu.
+**Mainroad** supports multiple menus. The `main` menu is fully responsive and displayed right under the site header. The secondary menus `side` and `footer` are displayed in a sidebar widget and the page footer. In order to add a page to a menu, add a `menu = <menu>` parameter to the pages frontmatter. You can also add a page to many menus by providing a list, e.g. `menu = [main, side, footer]`. Don't forget to enable the `sidemenu` widget in the widget configuration if you want to use the `side` menu.
 
 ## Contributing
 
