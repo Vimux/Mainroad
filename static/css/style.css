@@ -1094,12 +1094,16 @@ textarea {
 
 .footer__container {
 	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-ms-flex-pack: justify;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 
 .footer__links {
+	-ms-flex-order: 1;
+	-webkit-order: 1;
 	order: 1;
 }
 
