@@ -1092,11 +1092,26 @@ textarea {
 	border-top: 3px solid #999;
 }
 
-.footer__copyright a {
+.footer__container {
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.footer__links {
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+}
+
+.footer a {
 	color: #fff;
 }
 
-.footer__copyright a:hover {
+.footer a:hover {
 	text-decoration: underline;
 }
 
@@ -1120,6 +1135,16 @@ textarea {
 
 	.widget {
 		margin-bottom: 20px;
+	}
+
+	.footer__container {
+		display: block;
+	}
+
+	.footer__links {
+		padding-bottom: 8px;
+		padding-bottom: 0.5rem;
+		text-align: center;
 	}
 
 	.footer__copyright {
