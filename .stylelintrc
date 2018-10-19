@@ -119,8 +119,7 @@
       "flex-flow",
       "flex-shrink",
       "flex-grow",
-      "flex-order",
-      "flex-pack",
+      "flex-wrap",
       "align-content",
       "align-items",
       "align-self",
@@ -310,7 +309,10 @@
       "animation-iteration-count",
       "animation-direction",
       "animation-fill-mode",
+      "quotes",
+      "will-change",
       "fill",
+      "fill-rule",
       "stroke"
     ]
   }
