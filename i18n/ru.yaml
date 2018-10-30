@@ -17,6 +17,9 @@
     one: папку, появятся тут
     other: папки, появятся тут
 
+- id: sidemenu_title
+  translation: Меню
+
 # Post meta
 - id: meta_lastmod
   translation: Последние измененные

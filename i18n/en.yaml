@@ -17,6 +17,9 @@
     one: folder, they'll appear here
     other: folders, they'll appear here
 
+- id: sidemenu_title
+  translation: Menu
+
 # Post meta
 - id: meta_lastmod
   translation: Last Modified

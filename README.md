@@ -10,6 +10,7 @@
 
 + Hugo internal templates (Open Graph, Twitter Cards, Disqus, Google Analytics)
 + Responsive menu
++ Secondary menus
 + SVG icons
 + Theme options (Sidebar position, Author Box, Post Navigation) available through config.toml file parameters
 + Table of Contents
@@ -117,6 +118,7 @@ categories:
 tags:
   - "Test"
   - "Another test"
+menu: main # Optional, add page to a menu. Options: main, side, footer
 ---
 ```
 
@@ -130,6 +132,11 @@ The sidebar consists of multiple widgets. Widgets can be enabled individually us
 
 Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]` sections in the example configuration above.
 
+### Menus
+
+**Mainroad** supports multiple menus. The `main` menu is fully responsive and displayed right under the site header. The secondary menus `side` and `footer` are displayed in a sidebar widget and the page footer. In order to add a page to a menu, add a `menu = <menu>` parameter to the pages frontmatter. You can also add a page to many menus by providing a list, e.g. `menu = [main, side, footer]`. Don't forget to enable the `sidemenu` widget in the widget configuration if you want to use the `side` menu.
+
+**Sidenote:** Please keep in mind that Mainroad menus don't support nested items (submenus).
 
 ## Contributing
 

@@ -5,13 +5,27 @@
   "license": "GPL-2.0",
   "dependencies": {},
   "devDependencies": {
-    "stylelint": "^9.2.0",
-    "stylelint-order": "^0.8.1"
+    "autoprefixer": "^9.2.1",
+    "eclint": "^2.8.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "postcss-cli": "^6.0.1",
+    "stylelint": "^9.6.0",
+    "stylelint-order": "^1.0.0"
   },
   "scripts": {
     "lint:css": "stylelint static/css/*.css",
-    "lint": "npm run lint:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:js": "eslint static/js/*.js",
+    "lint:editorconfig": "eclint check '**/*.{html,css,js,json,md,toml,yaml,yml}'",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:editorconfig",
+    "fix:prefixes": "postcss -r static/css/*.css",
+    "fix:css": "stylelint static/css/*.css --fix",
+    "fix:js": "eslint static/js/*.js --fix",
+    "fix:editorconfig": "eclint fix '**/*.{html,css,js,json,md,toml,yaml,yml}'",
+    "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js && npm run fix:editorconfig",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
