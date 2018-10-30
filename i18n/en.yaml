@@ -6,7 +6,7 @@
   translation: Menu
 
 # No posts empty state
-- id: posts_list_warning_headline
+- id: noposts_warning_title
   translation: You don't have any posts yet
 
 - id: posts_list_warning_text_l
