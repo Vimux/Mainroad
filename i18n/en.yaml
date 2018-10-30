@@ -5,7 +5,10 @@
 - id: menu_label
   translation: Menu
 
-# Posts list
+- id: sidemenu_title
+  translation: Menu
+
+# No posts empty state
 - id: posts_list_warning_headline
   translation: You don't have any posts yet
 
@@ -16,9 +19,6 @@
   translation:
     one: folder, they'll appear here
     other: folders, they'll appear here
-
-- id: sidemenu_title
-  translation: Menu
 
 # Post meta
 - id: meta_lastmod
