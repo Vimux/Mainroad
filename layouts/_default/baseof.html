@@ -26,7 +26,7 @@
 	<div class="container container--outer">
 		{{ partial "header" . }}
 		<div class="wrapper flex">
-			<section class="primary">
+			<div class="primary">
 			{{ block "main" . }}
 				{{ with .Content }}
 				<div class="content main__content clearfix">
@@ -34,7 +34,7 @@
 				</div>
 				{{ end }}
 			{{ end }}
-			</section>
+			</div>
 			{{ partial "sidebar.html" . }}
 		</div>
 		{{ partial "footer" . }}
