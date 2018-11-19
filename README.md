@@ -90,6 +90,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   # Enable parts of social widget
   facebook = "username"
   twitter = "username"
+  instagram = "username"
   linkedin = "username"
   telegram = "username"
   github = "username"
