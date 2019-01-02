@@ -1,15 +1,8 @@
 <article class="list__item post">
-	{{- if .Params.thumbnail }}
-	<figure class="list__thumbnail">
-		<a href="{{ .Permalink }}">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
-		</a>
-	</figure>
-	{{- end }}
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="{{ .RelPermalink }}" rel="bookmark">
-			{{ .Title }}
+				{{ .Title }}
 			</a>
 		</h3>
 		{{- with .Params.lead }}
@@ -20,6 +13,14 @@
 		{{- end }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
+		{{- if .Params.thumbnail }}
+		<figure class="list__thumbnail">
+			<a href="{{ .Permalink }}">
+				<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
+			</a>
+		</figure>
+		{{- end }}
+		
 		{{ .Summary }}
 	</div>
 	{{- if .Site.Params.readmore }}

@@ -1203,6 +1203,17 @@ textarea {
 	.sidebar {
 		margin-top: 20px;
 	}
+
+
+	.list__thumbnail a{
+		display:block;
+		width: 100%;
+	}
+	
+	.list__thumbnail img {
+		width: 100%;
+		/*max-width: 235px;*/
+	}
 }
 
 @media screen and (max-width: 620px) {
@@ -1214,7 +1225,7 @@ textarea {
 	}
 
 	.meta__item {
-		display: block;
+		display: inline-block;
 		margin-left: 0;
 	}
 
@@ -1251,8 +1262,26 @@ textarea {
 		margin: 0 0 0 20px;
 	}
 
+	.list__item .content blockquote {
+		clear: both;
+	}
+
 	.list__thumbnail {
-		max-width: 80px;
+		/*max-width: 80px;*/
+		width: 100%;
+		margin: 5px auto;
+		margin: 0.5rem auto;
+	}
+
+	.list__thumbnail a{
+		display:block;
+		width: 100%;
+	}
+	
+	.list__thumbnail img {
+		width: 100%;
+		max-width: 100%;
+		/*max-width: 235px;*/
 	}
 
 	.list__title {
