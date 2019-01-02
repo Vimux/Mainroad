@@ -1196,6 +1196,10 @@ textarea {
 		font-size: 1.25rem;
 	}
 
+	.logo__tagline {
+		border-top: 1px solid #666666;
+	}
+
 	.sidebar {
 		margin-top: 20px;
 	}
