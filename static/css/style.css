@@ -1186,10 +1186,12 @@ textarea {
 	}
 
 	.logo {
+		background-color: #2a2a2a;
 		text-align: center;
 	}
 
 	.logo__title {
+		color: #ebebeb;
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
