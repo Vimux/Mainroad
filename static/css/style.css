@@ -1175,6 +1175,12 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+
+	h2 {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
 	.wrapper {
 		display: block;
 	}
