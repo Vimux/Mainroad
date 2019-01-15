@@ -17,7 +17,7 @@
 	{{ end -}}
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-	{{ range .Site.Params.customCss -}}
+	{{ range .Site.Params.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{- end }}
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">

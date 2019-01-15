@@ -20,7 +20,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true
   post_navigation = true
   postSections = ["post"]
-  customCss = []
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
