@@ -281,8 +281,8 @@ pre {
 	padding: 1.25rem;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
-	color: #000;
 	overflow: auto;
+	color: #000;
 }
 
 pre code {
