@@ -12,6 +12,9 @@
 - id: meta_lastmod
   translation: Last Modified
 
+- id: meta_translations
+  translation: Translations
+
 # Table of Contents
 - id: toc_title
   translation: Page content
@@ -37,6 +40,10 @@
 # Search widget
 - id: search_placeholder
   translation: SEARCH...
+
+# Languages widget
+- id: languages_title
+  translation: Languages
 
 # Categories widget
 - id: categories_title
