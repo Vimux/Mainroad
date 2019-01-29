@@ -273,10 +273,6 @@ code {
 code {
 	padding: 0 5px;
 	color: #c33;
-	white-space: nowrap;
-	white-space: -o-nowrap;
-	white-space: -moz-nowrap;
-	white-space: -webkit-nowrap;
 }
 
 pre {
@@ -285,11 +281,8 @@ pre {
 	padding: 1.25rem;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
+	overflow: auto;
 	color: #000;
-	white-space: pre-wrap;
-	white-space: -o-pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -webkit-pre-wrap;
 }
 
 pre code {
