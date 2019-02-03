@@ -5,7 +5,12 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- range .Site.Home.AllTranslations }}
-			<li class="widget__item"><a class="widget-languages__link widget__link" href="{{ .RelPermalink }}"><span class="widget-languages__link-btn widget__link-btn btn">{{ .Language | upper }}</span><span class="widget-languages__link-text widget__link-text">{{ .Language.LanguageName | title | humanize }}</span></a></li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="{{ .RelPermalink }}">
+					<span class="widget-languages__link-btn widget__link-btn btn">{{ .Language | upper }}</span>
+					<span class="widget-languages__link-text widget__link-text">{{ .Language.LanguageName | title | humanize }}</span>
+				</a>
+			</li>
 			{{- end }}
 		</ul>
 	</div>

@@ -67,7 +67,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
-  # post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
+  # post_meta = ["date", "categories", "translations"] # Order of post meta information. Use ["none"] to turn off completely.
   postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
   #postSections = ["blog", "news"] # alternative that shows more than one section's pages
   #dateformat = "2006-01-02" # change the format of dates
@@ -81,7 +81,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social"]
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget

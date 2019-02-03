@@ -1097,6 +1097,20 @@ textarea {
 	text-transform: uppercase;
 }
 
+/* Languages Widget */
+.widget-languages__link {
+	display: block;
+}
+
+.widget-languages__link:hover .widget-languages__link-btn {
+	color: #fff;
+	background: #e64946;
+}
+
+.widget-languages__link-btn {
+	display: inline-block;
+}
+
 /* Footer */
 .footer {
 	padding: 10px 25px;
