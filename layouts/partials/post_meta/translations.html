@@ -1,0 +1,5 @@
+{{- if .IsTranslated }}
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">{{ T "meta_translations" }}: {{ range $index, $translation := .Translations }}{{ if gt $index 0 }}, {{ end }}<a class="meta__link" href="{{ .RelPermalink }}">{{ .Lang | upper }}</a>{{ end }}</span>
+</div>
+{{ end -}}
