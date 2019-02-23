@@ -387,12 +387,21 @@ select {
 }
 
 .logo {
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
 	padding: 25px;
 }
 
-.logo__link {
+.logo__text {
 	display: inline-block;
 	text-transform: uppercase;
+}
+
+.logo__img {
+	max-height: 5rem;
+	padding-right: 1.5rem;
 }
 
 .logo__title {
@@ -404,8 +413,8 @@ select {
 }
 
 .logo__tagline {
-	display: inline-block;
 	padding-top: 10px;
+	padding-bottom: 4px;
 	margin-top: 10px;
 	font-size: 14px;
 	font-size: .875rem;
@@ -1192,15 +1201,6 @@ textarea {
 		margin: 0;
 	}
 
-	.logo {
-		text-align: center;
-	}
-
-	.logo__title {
-		font-size: 24px;
-		font-size: 1.5rem;
-	}
-
 	.sidebar {
 		margin-top: 20px;
 	}
@@ -1212,6 +1212,25 @@ textarea {
 	input[type=tel],
 	input[type=url] {
 		width: 88%;
+	}
+
+	.logo {
+		display: block;
+		text-align: center;
+	}
+
+	.logo__img {
+		padding-right: 0;
+		padding-bottom: 1rem;
+	}
+
+	.logo__title {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
+	.logo__tagline {
+		padding-bottom: 0;
 	}
 
 	.meta__item {

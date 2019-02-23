@@ -1,11 +1,16 @@
 <header class="header">
 	<div class="container">
-		<div class="logo">
-			<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+		<a class="logo flex" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+			{{ with .Site.Params.logo }}
+			<div>
+				<img class="logo__img" alt="Logo" src="{{ relLangURL . }}" />
+			</div>
+			{{ end }}
+			<div class="logo__text">
 				<div class="logo__title">{{ .Site.Title }}</div>
 				{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
-			</a>
-		</div>
+			</div>
+		</a>
 		{{ partial "menu.html" . }}
 	</div>
 </header>

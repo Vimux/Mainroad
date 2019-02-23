@@ -14,6 +14,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Params]
   subtitle = "Just another site" # Subtitle of your site
   description = "John Doe's Personal blog about everything" # Description of your site
+  logo = "img/placeholder.png"
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
