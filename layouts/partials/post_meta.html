@@ -4,7 +4,4 @@
 		{{- $p := printf "post_meta/%s.html" $field -}}
 		{{- partial $p $root -}}
 	{{- end -}}
-{{- else -}}
-	{{- partial "post_meta/date.html" $root -}}
-	{{- partial "post_meta/categories.html" $root -}}
 {{- end -}}
