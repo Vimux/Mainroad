@@ -18,10 +18,10 @@
 
 **Browser support:**
 
-+ **Desktop:** IE10+, Chrome, Firefox, Safari
++ **Desktop:** IE11+, Chrome, Firefox, Safari
 + **Mobile:** Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini
 
-Other browsers (like Opera on Blink engine) are also supported, but not tested. Support for older versions of Internet Explorer (IE9 and below) ended.
+Other browsers (like Opera on Blink engine) are also supported, but not tested.
 
 ## Installation
 

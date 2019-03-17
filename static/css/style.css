@@ -71,15 +71,12 @@ body {
 
 .flex {
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 .primary {
 	-webkit-flex: 1 0 65.83%;
-	-ms-flex: 1 0 65.83%;
 	flex: 1 0 65.83%;
-	-ms-flex-order: 1;
 	-webkit-order: 1;
 	order: 1;
 	min-width: 0;
@@ -87,9 +84,7 @@ body {
 
 .sidebar {
 	-webkit-flex: 1 0 31.66%;
-	-ms-flex: 1 0 31.66%;
 	flex: 1 0 31.66%;
-	-ms-flex-order: 2;
 	-webkit-order: 2;
 	order: 2;
 	min-width: 0;
@@ -98,7 +93,6 @@ body {
 
 .sidebar--left {
 	-webkit-order: 0;
-	-ms-flex-order: 0;
 	order: 0;
 	margin: 0 2.5% 0 0;
 }
@@ -537,10 +531,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	.js .menu__list {
 		position: relative;
 		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
 		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		visibility: visible;
 		border: 0;
@@ -878,7 +870,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 /* Post Navigation */
 .post-nav {
-	-ms-flex-pack: justify;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding-top: 25px;
@@ -904,7 +895,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .post-nav__item {
 	-webkit-flex: 1 1 50%;
-	-ms-flex: 1 1 50%;
 	flex: 1 1 50%;
 	max-width: 48%;
 }
@@ -1123,15 +1113,12 @@ textarea {
 
 .footer__container {
 	-webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-	-ms-flex-pack: justify;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 
 .footer__links {
-	-ms-flex-order: 1;
 	-webkit-order: 1;
 	order: 1;
 }
