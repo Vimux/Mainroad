@@ -5,15 +5,15 @@
   "license": "GPL-2.0",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.2.1",
-    "eclint": "^2.8.0",
-    "eslint": "^5.7.0",
+    "autoprefixer": "^9.4.10",
+    "eclint": "^2.8.1",
+    "eslint": "^5.15.2",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^7.0.1",
-    "postcss-cli": "^6.0.1",
-    "stylelint": "^9.6.0",
-    "stylelint-order": "^1.0.0"
+    "postcss-cli": "^6.1.2",
+    "stylelint": "^9.10.1",
+    "stylelint-order": "^2.1.0"
   },
   "scripts": {
     "lint:css": "stylelint static/css/*.css",
