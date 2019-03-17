@@ -66,14 +66,6 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social.google_plus }}
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Google Plus" rel="noopener noreferrer" href="https://plus.google.com/{{ . }}" target="_blank">
-				<svg class="widget-social__link-icon icon-googleplus" viewBox="0 0 512 512" width="24" height="24" fill="#fff"><path d="M0 279c-2-92 66-170 156-173 43-2 83 15 115 45l-43 45C201 177 167 164 132 177c-53 19-81 81-62 136s79 85 132 64c28-11 45-38 53-64l-92 0v-60H320c0 49-4 98-34 136-60 70-162 77-228 15C22 373 2 328 0 279L0 279zM418 205h47l0 49H512v49h-47l0 49h-47v-49h-47v-49h47V205z"/></svg>
-				<span>{{ . }}</span>
-			</a>
-		</div>
-		{{- end }}
 		{{- with .Site.Params.widgets.social.email }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">

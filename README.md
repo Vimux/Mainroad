@@ -98,7 +98,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   gitlab = "username"
   bitbucket = "username"
   email = "example@example.com"
-  google_plus = "profileid"
 ```
 
 ### Front Matter example
