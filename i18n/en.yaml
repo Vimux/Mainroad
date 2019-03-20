@@ -63,7 +63,8 @@
 
 # Footer
 - id: footer_credits
-  translation: "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+  translation: "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
 
 # 404
 - id: 404_title
@@ -74,3 +75,16 @@
 
 - id: 404_linktext
   translation: "main page"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "You don't have any posts yet!"
+
+- id: noposts_warning_description
+  translation: "As posts are added in any subfolder in <b>content/</b> folder (<b>content/post</b>, for example), they'll appear here. \
+  Only one section with the most pages will be appeared by default."
+
+- id: noposts_warning_tip
+  translation: "<b>Tip:</b> You can set as many sections as you like with <b>\
+  <a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+  config parameter."

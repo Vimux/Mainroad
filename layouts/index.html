@@ -12,10 +12,10 @@
 	{{- if eq $paginator.TotalNumberOfElements 0 }}
 		<div class="warning">
 			<svg class="warning__icon icon icon-files" viewBox="0 0 384 384" width="96" height="96" fill="#ddd"><path d="m368 64h-224-16v16 288 16h16 224 16v-16-288-16zm-16 288h-192v-256h192zm-320-320h192v16h32v-32-16h-16-224-16v16 288 16h16 96v-32h-80zm144 272h160v-32h-160zm0-64h160v-32h-160zm0-64h160v-32h-160zm-128 64h64v-32h-64zm0-64h64v-32h-64zm0-64h64v-32h-64z"/></svg>
-			<h3 class="warning__headline">You don't have any posts yet!</h3>
+			<h3 class="warning__headline">{{ T "noposts_warning_title" | safeHTML }}</h3>
 			<div class="warning__text">
-				<p class="warning__description">As posts are added in any subfolder in <b>content/</b> folder (<b>content/post</b>, for example), they'll appear here. Only one section with the most pages will be appeared by default.</p>
-				<p class="warning__tip"><b>Tip:</b> You can set as many sections as you like with <b><a href="https://gohugo.io/functions/where/#mainsections" rel="nofollow noopener" target="_blank">mainSections</a></b> config parameter.</p>
+				<p class="warning__description">{{ T "noposts_warning_description" | safeHTML }}</p>
+				<p class="warning__tip">{{ T "noposts_warning_tip" | safeHTML }}</p>
 			</div>
 		</div>
 	{{ end }}
