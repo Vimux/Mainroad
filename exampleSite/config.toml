@@ -20,7 +20,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true
   post_navigation = true
   post_meta = ["date", "categories"] # Order of post meta information
-  postSections = ["post"]
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

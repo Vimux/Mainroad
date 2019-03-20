@@ -1,4 +1,4 @@
-{{- $recent := where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "post")) }}
+{{- $recent := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
 {{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
 
 {{- if $recent }}

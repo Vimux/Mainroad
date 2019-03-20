@@ -68,8 +68,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
   post_meta = ["date", "categories", "translations"] # Order of post meta information
-  postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
-  #postSections = ["blog", "news"] # alternative that shows more than one section's pages
+  #mainSections = ["post", blog", "news"] # specify section pages to show on home page and the "Recent articles" widget
   #dateformat = "2006-01-02" # change the format of dates
   #mathjax = true # Enable MathJax
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
@@ -99,6 +98,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   bitbucket = "username"
   email = "example@example.com"
 ```
+
+A good idea is not copy  double check all the Configuration settings of Minimo.
 
 ### Front Matter example
 
