@@ -1,0 +1,1 @@
+<svg class="{{ with .class }}{{ . }} {{ end }}icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
