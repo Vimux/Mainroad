@@ -9,7 +9,7 @@
 	{{- range $paginator.Pages }}
 		{{- .Render "summary" }}
 	{{- end }}
-	{{- if eq $paginator.TotalNumberOfElements 0 }}
+	{{- if and (eq $paginator.TotalNumberOfElements 0) (not $.Content) }}
 		<div class="warning">
 			{{ partial "svg/files.svg" (dict "class" "warning__icon") }}
 			<h3 class="warning__headline">{{ T "noposts_warning_title" | safeHTML }}</h3>
