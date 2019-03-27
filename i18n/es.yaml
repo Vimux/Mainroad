@@ -81,10 +81,10 @@
   translation: "You don't have any posts yet!"
 
 - id: noposts_warning_description
-  translation: "As posts are added in any subfolder in <b>content/</b> folder (<b>content/post</b>, for example), they'll appear here. \
-  Only one section with the most pages will be appeared by default."
+  translation: "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one section \
+  (with the most posts) will be displayed on the main page by default."
 
 - id: noposts_warning_tip
-  translation: "<b>Tip:</b> You can set as many sections as you like with <b>\
-  <a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+  translation: "<b>Tip:</b> You can show as many sections as you like with \
+  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
   config parameter."
