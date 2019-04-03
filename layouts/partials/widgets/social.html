@@ -70,7 +70,23 @@
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
 				{{ partial "svg/email.svg" (dict "class" "widget-social__link-icon") }}
-				<span>{{ . }}</span>
+				<span>Email</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.google_scholar }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Google Scholar" rel="noopener noreferrer" href="https://scholar.google.com.au/citations?user={{ . }}" target="_blank">
+				{{ partial "svg/google_scholar.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Google Scholar</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.research_gate }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="ResearchGate" rel="noopener noreferrer" href="https://www.researchgate.net/profile/{{ . }}" target="_blank">
+				{{ partial "svg/research_gate.svg" (dict "class" "widget-social__link-icon") }}
+				<span>ResearchGate</span>
 			</a>
 		</div>
 		{{- end }}
