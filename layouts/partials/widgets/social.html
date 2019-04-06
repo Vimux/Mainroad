@@ -70,7 +70,7 @@
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
 				{{ partial "svg/email.svg" (dict "class" "widget-social__link-icon") }}
-				<span>Email</span>
+				<span>{{ . }}</span>
 			</a>
 		</div>
 		{{- end }}
