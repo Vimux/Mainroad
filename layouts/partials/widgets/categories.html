@@ -5,7 +5,7 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- range $name, $items := .Site.Taxonomies.categories }}
-			<li class="widget__item"><a class="widget__link" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+			<li class="widget__item"><a class="widget__link" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name | title | humanize }}</a></li>
 			{{- end }}
 		</ul>
 	</div>
