@@ -1,0 +1,90 @@
+# General
+- id: read_more
+  translation: 阅读全文…
+
+- id: menu_label
+  translation: 菜单
+
+- id: sidemenu_title
+  translation: 菜单
+
+# Post meta
+- id: meta_lastmod
+  translation: 最后修改
+
+- id: meta_translations
+  translation: 翻译
+
+# Table of Contents
+- id: toc_title
+  translation: 目录
+
+# Post nav
+- id: post_nav_prev
+  translation: 上一篇
+
+- id: post_nav_next
+  translation: 下一篇
+
+# Authorbox
+- id: authorbox_name
+  translation: 关于 {{ .Count }}
+
+# Sidebar
+- id: sidebar_warning
+  translation: 警告
+
+- id: sidebar_recommendation
+  translation: 请至少选择一个侧边栏组件
+
+# Search widget
+- id: search_placeholder
+  translation: 搜索...
+
+# Languages widget
+- id: languages_title
+  translation: 语言
+
+# Categories widget
+- id: categories_title
+  translation: 分类
+
+# Recent Posts widget
+- id: recent_title
+  translation: 近期文章
+
+# Social widget
+- id: social_title
+  translation: 社交
+
+# Tags List widget
+- id: tags_title
+  translation: 标签
+
+# Footer
+- id: footer_credits
+  translation: "基于 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> 引擎和 \
+  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>主題"
+
+# 404
+- id: 404_title
+  translation: 404. 抱歉，找不到您要找的页面
+
+- id: 404_text
+  translation: "您要找的页面可能已经被移除、刪除或不存在，不妨去首页搜索一下吧。"
+
+- id: 404_linktext
+  translation: "回到首页"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "目前还没有任何内容!"
+
+- id: noposts_warning_description
+  translation: "在 <b>content</b> 目录下的任意文件夹（板块）中发布内容后，它就会显示在这里。\
+  只有一个板块的内容（默认文章最多的文件夹）会显示在主页面上"
+
+- id: noposts_warning_tip
+  translation: "<b>提示:</b> 您可以通过 \
+  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+  参数来控制展示您想要展示的板块内容。"
