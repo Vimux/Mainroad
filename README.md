@@ -80,7 +80,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "categories", "taglist", "social", "blogroll", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
@@ -132,7 +132,7 @@ For more information about front matter variables read [Hugo Front Matter](https
 
 The sidebar consists of multiple widgets. Widgets can be enabled individually using the `widgets` key with a list of widget names as value. You can add your own widgets, by placing a template under `layouts/partials/widgets/<name>.html`. The list of widgets can be overwritten from a page's front matter.
 
-Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]` sections in the example configuration above.
+Some widget respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]` sections in the example configuration above. The blogroll can be configured with `[[Params.blogroll]]` entries, one per link.
 
 ### Menus
 
