@@ -12,7 +12,7 @@
 + Responsive menu
 + Secondary menus
 + SVG icons
-+ Theme options (Sidebar position, Author Box, Post Navigation) available through config.toml file parameters
++ Theme options (Sidebar position, Author Box, Post Navigation, highlight color) available through config.toml file parameters
 + Table of Contents
 + MathJax
 
@@ -73,6 +73,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjax = true # Enable MathJax
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  #highlightColor = "#e22d30" # Override highlight colour
   customCSS = ["css/custom.css"] # Include custom CSS files
 
 [Params.sidebar]
