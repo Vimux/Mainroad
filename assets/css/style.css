@@ -1,4 +1,4 @@
-{{ $highlightColor := .Site.Params.highlightColor | default "#e22d30" }}
+{{- $highlightColor := .Site.Params.highlightColor | default "#e22d30" -}}
 
 *,
 *::before,
