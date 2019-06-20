@@ -6,7 +6,6 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.4.10",
-    "eclint": "^2.8.1",
     "eslint": "^5.15.3",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -18,13 +17,11 @@
   "scripts": {
     "lint:css": "stylelint static/css/*.css",
     "lint:js": "eslint static/js/*.js",
-    "lint:editorconfig": "eclint check '**/*.{html,css,js,json,md,toml,yaml,yml}'",
-    "lint": "npm run lint:css && npm run lint:js && npm run lint:editorconfig",
+    "lint": "npm run lint:css && npm run lint:js",
     "fix:prefixes": "postcss -r static/css/*.css",
     "fix:css": "stylelint static/css/*.css --fix",
     "fix:js": "eslint static/js/*.js --fix",
-    "fix:editorconfig": "eclint fix '**/*.{html,css,js,json,md,toml,yaml,yml}'",
-    "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js && npm run fix:editorconfig",
+    "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js",
     "test": "npm run lint"
   },
   "repository": {
