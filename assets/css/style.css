@@ -690,6 +690,11 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-bottom: 5px;
 }
 
+.post__footer {
+	margin-top: 20px;
+	margin-top: 1.25rem;
+}
+
 .tags {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;

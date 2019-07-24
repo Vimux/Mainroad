@@ -19,7 +19,11 @@
 		<div class="content post__content clearfix">
 			{{ .Content }}
 		</div>
-		{{ partial "post_tags.html" . }}
+		{{- if .Params.tags }}
+		<footer class="post__footer">
+			{{ partial "post_tags.html" . }}
+		</footer>
+		{{- end }}
 	</article>
 </main>
 {{ partial "authorbox.html" . }}
