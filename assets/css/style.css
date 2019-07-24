@@ -695,6 +695,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-top: 1.25rem;
 }
 
+/* Post tags */
 .tags {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
@@ -726,7 +727,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: 10px 15px;
 }
 
-.icon-tag {
+.tags__badge {
 	float: left;
 	width: 32px;
 	height: 32px;
