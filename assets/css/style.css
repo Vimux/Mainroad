@@ -1247,7 +1247,9 @@ textarea {
 	}
 
 	.content ul ul,
-	.content ol ol {
+	.content ol ol,
+	.content ol ul,
+	.content ul ol {
 		margin: 0 0 0 20px;
 	}
 
