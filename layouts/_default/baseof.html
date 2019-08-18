@@ -44,7 +44,7 @@
 	</div>
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
 {{ range .Site.Params.customJS -}}
-<script async defer src="{{ . | relURL }}"></script>
+<script src="{{ . | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
 </body>
