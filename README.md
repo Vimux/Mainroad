@@ -77,6 +77,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   #highlightColor = "#e22d30" # Override highlight color
   customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
