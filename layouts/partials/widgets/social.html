@@ -66,6 +66,38 @@
 			</a>
 		</div>
 		{{- end }}
+		{{- with .Site.Params.widgets.social.orcid }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="orcid" rel="noopener noreferrer" href="https://orcid.org/{{ . }}" target="_blank">
+				{{ partial "svg/orcid.svg" (dict "class" "widget-social__link-icon") }}
+				<span>ORCID</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.quora }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="quora" rel="noopener noreferrer" href="https://www.quora.com/profile/{{ . }}" target="_blank">
+				{{ partial "svg/quora.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Quora</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.stackoverflow }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="stackoverflow" rel="noopener noreferrer" href="https://stackoverflow.com/users/{{ . }}" target="_blank">
+				{{ partial "svg/stackoverflow.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Stack Overflow</span>
+			</a>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.researchgate }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="researchgate" rel="noopener noreferrer" href="https://www.researchgate.net/profile/{{ . }}" target="_blank">
+				{{ partial "svg/researchgate.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Research Gate</span>
+			</a>
+		</div>
+		{{- end }}
 		{{- with .Site.Params.widgets.social.email }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
