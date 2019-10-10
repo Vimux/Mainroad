@@ -4,7 +4,10 @@ This repository consists of Yu Wan's version of the [Hugo](https://gohugo.io/) M
 
 **Mainroad** is a responsive, simple, clean and content-focused Hugo theme based on the [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](https://www.mhthemes.com/).
 
-**[Demo (Fast update)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
+**Demonstrations**
+
+- A bilingual academic [blog](https://www.microbialsystems.cn)
+- Default: **[Demo (Fast update)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
