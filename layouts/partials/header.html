@@ -8,4 +8,5 @@
 		</div>
 		{{ partial "menu.html" . }}
 	</div>
+	{{ if .Params.mathjax}}{{ partial "mathjax.html" . }}{{ end }}  <!-- https://pennbay.github.io/tech/mathjax.with.hugo/ -->
 </header>
