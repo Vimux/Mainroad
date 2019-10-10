@@ -8,6 +8,11 @@ This repository consists of Yu Wan's version of the [Hugo](https://gohugo.io/) M
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
+**Updates to the [original version](https://github.com/Vimux/Mainroad)**
+
+- Links and icons to social networks
+- MathJax
+
 **Features:**
 
 + Hugo internal templates (Open Graph, Twitter Cards, Disqus, Google Analytics)
