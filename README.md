@@ -11,8 +11,9 @@
 
 **Updates to the [original version](https://github.com/Vimux/Mainroad)**
 
-- Links and icons to social networks
-- MathJax
+- Added links and SVG icons of additional websites to the social widget
+  - [ResearchGate](https://www.researchgate.net), [Google Scholar](https://scholar.google.com/), and [Lofter](http://www.lofter.com/)
+- Support to MathJax
 
 **Features:**
 
