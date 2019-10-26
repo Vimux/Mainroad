@@ -2,18 +2,9 @@
 
 **Mainroad** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by [MH Themes](https://www.mhthemes.com/).
 
-**Demonstrations**
-
-- A bilingual academic [blog](https://www.microbialsystems.cn)
-- Default: **[Demo (Fast update)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
+**[Demo (Fast update)](https://hugothemes.gitlab.io/mainroad/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
-
-**Updates to the [original version](https://github.com/Vimux/Mainroad)**
-
-- Added links and SVG icons of additional websites to the social widget
-  - [ResearchGate](https://www.researchgate.net), [Google Scholar](https://scholar.google.com/), and [Lofter](http://www.lofter.com/)
-- Support to MathJax
 
 **Features:**
 
@@ -21,7 +12,7 @@
 + Responsive menu
 + Secondary menus
 + SVG icons
-+ Theme options (Sidebar position, Author Box, Post Navigation) available through config.toml file parameters
++ Theme options (Sidebar position, Author Box, Post Navigation, highlight color) available through config.toml file parameters
 + Table of Contents
 + MathJax
 
@@ -34,10 +25,12 @@ Other browsers (like Opera on Blink engine) are also supported, but not tested.
 
 ## Installation
 
+*Before starting, please be sure that you have [installed Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). After that, you ready to install **Mainroad**.*
+
 In your Hugo site `themes` directory, run:
 
 ```
-$ git clone https://github.com/vimux/mainroad
+git clone https://github.com/vimux/mainroad
 ```
 
 Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `mainroad`:
@@ -77,12 +70,14 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
   post_meta = ["date", "categories", "translations"] # Order of post meta information
-  #mainSections = ["post", blog", "news"] # specify section pages to show on home page and the "Recent articles" widget
+  #mainSections = ["post", "blog", "news"] # specify section pages to show on home page and the "Recent articles" widget
   #dateformat = "2006-01-02" # change the format of dates
   #mathjax = true # Enable MathJax
-  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  #highlightColor = "#e22d30" # Override highlight color
   customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -108,7 +103,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   email = "example@example.com"
 ```
 
-A good idea is not copy  double check all the Configuration settings of Minimo.
+A good idea is not to copy all these settings without understanding how it works.
+
+For more information about all available standard configuration settings, please read [Configure Hugo: All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings).
 
 ### Front Matter example
 
@@ -151,7 +148,7 @@ Some widget respect optional configuration. Have a look at the `[Params.widgets]
 
 ## Contributing
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/mainroad/pulls), but please respect the following [contributing guide](CONTRIBUTING.md).
+Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/mainroad/pulls), but please respect the following [contributing guide](https://github.com/Vimux/mainroad/blob/master/CONTRIBUTING.md).
 
 ## License
 
