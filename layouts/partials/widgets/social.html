@@ -90,6 +90,14 @@
 			</a>
 		</div>
 		{{- end }}
+		{{- with .Site.Params.widgets.social.lofter }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Lofter" rel="noopener noreferrer" href="http://{{ . }}.lofter.com" target="_blank">
+				{{ partial "svg/lofter.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Lofter</span>
+			</a>
+		</div>
+		{{- end }}
 	</div>
 </div>
 {{- end }}
