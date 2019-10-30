@@ -1,4 +1,6 @@
 {{- $highlightColor := .Site.Params.highlightColor | default "#e22d30" -}}
+{{- $font := .Site.Params.font | default "Open Sans" -}}
+
 
 *,
 *::before,
@@ -45,7 +47,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "{{ $font }}", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-size: .875rem;
 	line-height: 1.6;
