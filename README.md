@@ -58,7 +58,7 @@ title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
-disqusShortname = "" # Enable comments by entering your Disqus shortname
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author] # Used in authorbox
@@ -69,7 +69,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Params]
   subtitle = "Just another site" # Subtitle of your site. Used in site header
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  #copyright = "John Doe" # copyright holder, otherwise will use site title
+  copyright = "John Doe" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
@@ -77,12 +77,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   toc = true # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
   post_meta = ["date", "categories", "translations"] # Order of post meta information
-  #mainSections = ["post", "blog", "news"] # specify section pages to show on home page and the "Recent articles" widget
-  #dateformat = "2006-01-02" # change the format of dates
-  #mathjax = true # Enable MathJax
-  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
-  #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  #highlightColor = "#e22d30" # Override highlight color
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#e22d30" # Override highlight color
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
 
@@ -95,7 +95,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+  tags_counter = false # Enable counter for each tag in "Tags" widget
 
 [Params.widgets.social]
   # Enable parts of social widget
@@ -110,7 +110,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   email = "example@example.com"
 ```
 
-A good idea is not to copy all these settings without understanding how it works.
+A good idea is not to copy all these settings without understanding how it works. Use only those parameters that you
+need.
 
 For more information about all available standard configuration settings, please read
 [All Hugo Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings).
@@ -119,15 +120,10 @@ For more information about all available standard configuration settings, please
 
 ```yaml
 ---
+# Common-Defined params
 title: "Example article title"
 date: "2017-08-21"
 description: "Example article description"
-thumbnail: "img/placeholder.jpg" # Optional, thumbnail
-lead: "Example lead - highlighted near the title"
-comments: false # Enable/disable Disqus comments. Default value: true
-authorbox: true # Enable authorbox for specific post
-toc: true # Optional, enable Table of Contents for specific post
-mathjax: true # Optional, enable MathJax for specific post
 categories:
   - "Category 1"
   - "Category 2"
@@ -135,11 +131,19 @@ tags:
   - "Test"
   - "Another test"
 menu: main # Optional, add page to a menu. Options: main, side, footer
+
+# Theme-Defined params
+thumbnail: "img/placeholder.jpg" # Thumbnail image
+lead: "Example lead - highlighted near the title" # Lead text
+comments: false # Enable Disqus comments for specific page
+authorbox: true # Enable authorbox for specific page
+toc: true # Enable Table of Contents for specific page
+mathjax: true # Enable MathJax for specific page
 ---
 ```
 
 For more information about front matter variables read
-[Hugo Front Matter](https://gohugo.io/themes/installing-and-using-themes/) from Hugo official documentation.
+[Hugo Front Matter](https://gohugo.io/content-management/front-matter) from Hugo official documentation.
 
 ### Sidebar
 
@@ -159,12 +163,23 @@ in the example configuration above.
 ### Menus
 
 **Mainroad** supports multiple menus. The `main` menu is fully responsive and displayed right under the site header. The
-secondary menus `side` and `footer` are displayed in a sidebar widget and the page footer. In order to add a page to a
-menu, add a `menu = <menu>` parameter to the pages frontmatter. You can also add a page to many menus by providing a
-list, e.g. `menu = [main, side, footer]`. Don't forget to enable the `sidemenu` widget in the widget configuration if
-you want to use the `side` menu.
+secondary menus `side` and `footer` are displayed in a sidebar widget and the page footer. To add a page to a menu, add
+a `menu: <menu>` parameter to the page's front matter:
 
-**Sidenote:** Please keep in mind that Mainroad menus don't support nested items (submenus).
+```yaml
+menu: main # Add page to a main menu
+```
+
+You can also add a page to multiple menus by providing a list:
+
+```yaml
+menu: ["main", "side", "footer"] # Add page to a main, side, and footer menu
+```
+
+**Note:** Don't forget to enable the `sidemenu` widget in the `widgets` configuration param if you want to use the
+`side` menu.
+
+**Note:** Please keep in mind that Mainroad menus don't support nested items i.e. submenus.
 
 ## Contributing
 
