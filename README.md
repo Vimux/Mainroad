@@ -43,7 +43,7 @@ git clone https://github.com/vimux/mainroad
 Or, if you don't plan to make any significant changes, but want to track and update the theme, you can add it as a git
 submodule via the following command:
 
-```bash
+```
 git submodule add https://github.com/vimux/mainroad
 ```
 
