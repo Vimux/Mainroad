@@ -4,8 +4,9 @@
 	{{ partial "svg/category.svg" (dict "class" "meta__icon") }}
 	<span class="meta__text">
 		{{- range $index, $category := . }}
-			{{- $name := . -}}
-			{{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | anchorize)) }}
+			{{- $url := urls.Parse ($category | urlize) -}}
+			{{- $path := $url.Path -}}
+			{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
 				{{- if gt $index 0 }}, {{ end -}}
 				<a class="meta__link" href="{{ .RelPermalink }}" rel="category">{{ .Title }}</a>
 			{{- end }}
