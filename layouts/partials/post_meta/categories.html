@@ -5,7 +5,7 @@
 	<span class="meta__text">
 		{{- range $index, $category := . }}
 			{{- $name := . -}}
-			{{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+			{{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | anchorize)) }}
 				{{- if gt $index 0 }}, {{ end -}}
 				<a class="meta__link" href="{{ .RelPermalink }}" rel="category">{{ .Title }}</a>
 			{{- end }}
