@@ -74,6 +74,15 @@
 			</a>
 		</div>
 		{{- end }}
+
+		{{ range .Site.Params.widgets.social.custom }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="{{ .title }}" rel="noopener noreferrer" href="{{ .url }}" target="_blank">
+				{{ partial (.icon | default "svg/default-link.svg") (dict "class" "widget-social__link-icon") }}
+				<span>{{ .title }}</span>
+			</a>
+		</div>
+		{{ end }}
 	</div>
 </div>
 {{- end }}

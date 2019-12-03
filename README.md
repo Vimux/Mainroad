@@ -115,6 +115,21 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   gitlab = "username"
   bitbucket = "username"
   email = "example@example.com"
+
+# Your custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com"
+  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+[[Params.widgets.social.custom]]
+  title = "Steam"
+  url = "https://store.steampowered.com/"
+  icon = "steam.svg"
+
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "http://example.com"
 ```
 
 A good idea is not to copy all these settings without understanding how it works. Use only those parameters that you
