@@ -116,16 +116,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   bitbucket = "username"
   email = "example@example.com"
 
-# Your custom social links
+# Custom social links
 [[Params.widgets.social.custom]]
   title = "Youtube"
-  url = "https://youtube.com"
+  url = "https://youtube.com/user/username"
   icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-
-[[Params.widgets.social.custom]]
-  title = "Steam"
-  url = "https://store.steampowered.com/"
-  icon = "steam.svg"
 
 [[Params.widgets.social.custom]]
   title = "My Home Page"
@@ -202,6 +197,19 @@ menu: ["main", "side", "footer"] # Add page to a main, side, and footer menu
 `side` menu.
 
 **Note:** Please keep in mind that Mainroad menus don't support nested items i.e. submenus.
+
+### Custom social link quick guide
+
+**Mainroad** contains some built-in social link widgets. You can also set custom social links by adding `Params.widgets.social.custom` to your `config.toml`. Here is an example.
+
+```toml
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+  icon = "youtube.svg"
+```
+
+Note that you need to put your icon file in `layouts/partials` directory under your project's root if you want to display an icon of your social link. The `icon` filed, which is optional, should be a path relative to `layouts/partials`.
 
 ## Contributing
 
