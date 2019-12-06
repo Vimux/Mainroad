@@ -209,7 +209,15 @@ menu: ["main", "side", "footer"] # Add page to a main, side, and footer menu
   icon = "youtube.svg"
 ```
 
-Note that you need to put your icon file in `layouts/partials` directory under your project's root if you want to display an icon of your social link. The `icon` filed, which is optional, should be a path relative to `layouts/partials`.
+**Note:** You need to put your icon file in `layouts/partials` directory under your project's root if you want to display an icon of your social link. The `icon` filed, which is optional, should be a path relative to `layouts/partials`.
+
+**Note:** *Only* SVG files are supported to be used as custom social icons in the current version. If you use any files of another format, PNG for example, a compile error will be raised by Hugo.
+
+**Note:** Not every SVG icon can be used. For better results, it should be one-color SVG file with a special class attribute `{{ with .class }}{{ . }} {{ end }}` and 24x24 size. At a minimum, custom SVG icon needs these attributes:
+
+```html
+<svg class="{{ with .class }}{{ . }} {{ end }} icon" width="24" height="24">...</svg>
+```
 
 ## Contributing
 
