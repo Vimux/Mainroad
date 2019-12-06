@@ -198,9 +198,10 @@ menu: ["main", "side", "footer"] # Add page to a main, side, and footer menu
 
 **Note:** Please keep in mind that Mainroad menus don't support nested items i.e. submenus.
 
-### Custom social link quick guide
+### Social Widget: custom links
 
-**Mainroad** contains some built-in social link widgets. You can also set custom social links by adding `Params.widgets.social.custom` to your `config.toml`. Here is an example.
+**Mainroad** contains built-in social links in the social widget. In addition, you can also set custom social links by
+adding `Params.widgets.social.custom` to your `config.toml`. Here is an example.
 
 ```toml
 [[Params.widgets.social.custom]]
@@ -209,11 +210,15 @@ menu: ["main", "side", "footer"] # Add page to a main, side, and footer menu
   icon = "youtube.svg"
 ```
 
-**Note:** You need to put your icon file in `layouts/partials` directory under your project's root if you want to display an icon of your social link. The `icon` filed, which is optional, should be a path relative to `layouts/partials`.
+**Note:** You need to put your icon file in `layouts/partials` directory under your project's root if you want to
+display an icon of your social link. The `icon` filed, which is optional, should be a path relative to
+`layouts/partials`.
 
-**Note:** *Only* SVG files are supported to be used as custom social icons in the current version. If you use any files of another format, PNG for example, a compile error will be raised by Hugo.
+**Note:** *Only* SVG files are supported to be used as custom social icons in the current version. If you use any files
+of another format, PNG for example, a compile error will be raised by Hugo.
 
-**Note:** Not every SVG icon can be used. For better results, it should be one-color SVG file with a special class attribute `{{ with .class }}{{ . }} {{ end }}` and 24x24 size. At a minimum, custom SVG icon needs these attributes:
+**Note:** Not every SVG icon can be used. For better results, it should be one-color SVG file with a special class
+attribute `{{ with .class }}{{ . }} {{ end }}` and 24x24 size. At a minimum, custom SVG icon needs these attributes:
 
 ```html
 <svg class="{{ with .class }}{{ . }} {{ end }} icon" width="24" height="24">...</svg>
