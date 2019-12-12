@@ -9,7 +9,7 @@ below. If you're a newcomer to open source and you haven't contributed to other 
 The [issue tracker](https://github.com/vimux/mainroad/issues) is the preferred channel for bug reports and features
 requests, but please respect the following restrictions:
 
-**General requirements**
+### General requirements
 
 * Issue must be written in English.
 * Please **do not** combine a few problems or feature requests in one issue. Create separate issues if needed.
@@ -21,7 +21,7 @@ such comments. Use
 * Search first before filing a new issue. Please check existing open or recently closed issues to make sure somebody
 else hasn't already reported the issue.
 
-**Reporting bugs**
+### Reporting bugs
 
 When creating a new bug issue make sure to include the following information:
 
@@ -35,7 +35,7 @@ or demo projects, or copy/pasteable snippets, which you use in those examples.
 **Note:** If you find a **Closed** issue that seems like it is the same bug that you're experiencing, open a new issue
 and include a link to the original issue in the body of your new one.
 
-**Proposing features**
+### Proposing features
 
 * Explain the proposed feature, what it should do, why it is useful, and alternatives considered if possible. Please
 note that the project maintainer may close this issue or ask you to create a Pull Request if this is not something that
