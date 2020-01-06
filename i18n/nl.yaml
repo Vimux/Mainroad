@@ -72,7 +72,7 @@
   translation: 404. Pagina niet gevonden
 
 - id: 404_text
-  translation: 'De pagina is mogelijk verplaatst, verwijderd of bestaat niet. Gebruik de zoekfunctie of "ga naar"'
+  translation: "De pagina is mogelijk verplaatst, verwijderd of bestaat niet. Gebruik de zoekfunctie of \"ga naar\""
 
 - id: 404_linktext
   translation: "hoofdpagina"
