@@ -1,0 +1,90 @@
+# General
+- id: read_more
+  translation: Tovább olvas…
+
+- id: menu_label
+  translation: Menu
+
+- id: sidemenu_title
+  translation: Menu
+
+# Post meta
+- id: meta_lastmod
+  translation: Utoljára módosítva
+
+- id: meta_translations
+  translation: Fordítások
+
+# Table of Contents
+- id: toc_title
+  translation: Az oldal tartalma
+
+# Post nav
+- id: post_nav_prev
+  translation: Előző
+
+- id: post_nav_next
+  translation: Következő
+
+# Authorbox
+- id: authorbox_name
+  translation: A {{ .Count }} -ról
+
+# Sidebar
+- id: sidebar_warning
+  translation: FIGYELMEZTETÉS
+
+- id: sidebar_recommendation
+  translation: Kérjük, aktiváljon legalább egy oldalsáv-modult.
+
+# Search widget
+- id: search_placeholder
+  translation: KERES...
+
+# Languages widget
+- id: languages_title
+  translation: Nyelvek
+
+# Categories widget
+- id: categories_title
+  translation: Kategóriák
+
+# Recent Posts widget
+- id: recent_title
+  translation: Legutóbbi hozzászólások
+
+# Social widget
+- id: social_title
+  translation: Közösség
+
+# Tags List widget
+- id: tags_title
+  translation: Tags
+
+# Footer
+- id: footer_credits
+  translation: "Létrehozva <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> és \
+  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> témával."
+
+# 404
+- id: 404_title
+  translation: 404. Az oldal nem található
+
+- id: 404_text
+  translation: "Úgy tűnik, hogy a kívánt oldalt áthelyezték, törölték vagy nem létezik. Kérjük, használja a keresést, vagy lépjen ide"
+
+- id: 404_linktext
+  translation: "main page"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "You don't have any posts yet!"
+
+- id: noposts_warning_description
+  translation: "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one section \
+  (with the most posts) will be displayed on the main page by default."
+
+- id: noposts_warning_tip
+  translation: "<b>Tip:</b> You can show as many sections as you like with \
+  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+  config parameter."
