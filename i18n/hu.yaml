@@ -51,7 +51,7 @@
 
 # Recent Posts widget
 - id: recent_title
-  translation: Legutóbbi hozzászólások
+  translation: Legutóbbi bejegyzések
 
 # Social widget
 - id: social_title
@@ -59,7 +59,7 @@
 
 # Tags List widget
 - id: tags_title
-  translation: Tags
+  translation: Cimkék
 
 # Footer
 - id: footer_credits
@@ -74,17 +74,17 @@
   translation: "Úgy tűnik, hogy a kívánt oldalt áthelyezték, törölték vagy nem létezik. Kérjük, használja a keresést, vagy lépjen ide"
 
 - id: 404_linktext
-  translation: "main page"
+  translation: "főoldal"
 
 # No posts empty state
 - id: noposts_warning_title
-  translation: "You don't have any posts yet!"
+  translation: "Még nincs bejegyzésed!"
 
 - id: noposts_warning_description
-  translation: "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one section \
-  (with the most posts) will be displayed on the main page by default."
+  translation: Ha valamit a <b>content</b> könyvtár alatti mappába (szakaszba) közzéteszel, az itt jelenik meg. Csak egy szakasz \
+  (a legtöbb hozzászólással) jelenik meg a főoldalon alapértelmezés szerint.
 
 - id: noposts_warning_tip
-  translation: "<b>Tip:</b> You can show as many sections as you like with \
+  translation: "<b>Tipp:</b> Megjeleníthet annyi szakaszt, amennyit csak akar a \
   <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-  config parameter."
+  konfigurációs paraméterrel."
