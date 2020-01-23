@@ -81,8 +81,8 @@
   translation: "Még nincs bejegyzésed!"
 
 - id: noposts_warning_description
-  translation: Ha valamit a <b>content</b> könyvtár alatti mappába (szakaszba) közzéteszel, az itt jelenik meg. Csak egy szakasz \
-  (a legtöbb hozzászólással) jelenik meg a főoldalon alapértelmezés szerint.
+  translation: "Ha valamit a <b>content</b> könyvtár alatti mappába (szakaszba) közzéteszel, az itt jelenik meg. Csak egy szakasz \
+  (a legtöbb hozzászólással) jelenik meg a főoldalon alapértelmezés szerint."
 
 - id: noposts_warning_tip
   translation: "<b>Tipp:</b> Megjeleníthet annyi szakaszt, amennyit csak akar a \
