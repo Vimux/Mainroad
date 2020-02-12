@@ -85,5 +85,5 @@
   (Celle avec le plus de posts) sera affichée sur la page principale."
 
 - id: noposts_warning_tip
-  translation: "<b>Astuce:</b>Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
+  translation: "<b>Astuce:</b> Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
   <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
