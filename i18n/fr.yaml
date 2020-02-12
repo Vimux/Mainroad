@@ -78,13 +78,12 @@
 
 # No posts empty state
 - id: noposts_warning_title
-  translation: "You don't have any posts yet!"
+  translation: "Vous n'avez pas encore de posts!"
 
 - id: noposts_warning_description
-  translation: "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one section \
-  (with the most posts) will be displayed on the main page by default."
+  translation: "Une fois que vous avez publié quelque chose dans n'importe quel sous-dossier (section) du dossier <b>content</b>, ça apparaîtra ici. par défaut, une seule section \
+  (Celle avec le plus de posts) sera affichée sur la page principale."
 
 - id: noposts_warning_tip
-  translation: "<b>Tip:</b> You can show as many sections as you like with \
-  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-  config parameter."
+  translation: "<b>Astuce:</b> Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
+  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
