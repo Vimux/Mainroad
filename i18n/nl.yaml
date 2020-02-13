@@ -1,65 +1,65 @@
 # General
 - id: read_more
-  translation: Meer lezen…
+  translation: "Meer lezen…"
 
 - id: menu_label
-  translation: Menu
+  translation: "Menu"
 
 - id: sidemenu_title
-  translation: Menu
+  translation: "Menu"
 
 # Post meta
 - id: meta_lastmod
-  translation: Laatst gewijzigd
+  translation: "Laatst gewijzigd"
 
 - id: meta_translations
-  translation: Vertalingen
+  translation: "Vertalingen"
 
 # Table of Contents
 - id: toc_title
-  translation: Inhoud
+  translation: "Inhoud"
 
 # Post nav
 - id: post_nav_prev
-  translation: Vorige
+  translation: "Vorige"
 
 - id: post_nav_next
-  translation: Volgende
+  translation: "Volgende"
 
 # Authorbox
 - id: authorbox_name
-  translation: Over {{ .Count }}
+  translation: "Over {{ .Count }}"
 
 # Sidebar
 - id: sidebar_warning
-  translation: WAARSCHUWING
+  translation: "WAARSCHUWING"
 
 - id: sidebar_recommendation
-  translation: Activeer minstens één sidebar widget.
+  translation: "Activeer minstens één sidebar widget."
 
 # Search widget
 - id: search_placeholder
-  translation: ZOEKEN...
+  translation: "ZOEKEN..."
 
 # Languages widget
 - id: languages_title
-  translation: Talen
+  translation: "Talen"
 
 # Categories widget
 - id: categories_title
-  translation: Categorieën
+  translation: "Categorieën"
 
 # Recent Posts widget
 - id: recent_title
-  translation: Recente posts
+  translation: "Recente posts"
 
 # Social widget
 - id: social_title
-  translation: Social
+  translation: "Social"
 
 # Tags List widget
 - id: tags_title
-  translation: Tags
+  translation: "Tags"
 
 # Footer
 - id: footer_credits
@@ -69,7 +69,7 @@
 
 # 404
 - id: 404_title
-  translation: 404. Pagina niet gevonden
+  translation: "404. Pagina niet gevonden"
 
 - id: 404_text
   translation: "De pagina is mogelijk verplaatst, verwijderd of bestaat niet. Gebruik de zoekfunctie of \"ga naar\""
@@ -83,11 +83,11 @@
 
 - id: noposts_warning_description
   translation:
-    "Zodra je iets post in welke map (sectie) dan ook onder de <b>content</b> directory, zal het hier verschijnen. Slechts één sectie \
-    (met de meeste posts) zal standaard getoond worden op de hoofdpagina."
+    "Zodra je iets post in welke map (sectie) dan ook onder de <b>content</b> directory, zal het hier verschijnen. \
+    Slechts één sectie (met de meeste posts) zal standaard getoond worden op de hoofdpagina."
 
 - id: noposts_warning_tip
   translation:
     "<b>Tip:</b> Je kunt zoveel secties laten zien als je wilt met de \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     config parameter."

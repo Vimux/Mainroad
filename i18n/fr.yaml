@@ -3,28 +3,28 @@
   translation: "Lire la suite…"
 
 - id: menu_label
-  translation: Menu
+  translation: "Menu"
 
 - id: sidemenu_title
-  translation: Menu
+  translation: "Menu"
 
 # Post meta
 - id: meta_lastmod
   translation: "Dernière modification"
 
 - id: meta_translations
-  translation: Traductions
+  translation: "Traductions"
 
 # Table of Contents
 - id: toc_title
-  translation: Sommaire
+  translation: "Sommaire"
 
 # Post nav
 - id: post_nav_prev
-  translation: Précédent
+  translation: "Précédent"
 
 - id: post_nav_next
-  translation: Suivant
+  translation: "Suivant"
 
 # Authorbox
 - id: authorbox_name
@@ -32,22 +32,22 @@
 
 # Sidebar
 - id: sidebar_warning
-  translation: Attention
+  translation: "Attention"
 
 - id: sidebar_recommendation
   translation: "Activez au moins un widget pour la barre latérale."
 
 # Search widget
 - id: search_placeholder
-  translation: Rechercher...
+  translation: "Rechercher..."
 
 # Languages widget
 - id: languages_title
-  translation: Langues
+  translation: "Langues"
 
 # Categories widget
 - id: categories_title
-  translation: Catégories
+  translation: "Catégories"
 
 # Recent Posts widget
 - id: recent_title
@@ -55,16 +55,17 @@
 
 # Social widget
 - id: social_title
-  translation: Social
+  translation: "Social"
 
 # Tags List widget
 - id: tags_title
-  translation: Mots-clefs
+  translation: "Mots-clefs"
 
 # Footer
 - id: footer_credits
-  translation: "Produit par <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> et le thème \
-  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+  translation:
+    "Produit par <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> et le thème \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
 
 # 404
 - id: 404_title
@@ -81,9 +82,12 @@
   translation: "Vous n'avez pas encore de posts!"
 
 - id: noposts_warning_description
-  translation: "Une fois que vous avez publié quelque chose dans n'importe quel sous-dossier (section) du dossier <b>content</b>, ça apparaîtra ici. par défaut, une seule section \
-  (Celle avec le plus de posts) sera affichée sur la page principale."
+  translation:
+    "Une fois que vous avez publié quelque chose dans n'importe quel sous-dossier (section) du dossier <b>content</b>, \
+    ça apparaîtra ici. par défaut, une seule section (Celle avec le plus de posts) sera affichée sur la page \
+    principale."
 
 - id: noposts_warning_tip
-  translation: "<b>Astuce:</b> Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
-  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+  translation:
+    "<b>Astuce:</b> Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."

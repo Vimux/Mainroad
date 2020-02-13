@@ -13,7 +13,7 @@
   translation: "Última modificación"
 
 - id: meta_translations
-  translation: Traducciones
+  translation: "Traducciones"
 
 # Table of Contents
 - id: toc_title
@@ -43,7 +43,7 @@
 
 # Languages widget
 - id: languages_title
-  translation: Idiomas
+  translation: "Idiomas"
 
 # Categories widget
 - id: categories_title
@@ -55,7 +55,7 @@
 
 # Social widget
 - id: social_title
-  translation: Social
+  translation: "Social"
 
 # Tags List widget
 - id: tags_title
@@ -63,8 +63,9 @@
 
 # Footer
 - id: footer_credits
-  translation: "Generado con <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> y \
-  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+  translation:
+    "Generado con <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> y \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
 
 # 404
 - id: 404_title
@@ -81,10 +82,11 @@
   translation: "¡Todavía no hay publicaciones!"
 
 - id: noposts_warning_description
-  translation: "Una vez que publiques algo en cualquier carpeta (sección) dentro del directorio <b>content</b>, se verá aquí. Sólo una sección \
-  (la que tenga más publicaciones) se mostrará por defecto en la página principal."
+  translation:
+    "Una vez que publiques algo en cualquier carpeta (sección) dentro del directorio <b>content</b>, se verá aquí. \
+    Sólo una sección (la que tenga más publicaciones) se mostrará por defecto en la página principal."
 
 - id: noposts_warning_tip
-  translation: "<b>Aviso:</b> Puedes mostrar tantas secciones como gustes con \
-  el parámetro de configuración \
-  <b><a href=\"https://gohugo.io/functions/where/#mainsections\"rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+  translation:
+    "<b>Aviso:</b> Puedes mostrar tantas secciones como gustes con el parámetro de configuración \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
