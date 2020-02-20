@@ -84,8 +84,8 @@
 
 - id: noposts_warning_description
   translation:
-    "<p>Quando você criar uma postagem em qualquer pasta (seção) dentro do diretório content, ele vai aparecer aqui.</p> \
-    <p>Apenas uma seção (a que conter mais postagens) será exibida na página principal por padrão.</p>"
+    "Quando você criar uma postagem em qualquer pasta (seção) dentro do diretório <b>content</b>, ele vai aparecer aqui. \
+    Apenas uma seção (a que conter mais postagens) será exibida na página principal por padrão."
 
 - id: noposts_warning_tip
   translation:
