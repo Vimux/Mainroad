@@ -11,9 +11,11 @@
 			{{- end }}
 		</header>
 		{{- if .Params.thumbnail }}
-		<figure class="post__thumbnail">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
-		</figure>
+            {{- if .Params.show_thumb_in_post | default true}}
+            <figure class="post__thumbnail">
+                <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+            </figure>
+            {{- end }}
 		{{- end }}
 		{{- partial "post_toc.html" . -}}
 		<div class="content post__content clearfix">

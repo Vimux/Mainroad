@@ -151,6 +151,8 @@ menu: main # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params
 thumbnail: "img/placeholder.jpg" # Thumbnail image
+show_thumb_in_post: true # Show the thumbnail image at the top of the post
+show_thumb_in_home: true # Show the thumbnail image in the homepage
 lead: "Example lead - highlighted near the title" # Lead text
 comments: false # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page

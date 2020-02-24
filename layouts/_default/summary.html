@@ -1,10 +1,12 @@
 <article class="list__item post">
 	{{- if .Params.thumbnail }}
-	<figure class="list__thumbnail">
-		<a href="{{ .Permalink }}">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
-		</a>
-	</figure>
+        {{- if .Params.show_thumb_in_home | default true }}
+        <figure class="list__thumbnail">
+            <a href="{{ .Permalink }}">
+                <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
+            </a>
+        </figure>
+        {{- end }}
 	{{- end }}
 	<header class="list__header">
 		<h3 class="list__title post__title ">
