@@ -79,15 +79,15 @@
 
 # No posts empty state
 - id: noposts_warning_title
-  translation: "You don't have any posts yet!"
+  translation: "目前還沒有任何内容！"
 
 - id: noposts_warning_description
   translation:
-    "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one \
-    section (with the most posts) will be displayed on the main page by default."
+    "在 <b>content</b> 目錄下的任意資料夾（區塊）中發布内容後，就會被顯示在此處。\
+    其中只有一個區塊的内容（預設是擁有文章數量最多的資料夾）會被顯示在主要頁面上"
 
 - id: noposts_warning_tip
   translation:
-    "<b>Tip:</b> You can show as many sections as you like with \
+    "<b>提示:</b> 您可以透過 \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    config parameter."
+    參數來控制所要展示的區塊內容。"
