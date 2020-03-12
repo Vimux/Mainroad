@@ -5,7 +5,7 @@
 	</button>
 	<ul class="menu__list">
 		{{- $currentNode := . }}
-		{{- range sort .Site.Menus.main }}
+		{{- range .Site.Menus.main }}
 		{{- if .Name }}
 		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
 			<a class="menu__link" href="{{ .URL }}">
