@@ -1,0 +1,15 @@
+<div id="git-comments"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '828d851e2cca8472fff7',
+        clientSecret: '8010aa440c2565f5fd290194be72ed211584a952',
+        repo: 'jankeyfu.github.io',
+        owner: 'jankeyfu',
+        admin: ['jankeyfu'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+    gitalk.render('git-comments')
+</script>
