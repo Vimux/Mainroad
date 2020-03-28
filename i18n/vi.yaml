@@ -1,0 +1,93 @@
+# General
+- id: read_more
+  translation: "Đọc tiếp…"
+
+- id: menu_label
+  translation: "Menu"
+
+- id: sidemenu_title
+  translation: "Menu"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Cập nhật lần cuối"
+
+- id: meta_translations
+  translation: "Bản dịch"
+
+# Table of Contents
+- id: toc_title
+  translation: "Mục lục"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Trước"
+
+- id: post_nav_next
+  translation: "Sau"
+
+# Authorbox
+- id: authorbox_name
+  translation: "Về {{ .Count }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "CÁNH BÁO"
+
+- id: sidebar_recommendation
+  translation: "Vui lòng tạo hoặc kích hoạt tối thiểu một thành phần trong thanh bên."
+
+# Search widget
+- id: search_placeholder
+  translation: "TÌM KIẾM..."
+
+# Languages widget
+- id: languages_title
+  translation: "Ngôn ngữ"
+
+# Categories widget
+- id: categories_title
+  translation: "Chủ đề"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Bài viết gần đây"
+
+# Social widget
+- id: social_title
+  translation: "Xã hội"
+
+# Tags List widget
+- id: tags_title
+  translation: "Thẻ"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Được tạo từ <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> sử dụng với \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. Không tìm thấy trang này"
+
+- id: 404_text
+  translation:
+    "Trang bạn đang tìm kiếm đã bị xoá hoặc không tồn tại. Vui lòng sử dụng chức năng tìm kiếm"
+
+- id: 404_linktext
+  translation: "trang chủ"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Bạn chưa có bài viết nào!"
+
+- id: noposts_warning_description
+  translation:
+    "Khi bạn xuất bản bất kì bài viết nào trong bất kì thư mục nào trong thư mục <b>content</b>, nó sẽ xuất hiện tại đây.\
+    Mặc định chỉ một phần của bài viết sẽ được xuất hiện trong trang chủ cho hầu hết các bài viết."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Gợi ý:</b> Bạn có thể hiện bao nhiêu phần tuỳ ý bằng tham số parameter \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
