@@ -1,4 +1,4 @@
-{{- if .Site.Params.post_navigation }}
+{{- if .Param "post_navigation" }}
 {{- if or (.PrevInSection) (.NextInSection) }}
 <nav class="post-nav flex">
 	{{- if .PrevInSection }}
