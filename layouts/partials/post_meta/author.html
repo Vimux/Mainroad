@@ -1,11 +1,11 @@
-{{- if .Site.Author.name }}
+{{- if .Site.Author.name -}}
 <div class="meta__item-author meta__item">   
     <span class="meta__text">
-        {{- if .Param "authorbox" }}
-            <a class="meta__link" href="#authorbox">By {{ .Site.Author.name }}</a>
-        {{- else }}
-            By {{ .Site.Author.name }}
-        {{- end }}
+        {{- if (and (.Param "authorbox") (not ($.Scratch.Get "inSummary"))) -}}
+            <a class="meta__link" href="#authorbox">By {{ .Site.Author.name -}}</a>
+        {{- else -}}
+            By {{ .Site.Author.name -}}
+        {{- end -}}
     </span>
 </div>
-{{- end }}
+{{- end -}}
