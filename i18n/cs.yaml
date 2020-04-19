@@ -21,10 +21,10 @@
 
 # Post nav
 - id: post_nav_prev
-  translation: "Zpět"
+  translation: "Předchozí"
 
 - id: post_nav_next
-  translation: "Vpřed"
+  translation: "Následující"
 
 # Authorbox
 - id: authorbox_name
