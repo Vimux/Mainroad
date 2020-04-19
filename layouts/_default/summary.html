@@ -15,10 +15,11 @@
 		{{- with .Params.lead }}
 		<p class="list__lead post__lead">{{ . }}</p>
 		{{- end }}
-		{{ .Scratch.Set "inSummary" "inSummary" }}
+		{{ .Scratch.Set "inSummary" 1 }}
 		{{ with partial "post_meta.html" . -}}
 		<div class="list__meta meta">{{ . }}</div>
 		{{- end }}
+		{{ .Scratch.Set "inSummary" 0 }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		{{ .Summary }}
