@@ -59,7 +59,7 @@
 
 # Tags List widget
 - id: tags_title
-  translation: "Tagy"
+  translation: "Štítky"
 
 # Footer
 - id: footer_credits
