@@ -18,7 +18,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
   authorbox = true
-  post_navigation = true
+  pager = true
   post_meta = ["date", "categories"] # Order of post meta information
 
 [Params.sidebar]
