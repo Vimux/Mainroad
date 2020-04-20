@@ -4,7 +4,7 @@
 [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by
 [MH Themes](https://www.mhthemes.com/).
 
-**[Demo (Fast update)](https://mainroad-demo.netlify.com/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
+**[Demo (Fast update)](https://mainroad-demo.netlify.app/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
@@ -81,7 +81,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   readmore = false # Show "Read more" button in list if true
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
-  post_navigation = true # Show post navigation at bottom of pages if true
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
   post_meta = ["date", "categories", "translations"] # Order of post meta information
   mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "2006-01-02" # Change the format of dates
