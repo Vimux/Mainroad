@@ -879,8 +879,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	background: {{ $highlightColor }};
 }
 
-/* Post Navigation */
-.post-nav {
+/* Pager (prev/next links) navigation */
+.pager {
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding-top: 25px;
@@ -889,7 +889,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	border-bottom: 1px solid #ebebeb;
 }
 
-.post-nav__caption {
+.pager__subtitle {
 	display: block;
 	margin-bottom: 5px;
 	font-weight: 700;
@@ -897,25 +897,25 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	text-transform: uppercase;
 }
 
-.post-nav__post-title {
+.pager__title {
 	margin-bottom: 0;
 	overflow: hidden;
 	font-size: 13px;
 	font-size: .8125rem;
 }
 
-.post-nav__item {
+.pager__item {
 	-webkit-flex: 1 1 50%;
 	flex: 1 1 50%;
 	max-width: 48%;
 }
 
-.post-nav__item--next {
+.pager__item--next {
 	margin-left: auto;
 	text-align: right;
 }
 
-.post-nav__link {
+.pager__link {
 	display: block;
 }
 
@@ -1228,16 +1228,16 @@ textarea {
 		margin: 0 0 20px;
 	}
 
-	.post-nav {
+	.pager {
 		display: block;
 	}
 
-	.post-nav__item {
+	.pager__item {
 		min-width: 100%;
 		text-align: center;
 	}
 
-	.post-nav__item--prev {
+	.pager__item--prev {
 		padding-bottom: 25px;
 	}
 
