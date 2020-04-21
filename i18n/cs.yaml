@@ -84,11 +84,11 @@
 
 - id: noposts_warning_description
   translation:
-    "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one \
-    section (with the most posts) will be displayed on the main page by default."
+    "Jakmile vytvoříte příspěvek v libovolném podadresáři (sekci) adresáře <b>content</b>, objeví se zde. Ve výchozím nastavení \
+    je na hlavní stránce zobrazena pouze jedna sekce (s největším množstvím příspěvků)."
 
 - id: noposts_warning_tip
   translation:
-    "<b>Tip:</b> You can show as many sections as you like with \
+    "<b>Tip:</b> Pomocí parametru \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    config parameter."
+    můžete zobrazit libovolný počet sekcí."
