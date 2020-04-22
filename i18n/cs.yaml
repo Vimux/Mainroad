@@ -84,8 +84,8 @@
 
 - id: noposts_warning_description
   translation:
-    "Jakmile vytvoříte příspěvek v libovolném podadresáři (sekci) adresáře <b>content</b>, objeví se zde. Ve výchozím nastavení \
-    je na hlavní stránce zobrazena pouze jedna sekce (s největším množstvím příspěvků)."
+    "Jakmile vytvoříte příspěvek v libovolném podadresáři (sekci) adresáře <b>content</b>, objeví se zde. Ve výchozím \
+    nastavení je na hlavní stránce zobrazena pouze jedna sekce (s největším množstvím příspěvků)."
 
 - id: noposts_warning_tip
   translation:
