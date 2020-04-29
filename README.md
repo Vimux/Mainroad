@@ -239,3 +239,7 @@ Have you found a bug or got an idea for a new feature? Feel free to use the
 ## License
 
 This theme is released under the [GPLv2 license](https://github.com/Vimux/mainroad/blob/master/LICENSE.md).
+
+## Attributions
+
+Pen SVG icon courtesy of Font Awesome, under the Creative Commons Attribution 4.0 International license: https://fontawesome.com/license
