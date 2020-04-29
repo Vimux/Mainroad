@@ -4,7 +4,7 @@
 [MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) WordPress theme by
 [MH Themes](https://www.mhthemes.com/).
 
-**[Demo (Fast update)](https://mainroad-demo.netlify.com/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
+**[Demo (Fast update)](https://mainroad-demo.netlify.app/)** | [Standart Demo](https://themes.gohugo.io/theme/mainroad/)
 
 ![screenshot](https://github.com/Vimux/mainroad/blob/master/images/screenshot.png)
 
