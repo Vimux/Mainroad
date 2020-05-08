@@ -10,7 +10,7 @@
 
 **Features:**
 
-+ Hugo internal templates (Open Graph, Twitter Cards, Disqus, Google Analytics)
++ Hugo internal templates (Open Graph, Schema, Twitter Cards, Disqus, Google Analytics)
 + Responsive menu
 + Secondary menus
 + SVG icons
@@ -77,6 +77,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
   copyright = "John Doe" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
   authorbox = true # Show authorbox at bottom of pages if true

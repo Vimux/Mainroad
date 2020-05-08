@@ -7,8 +7,15 @@
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
-	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
-	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	{{- if .Site.Params.opengraph }}
+		{{ template "_internal/opengraph.html" . }}
+	{{- end }}
+	{{- if .Site.Params.schema }}
+		{{ template "_internal/schema.html" . }}
+	{{- end }}
+	{{- if .Site.Params.twitter_cards }}
+		{{ template "_internal/twitter_cards.html" . }}
+	{{- end }}
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	{{ with .OutputFormats.Get "rss" -}}
