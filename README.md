@@ -73,7 +73,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Just another site" # Subtitle of your site. Used in site header
+  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
   copyright = "John Doe" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
@@ -92,6 +92,10 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   highlightColor = "#e22d30" # Override highlight color
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.logo]
+  title = "Mainroad" # Logo title, otherwise will use site title
+  subtitle = "Just another site" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
