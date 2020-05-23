@@ -389,7 +389,32 @@ select {
 
 .logo__link {
 	display: inline-block;
+}
+
+.logo__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo__img {
+	max-height: 256px;
+}
+
+.logo__text {
 	text-transform: uppercase;
+}
+
+.logo--mixed .logo__item {
+	margin: .5rem auto;
+}
+
+.logo--mixed .logo__img {
+	max-width: 128px;
+	max-height: 128px;
+}
+
+.logo--mixed .logo__text {
+	padding: 0 1rem;
 }
 
 .logo__title {
@@ -1195,6 +1220,10 @@ textarea {
 
 	.logo {
 		text-align: center;
+	}
+
+	.logo__link {
+		margin: 0 auto;
 	}
 
 	.logo__title {

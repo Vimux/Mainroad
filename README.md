@@ -94,6 +94,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   customJS = ["js/custom.js"] # Include custom JS files
 
 [Params.logo]
+  image = "img/placeholder.png" # Logo image. Path relative to "static"
   title = "Mainroad" # Logo title, otherwise will use site title
   subtitle = "Just another site" # Logo subtitle
 
@@ -171,6 +172,22 @@ widgets: # Enable sidebar widgets in given order per page
 
 For more information about front matter variables read
 [Hugo Front Matter](https://gohugo.io/content-management/front-matter) from Hugo official documentation.
+
+### Logo
+
+**Mainroad** allows you to set a custom logo in the site header. You may use text, or image, or both. Use the following
+options in your site config:
+
+```toml
+[Params.logo]
+  image = "img/placeholder.png"
+  title = "Mainroad"
+  subtitle = "Just another site"
+```
+
+Please be noted that the logo image will display at a maximum width of 128 pixels and a maximum height of 128 pixels
+when you use text and image simultaneously. When the only logo image is active, it will display at a maximum height of
+256 pixels. Ideally, your image should be SVG.
 
 ### Sidebar
 
