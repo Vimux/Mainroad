@@ -3,7 +3,7 @@ license = "GPLv2"
 licenselink = "https://github.com/vimux/mainroad/blob/master/LICENSE.md"
 description = "Mainroad is a responsive, clean and content-focused Hugo theme."
 homepage = "https://github.com/vimux/mainroad/"
-tags = ["blog", "responsive", "widgets", "rss", "disqus", "google analytics", "wordpress"]
+tags = ["blog", "responsive", "customizable", "widgets", "rss", "disqus", "google analytics", "wordpress"]
 features = ["blog", "responsive", "widgets", "rss", "disqus", "wordpress"]
 min_version = "0.48"
 

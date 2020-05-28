@@ -1,0 +1,11 @@
+{{- $logoTitle := .Site.Params.logo.title | default .Site.Title -}}
+{{- $logoSubtitle := .Site.Params.logo.subtitle | default .Site.Params.subtitle -}}
+
+{{- with $logoTitle }}
+	<div class="logo">
+		<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ . }}" rel="home">
+			<div class="logo__title">{{ . }}</div>
+			{{ with $logoSubtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
+		</a>
+	</div>
+{{- end }}
