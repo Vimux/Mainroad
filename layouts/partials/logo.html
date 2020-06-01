@@ -8,12 +8,12 @@
 
 	<div class="logo{{ with $logoMix }} logo--mixed{{ end }}">
 		<a class="logo__link" href="{{ "" | relLangURL }}"{{ with $logoTitle }} title="{{ . }}"{{ end }} rel="home">
-			{{- with $logoImage }}
+			{{ with $logoImage -}}
 				<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="{{ . | relURL }}">
 				</div>
 			{{- end -}}
-			{{- with $logoTitle -}}
+			{{ with $logoTitle -}}
 				<div class="logo__item logo__text">
 					<div class="logo__title">{{ . }}</div>
 					{{ with $logoSubtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
