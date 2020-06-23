@@ -1,0 +1,93 @@
+# General
+- id: read_more
+  translation: "Leugh barrachd…"
+
+- id: menu_label
+  translation: "Clàr-taice"
+
+- id: sidemenu_title
+  translation: "Clàr-taice"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Air atharrachadh"
+
+- id: meta_translations
+  translation: "Eadar-theangachaidhean"
+
+# Table of Contents
+- id: toc_title
+  translation: "Clàr-innse"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Air ais"
+
+- id: post_nav_next
+  translation: "Air adhart"
+
+# Authorbox
+- id: authorbox_name
+  translation: "Mu dheidhinn {{ .Count }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "RABHADH"
+
+- id: sidebar_recommendation
+  translation: "Cuir an gnìomh co-dhiù aon widget"
+
+# Search widget
+- id: search_placeholder
+  translation: "RANNSAICH..."
+
+# Languages widget
+- id: languages_title
+  translation: "Cànanan"
+
+# Categories widget
+- id: categories_title
+  translation: "Roinnean"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "As ùire"
+
+# Social widget
+- id: social_title
+  translation: "Sòisealta"
+
+# Tags List widget
+- id: tags_title
+  translation: "Tagaichean"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Air a chruthachadh le <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> agus \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+    
+# 404
+- id: 404_title
+  translation: "404. Cha deach an duilleag a lorg"
+
+- id: 404_text
+  translation:
+    "A rèir choltais, chaidh an duilleag seo a ghluasad, neo chan eil e an seo tuilleadh. Rannsaich an làrach-lìn, neo thig"
+
+- id: 404_linktext
+  translation: "dhachaigh"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Chan eil sian sgrìobhte agad fhathast!"
+
+- id: noposts_warning_description
+  translation:
+    "Aon uair 's gu sgrìobh thu rudeigin ann an faidhle (roinn) fo eòlaire <b>content</b>, chì thu an seo e. A rèir \
+    gnàthachas, cha nochd ach aon roinn an seo; an roinn as a bheil an cuid as motha de aistean"
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Beagan cuideachaidh:</b> Faodaidh tu grunn roinnean fhaicinn an seo le taghadh rèiteachaidh \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
