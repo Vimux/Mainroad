@@ -1,0 +1,59 @@
+/* base generated with https://google-webfonts-helper.herokuapp.com/fonts/open-sans?subsets=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese */
+
+{{ $openSansRegularEOT := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot" }}
+{{ $openSansRegularWOFF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff" }}
+{{ $openSansRegularWOFF2 := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" }}
+{{ $openSansRegularTTF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf" }}
+{{ $openSansRegularSVG := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg" }}
+
+{{ $openSansItalicEOT := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-italic.eot" }}
+{{ $openSansItalicWOFF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff" }}
+{{ $openSansItalicWOFF2 := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff2" }}
+{{ $openSansItalicTTF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-italic.ttf" }}
+{{ $openSansItalicSVG := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-italic.svg" }}
+
+{{ $openSans700EOT := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot" }}
+{{ $openSans700WOFF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff" }}
+{{ $openSans700WOFF2 := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2" }}
+{{ $openSans700TTF := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf" }}
+{{ $openSans700SVG := resources.Get "fonts/open-sans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg" }}
+
+/* open-sans-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ $openSansRegularEOT.Permalink }}' ); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('{{ $openSansRegularEOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $openSansRegularWOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $openSansRegularWOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $openSansRegularTTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $openSansRegularSVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-italic - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('{{ $openSansItalicEOT.Permalink }}'); /* IE9 Compat Modes */
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('{{ $openSansItalicEOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $openSansItalicWOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $openSansItalicWOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $openSansItalicTTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $openSansItalicSVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('{{ $openSans700EOT.Permalink }}'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('{{ $openSans700EOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $openSans700WOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $openSans700WOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $openSans700TTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $openSans700SVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
