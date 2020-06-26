@@ -1,0 +1,20 @@
+{{ define "main" }}
+	<article class="article article-type-post" itemscope="" itemprop="blogPost">
+		<div class="article-inner">
+			<div class="post-archive">
+				{{ range (where (where .Site.Pages "Type" "post") "Kind" "page").GroupByDate "2006" }}
+					<h2> {{ .Key }} </h2>
+					<ul class="listing">
+						{{ range .Pages }}
+							<li>
+								<date class="meta-date">{{ .Date.Format "2006/01/02" }}</date>
+								<a class="archive-title" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+							</li>
+						{{ end }}
+					</ul>
+				{{ end }}
+
+			</div>
+		</div>
+	</article>
+{{ end }}
