@@ -103,7 +103,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["google-search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
   # alternatively "ddg-search" can be used, to search via DuckDuckGo
   # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
 
@@ -166,7 +166,7 @@ toc: true # Enable Table of Contents for specific page
 mathjax: true # Enable MathJax for specific page
 sidebar: "right" # Enable sidebar (on the right side) per page
 widgets: # Enable sidebar widgets in given order per page
-  - "google-search"
+  - "search"
   - "recent"
   - "taglist"
 ---
