@@ -1,0 +1,73 @@
+{{ $liberationSansRegularEOT    := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.eot" }}
+{{ $liberationSansRegularWOFF   := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.woff" }}
+{{ $liberationSansRegularWOFF2  := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.woff2" }}
+{{ $liberationSansRegularTTF    := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.ttf" }}
+{{ $liberationSansRegularSVG    := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.svg" }}
+
+{{ $liberationSansItalicEOT     := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.eot" }}
+{{ $liberationSansItalicWOFF    := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.woff" }}
+{{ $liberationSansItalicWOFF2   := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.woff2" }}
+{{ $liberationSansItalicTTF     := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.ttf" }}
+{{ $liberationSansItalicSVG     := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.svg" }}
+
+{{ $liberationSansBoldEOT   := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.eot" }}
+{{ $liberationSansBoldWOFF  := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.woff" }}
+{{ $liberationSansBoldWOFF2 := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.woff2" }}
+{{ $liberationSansBoldTTF   := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.ttf" }}
+{{ $liberationSansBoldSVG   := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.svg" }}
+
+{{ $liberationMonoRegularEOT    := resources.Get "fonts/liberation-sans/liberation-mono-v2-regular.eot" }}
+{{ $liberationMonoRegularWOFF   := resources.Get "fonts/liberation-sans/liberation-mono-v2-regular.woff" }}
+{{ $liberationMonoRegularWOFF2  := resources.Get "fonts/liberation-sans/liberation-mono-v2-regular.woff2" }}
+{{ $liberationMonoRegularTTF    := resources.Get "fonts/liberation-sans/liberation-mono-v2-regular.ttf" }}
+{{ $liberationMonoRegularSVG    := resources.Get "fonts/liberation-sans/liberation-mono-v2-regular.svg" }}
+
+@font-face {
+  font-family: "Liberation Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ $liberationSansRegularEOT.RelPermalink }}' ); /* IE9 Compat Modes */
+  src: url('{{ $liberationSansRegularEOT.RelPermalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSansRegularWOFF2.RelPermalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSansRegularWOFF.RelPermalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSansRegularTTF.RelPermalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSansRegularSVG.RelPermalink }}#Liberation Sans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Liberation Sans"; 
+  font-style: italic;
+  font-weight: 400;
+  src: url('{{ $liberationSansItalicEOT.RelPermalink }}'); /* IE9 Compat Modes */
+  src: url('{{ $liberationSansItalicEOT.RelPermalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSansItalicWOFF2.RelPermalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSansItalicWOFF.RelPermalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSansItalicTTF.RelPermalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSansItalicSVG.RelPermalink }}#Liberation Sans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url('{{ $liberationSansBoldEOT.RelPermalink }}'); /* IE9 Compat Modes */
+  src: url('{{ $liberationSansBoldEOT.RelPermalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSansBoldWOFF2.RelPermalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSansBoldWOFF.RelPermalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSansBoldTTF.RelPermalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSansBoldSVG.RelPermalink }}#Liberation Sans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Liberation Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ $liberationMonoRegularEOT.RelPermalink }}'); /* IE9 Compat Modes */
+  src: url('{{ $liberationMonoRegularEOT.RelPermalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationMonoRegularWOFF2.RelPermalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationMonoRegularWOFF.RelPermalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationMonoRegularTTF.RelPermalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationMonoRegularSVG.RelPermalink }}#Liberation Mono') format('svg'); /* Legacy iOS */
+}
+
+
