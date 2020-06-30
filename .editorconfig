@@ -8,12 +8,12 @@ end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.html]
-insert_final_newline = false
-
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{json,yaml,yml,toml,md,babelrc,eslintrc,stylelintrc}]
+[*.{json,yaml,yml,toml,md,babelrc,eslintrc,postcssrc,stylelintrc}]
 indent_style = space
 indent_size = 2
+
+[layouts/**.{html,svg}]
+insert_final_newline = false
