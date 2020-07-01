@@ -104,6 +104,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   single = false # Configure layout for single pages
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
