@@ -906,6 +906,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	background: {{ $highlightColor }};
 }
 
+
+.pagination__item--disabled:hover {
+	color: #000;
+	background: #f5f5f5;
+	cursor: not-allowed;
+}
+
 /* Pager (prev/next links) navigation */
 .pager {
 	-webkit-justify-content: space-between;

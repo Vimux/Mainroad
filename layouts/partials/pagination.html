@@ -1,13 +1,30 @@
 {{- if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <div class="pagination">
+	{{- if gt .Paginator.PageNumber 1 }}
+	<a class="pagination__item pagination__item--next btn" href="{{ .Paginator.First.URL }}">««</a>
+	{{- else }}
+	<a class="pagination__item pagination__item--disabled">««</a>
+	{{- end }}
 	{{- if .Paginator.HasPrev }}
 	<a class="pagination__item pagination__item--prev btn" href="{{ .Paginator.Prev.URL }}">«</a>
+	{{- else }}
+	<a class="pagination__item pagination__item--disabled">«</a>
 	{{- end }}
 	<span class="pagination__item pagination__item--current">
 		{{- .Paginator.PageNumber }}/{{ .Paginator.TotalPages -}}
 	</span>
 	{{- if .Paginator.HasNext }}
 	<a class="pagination__item pagination__item--next btn" href="{{ .Paginator.Next.URL }}">»</a>
+	{{- else }}
+	<a class="pagination__item pagination__item--disabled">»</a>
+
 	{{- end }}
+	{{- if lt .Paginator.PageNumber .Paginator.TotalPages  }}
+	<a class="pagination__item pagination__item--next btn" href="{{ .Paginator.Last.URL }}">»»</a>
+	{{- else }}
+	<a class="pagination__item pagination__item--disabled">»»</a>
+	{{- end }}
+
+
 </div>
 {{- end }}
