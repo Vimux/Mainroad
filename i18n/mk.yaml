@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Читај повеќе…"
+
+- id: menu_label
+  translation: "Мени"
+
+- id: sidemenu_title
+  translation: "Мени"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Последна промена"
+
+- id: meta_translations
+  translation: "Преводи"
+
+# Table of Contents
+- id: toc_title
+  translation: "Содржина"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Претходна"
+
+- id: post_nav_next
+  translation: "Следна"
+
+# Authorbox
+- id: authorbox_name
+  translation: "За {{ .Count }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "ВНИМАНИЕ"
+
+- id: sidebar_recommendation
+  translation: "Ве молам, активирајте најмалку еден страничен елемент."
+
+# Search widget
+- id: search_placeholder
+  translation: "Пребарувај..."
+
+# Languages widget
+- id: languages_title
+  translation: "Јазици"
+
+# Categories widget
+- id: categories_title
+  translation: "Категории"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Скорешни написи"
+
+# Social widget
+- id: social_title
+  translation: "Социјални"
+
+# Tags List widget
+- id: tags_title
+  translation: "Ознаки"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Направено со <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> и тема \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. Страницата не е најдена"
+
+- id: 404_text
+  translation:
+    "Страницата која ја баравте личи дека е поместена, избришана или не постои. Ве молам, користите го полето Барај \
+    или Оди"
+
+- id: 404_linktext
+  translation: "главна страница"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Сѐ уште немате написи!"
+
+- id: noposts_warning_description
+  translation:
+    "Штом објавите напис во било кој директориум (секција) под директориумот <b>content</b>, тој ќе се појави тука. \
+    Предефинирано само една секција (со најмногу написи) ќе се прикаже на главната страница."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Препорака:</b> Може да прикажете колку сакате секции со конфигурацискиот параметар \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
