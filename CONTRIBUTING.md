@@ -32,6 +32,26 @@ or demo projects, or copy/pasteable snippets, which you use in those examples.
 * Any message or error you get from Hugo, if you do.
 * A screenshot of any visual bug.
 
+Please, take in consideration the next template to report your bug:
+
+> **Hugo version**\
+> _Run `hugo version` and paste output here._
+>
+> **Theme is up to date?**\
+> _No | Yes_
+>
+> **Expected behavior**\
+> _A short and expressive description of what behavior you're expecting._
+>
+> **Current behavior**\
+> _A short sentence explaining what's actually happening, possibly containing screenshots._
+>
+> **Steps to reproduce / Code to reproduce**\
+> _A step by step description of how to trigger this bug. / Provide link to a demo project which reproduces this bug._
+>
+> **Additional info**\
+> _Anything unusual about your environment or deployment process? Anything else do we need to know? Optional._
+
 **Note:** If you find a **Closed** issue that seems like it is the same bug that you're experiencing, open a new issue
 and include a link to the original issue in the body of your new one.
 
