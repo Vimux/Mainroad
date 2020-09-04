@@ -1,15 +1,14 @@
-{{- $tags := .Site.Taxonomies.tags }}
-{{- if gt (len $tags) 0 }}
+{{- $tags := $.Site.Taxonomies.tags.Alphabetical }}
 <div class="widget-taglist widget">
 	<h4 class="widget__title">{{ T "tags_title" }}</h4>
 	<div class="widget__content">
-	{{- range $name, $taxonomy := $tags }}
-		{{- with $.Site.GetPage (printf "/tags/%s" $name) }}
-		<a class="widget-taglist__link widget__link btn" href="{{ .RelPermalink }}" title="{{ .Title }}">
-			{{- .Title -}}{{- if .Site.Params.widgets.tags_counter }} ({{ $taxonomy.Count }}){{ end -}}
-		</a>
-		{{- end }}
-	{{- end }}
+	<!-- Display Tags with more than # posts (exclude less used tags) -->
+	{{ $display := where $tags "Count" ">" 1 }}
+	<!-- Exclude some tags from the display list, if required -->
+    {{ $names := where $display "Term" "not in" (slice "draft" "old") }}
+    {{ range $names }}
+      {{ $tagURL := printf "tags/%s" .Term | relURL }}
+        <a href="{{ $tagURL }}" class="widget-taglist__link widget__link btn" data-count={{.Count}}>{{ .Term }}</a>
+      {{ end }}
 	</div>
 </div>
-{{- end }}
