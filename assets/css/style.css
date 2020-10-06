@@ -873,6 +873,11 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-bottom: .625rem;
 }
 
+.list__title {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
 .list__meta {
 	margin-top: 5px;
 }
