@@ -28,7 +28,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "Riguardo {{ .Count }}"
+  translation: "Riguardo {{ . }}"
 
 # Sidebar
 - id: sidebar_warning
