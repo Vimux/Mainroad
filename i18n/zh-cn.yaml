@@ -1,6 +1,6 @@
 # General
 - id: read_more
-  translation: "阅读全文…"
+  translation: "阅读全文..."
 
 - id: menu_label
   translation: "菜单"
@@ -71,14 +71,14 @@
   translation: "404. 抱歉，找不到您要找的页面"
 
 - id: 404_text
-  translation: "您要找的页面可能已经被移除、刪除或不存在，不妨去首页搜索一下吧。"
+  translation: "您要找的页面可能已经被移除、删除或不存在，不妨去首页搜索一下吧。"
 
 - id: 404_linktext
   translation: "回到首页"
 
 # No posts empty state
 - id: noposts_warning_title
-  translation: "目前还没有任何内容!"
+  translation: "目前还没有任何内容！"
 
 - id: noposts_warning_description
   translation:
