@@ -14,5 +14,8 @@
 		{{- end }}
 	{{- end }}
 	</div>
+	{{- if ge .Site.Params.widgets.tags_min_counter 2 }}
+	<a href="{{ "/tags/" | relURL }}">{{ T "all_tags" }}</a>
+	{{- end }}
 </div>
 {{- end }}
