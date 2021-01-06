@@ -1,0 +1,58 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "README.md"
+  pull_request:
+    paths-ignore:
+      - "README.md"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - '10.x'
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+  test-hugo:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        hugo:
+          - '0.48.0' # min version
+          - '0.58.2' # https://github.com/gohugoio/hugoThemes/issues/682
+          - '0.59.1' # last major version without goldmark renderer
+          - '0.60.1' # first major version with goldmark renderer
+          - '0.76.5' # https://github.com/gohugoio/hugo/issues/7822
+          - 'latest'
+      fail-fast: true
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # https://github.com/peaceiris/actions-hugo (community action)
+      - name: Run Hugo ${{ matrix.hugo }}
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ matrix.hugo }}
+          # extended: true
+
+      - name: Build with Hugo ${{ matrix.hugo }}
+        working-directory: exampleSite
+        run: HUGO_THEME="Mainroad" hugo --themesDir ../.. --i18n-warnings -v
