@@ -35,7 +35,7 @@ jobs:
     strategy:
       matrix:
         hugo:
-          - '0.48.0' # min version
+          - '0.48' # min version
           - '0.58.2' # https://github.com/gohugoio/hugoThemes/issues/682
           - '0.59.1' # last major version without goldmark renderer
           - '0.60.1' # first major version with goldmark renderer
