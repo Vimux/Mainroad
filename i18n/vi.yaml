@@ -28,7 +28,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "Về {{ .Count }}"
+  translation: "Về {{ .Name }}"
 
 # Sidebar
 - id: sidebar_warning

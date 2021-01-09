@@ -28,7 +28,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "关于 {{ .Count }}"
+  translation: "关于 {{ .Name }}"
 
 # Sidebar
 - id: sidebar_warning
