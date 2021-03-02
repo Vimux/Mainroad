@@ -19,6 +19,18 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
+  
+  # support for utteranc.es
+  # for detail, please refer to: https://utteranc.es/?installation_id=15052636&setup_action=install
+  utteranc_comment = true     # to enable utteranc.es comment plugin                
+  utteranc_repo = ""          # "owner/repo"
+  utteranc_src = "https://utteranc.es/client.js"       
+  utteranc_issue_term = "pathname"                     
+  utteranc_label = "utteranc-comment"                  
+  utteranc_theme = "github-light"                      
+  utteranc_cross_origin = "anonymous"                  
+
+  
 
 [Params.logo]
   subtitle = "Just another site" # Logo subtitle
