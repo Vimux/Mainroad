@@ -5,4 +5,3 @@
 {{ else if and .Site.Params.utteranc_comment .Site.Params.utteranc_repo (index .Params "comments" | default "true") (not .Site.IsServer) }}
 <script src="{{ $.Site.Params.utteranc_src | default "https://utteranc.es/client.js" }}" repo="{{ $.Site.Params.utteranc_repo }}" issue-term="{{ $.Site.Params.utteranc_issue_term | default "pathname" }}" {{ with .Site.Params.utteranc_label }} label="{{ . }}" {{ end }} theme="{{ $.Site.Params.utteranc_theme | default "github-light" }}" crossorigin="{{ $.Site.Params.utteranc_cross_origin | default "anonymous" }}" async></script>
 {{ end }}
-
