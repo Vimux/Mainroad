@@ -64,8 +64,9 @@
 # Footer
 - id: footer_credits
   translation:
-    "<a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a>   \
-    және <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> тақырыптар көмегімен жасалған."
+    "<a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> және \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> тақырыптар \
+    көмегімен жасалған."
 
 # 404
 - id: 404_title
