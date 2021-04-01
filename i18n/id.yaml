@@ -90,4 +90,4 @@
 - id: noposts_warning_tip
   translation:
     "<b>Tip:</b> Kamu dapat menampilkan sebanyak mungkin bagian dengan parameter konfigurasi \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \ ."
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
