@@ -84,8 +84,8 @@
 
 - id: noposts_warning_description
   translation:
-    "Setelah kamu memposting sesuatu ke dalam folder manapun di folder <b>content</b>, Postingan itu akan muncul disini. Hanya satu \
-    bagian (dengan postingan terbanyak) yang akan ditampilkan di beranda secara default."
+    "Setelah kamu memposting sesuatu ke dalam folder manapun di folder <b>content</b>, Postingan itu akan muncul \
+    disini. Hanya satu bagian (dengan postingan terbanyak) yang akan ditampilkan di beranda secara default."
 
 - id: noposts_warning_tip
   translation:
