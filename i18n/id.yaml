@@ -1,0 +1,93 @@
+# General
+- id: read_more
+  translation: "Selanjutnya…"
+
+- id: menu_label
+  translation: "Menu"
+
+- id: sidemenu_title
+  translation: "Menu"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Terakhir Diubah"
+
+- id: meta_translations
+  translation: "Terjemahan"
+
+# Table of Contents
+- id: toc_title
+  translation: "Konten Halaman"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Sebelumnya"
+
+- id: post_nav_next
+  translation: "Selanjutnya"
+
+# Authorbox
+- id: authorbox_name
+  translation: "Tentang {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "PERINGATAN"
+
+- id: sidebar_recommendation
+  translation: "Aktifkan setidaknya satu widget sidebar."
+
+# Search widget
+- id: search_placeholder
+  translation: "CARI…"
+
+# Languages widget
+- id: languages_title
+  translation: "Bahasa"
+
+# Categories widget
+- id: categories_title
+  translation: "Kategori"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Postingan Terbaru"
+
+# Social widget
+- id: social_title
+  translation: "Sosmed"
+
+# Tags List widget
+- id: tags_title
+  translation: "Tag"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Dibuat dengan <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> dan Tema \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. Halaman tidak ditemukan"
+
+- id: 404_text
+  translation:
+    "Halaman yang Kamu cari tampaknya telah dipindahkan, dihapus atau tidak ada. Silakan gunakan pencarian atau pergi ke"
+
+- id: 404_linktext
+  translation: "Beranda"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Kamu belum memiliki postingan apa pun!"
+
+- id: noposts_warning_description
+  translation:
+    "Setelah kamu memposting sesuatu ke dalam folder manapun di folder <b>content</b>, Postingan itu akan muncul \
+    disini. Hanya satu bagian (dengan postingan terbanyak) yang akan ditampilkan di beranda secara default."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Tip:</b> Kamu dapat menampilkan sebanyak mungkin bagian dengan parameter konfigurasi \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
