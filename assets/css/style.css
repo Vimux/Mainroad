@@ -1077,6 +1077,16 @@ textarea {
 	padding-top: 0;
 }
 
+.widget__counter--bubble {
+	display: inline-block;
+	padding: 0 6px;
+	font-size: .75rem;
+	color: #666;
+	text-align: center;
+	background: #ebebeb;
+	border-radius: 2em;
+}
+
 /* Search widget */
 .widget-search__form {
 	display: block;
