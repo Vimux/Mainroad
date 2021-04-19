@@ -16,6 +16,9 @@
 	{{- if .Site.Params.twitter_cards }}
 		{{ template "_internal/twitter_cards.html" . }}
 	{{- end }}
+	{{- if not .Site.Params.floc_optin }}
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+	{{- end }}
 
 	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
 	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
