@@ -61,6 +61,9 @@
 - id: tags_title
   translation: "Tags"
 
+- id: all_tags
+  translation: "All tags"
+
 # Footer
 - id: footer_credits
   translation:
