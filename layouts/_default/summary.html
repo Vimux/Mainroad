@@ -1,11 +1,5 @@
 <article class="list__item post">
-	{{- if .Params.thumbnail }}
-	<figure class="list__thumbnail">
-		<a href="{{ .Permalink }}">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
-		</a>
-	</figure>
-	{{- end }}
+	{{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
 	<header class="list__header">
 		<h2 class="list__title post__title">
 			<a href="{{ .RelPermalink }}" rel="bookmark">
