@@ -101,6 +101,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   title = "Mainroad" # Logo title, otherwise will use site title
   subtitle = "Just another site" # Logo subtitle
 
+[Params.thumbnail]
+  visibility = ["list", "post"] # Control thumbnail visibility
+
 [Params.sidebar]
   home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
@@ -194,6 +197,28 @@ options in your site config:
 Please be noted that the logo image will display at a maximum width of 128 pixels and a maximum height of 128 pixels
 when you use text and image simultaneously. When the only logo image is active, it will display at a maximum height of
 256 pixels. Ideally, your image should be SVG.
+
+### Thumbnail visibility
+
+By default, a thumbnail image has shown for a list and single pages simultaneously. In some cases, you may want to show
+a thumbnail for list-like pages only and hide it on single pages (or vice versa). Control global thumbnail visibility
+via config.
+
+```toml
+[Params.thumbnail]
+  visibility = ["list"]
+```
+
+Besides global configuration, you can change thumbnail visibility individually with extended thumbnail notation via
+front matter.
+
+```yaml
+thumbnail:
+  src: "img/placeholder.jpg"
+  visibility:
+    - list
+    - post
+```
 
 ### Sidebar
 
