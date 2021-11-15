@@ -138,7 +138,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [[Params.widgets.social.custom]]
   title = "My Home Page"
-  url = "http://example.com"
+  url = "https://example.com"
 ```
 
 A good idea is not to copy all these settings without understanding how it works. Use only those parameters that you
