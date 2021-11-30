@@ -40,6 +40,7 @@ jobs:
           - '0.59.1' # last major version without goldmark renderer
           - '0.60.1' # first major version with goldmark renderer
           - '0.76.5' # https://github.com/gohugoio/hugo/issues/7822
+          - '0.86.1' # https://github.com/gohugoio/hugo/issues/9150
           - 'latest'
       fail-fast: true
 
