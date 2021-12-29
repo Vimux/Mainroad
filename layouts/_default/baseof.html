@@ -46,7 +46,7 @@
 </head>
 <body class="body">
 	<div class="container container--outer">
-		{{ partial "header" . }}
+		{{ block "header" . }}{{ partial "header.html" . }}{{ end }}
 		<div class="wrapper flex">
 			<div class="primary">
 			{{ block "main" . }}
@@ -57,9 +57,9 @@
 				{{ end }}
 			{{ end }}
 			</div>
-			{{ partial "sidebar.html" . }}
+			{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
 		</div>
-		{{ partial "footer" . }}
+		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 	</div>
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
 {{ range .Site.Params.customJS -}}
