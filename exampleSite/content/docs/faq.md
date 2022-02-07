@@ -1,29 +1,29 @@
 ---
-Title: Frequently asked questions (FAQ)
-Description: Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere in
+title: Frequently asked questions (FAQ)
+description: Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere in
   the documentation.
-Date: 2022-01-24T14:00:00.000Z
-Authorbox: False
-Sidebar: False
-Pager: False
-Weight: 3
-Menu:
+date: 2022-01-24T14:00:00.000Z
+authorbox: false
+sidebar: false
+pager: false
+weight: 3
+menu:
   main:
     name: FAQ
 ---
 
-Browse this FAQ page to find a new collection of answers to frequently asked questions that have not been covered elsewhere
+Browse this FAQ page to find a collection of answers to frequently asked questions that have not been covered elsewhere
 in the documentation.
 
 <!--more-->
 
 The answers have been categorized into two groups:
-1) Answers to general questions without any lines of code.
-2) Answers to technical questions with code snippets, step-by-step instructions, etc.
+>1. Answers to general questions without any lines of code.
+>2. Answers to technical questions with code snippets, step-by-step instructions, etc.
 
 ## General questions
 
-### Do I need to have some prior experience before proceed with Mainroad theme?
+### Do I need to have some prior experience before proceeding with the Mainroad theme?
 
 **Yes.** We expect that you already have prior experience with Hugo, at least.
 [Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is for intermediate users and
@@ -73,7 +73,7 @@ There is no way to do this on the fly with Hugo, but you may use two one-liners 
 1. Replace the color in variable to your preferred at the beginning of both scripts. Beware, you should use full
 six-digit Hex triplet notation (e.g., `#E22D30`) to make it work properly.
 
-Go to the root of your project directory in the terminal and execute this two commands accordingly.
+Go to the root of your project directory in the terminal and execute these two commands accordingly.
 
 ```
 a=#E22D30;a=\\x${a:5:2}\\x${a:3:2}\\x${a:1:2};for i in 98 274 578;do printf $a|dd of=static/favicon.ico bs=1 seek=$i conv=notrunc;done
