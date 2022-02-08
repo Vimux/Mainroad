@@ -18,8 +18,12 @@ in the documentation.
 <!--more-->
 
 The answers have been categorized into two groups:
->1. Answers to general questions without any lines of code.
->2. Answers to technical questions with code snippets, step-by-step instructions, etc.
+
+
+1. Answers to general questions without any lines of code.
+
+
+2. Answers to technical questions with code snippets, step-by-step instructions, etc.
 
 ## General questions
 
