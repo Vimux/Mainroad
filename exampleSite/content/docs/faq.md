@@ -17,12 +17,14 @@ in the documentation.
 
 <!--more-->
 
-The answers have been categorized into two groups. Those are answers to general questions without any lines of code, and
-those are answers to technical questions with code snippets, step-by-step instructions, etc.
+The answers have been categorized into two groups:
+
+1. Answers to general questions without any lines of code.
+2. Answers to technical questions with code snippets, step-by-step instructions, etc.
 
 ## General questions
 
-### Do I need to have some prior experience before proceed with Mainroad theme?
+### Do I need to have some prior experience before proceeding with the Mainroad theme?
 
 **Yes.** We expect that you already have prior experience with Hugo, at least.
 [Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is for intermediate users and
@@ -72,7 +74,7 @@ There is no way to do this on the fly with Hugo, but you may use two one-liners 
 1. Replace the color in variable to your preferred at the beginning of both scripts. Beware, you should use full
 six-digit Hex triplet notation (e.g., `#E22D30`) to make it work properly.
 
-Go to the root of your project directory in the terminal and execute this two commands accordingly.
+Go to the root of your project directory in the terminal and execute these two commands accordingly.
 
 ```
 a=#E22D30;a=\\x${a:5:2}\\x${a:3:2}\\x${a:1:2};for i in 98 274 578;do printf $a|dd of=static/favicon.ico bs=1 seek=$i conv=notrunc;done
