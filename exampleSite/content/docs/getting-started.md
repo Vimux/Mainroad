@@ -13,9 +13,9 @@ weight: 1
 menu: main
 ---
 
-Welcome to the Mainroad theme documentation. This quick start guide covers Mainroad theme installation and minimal configuration and is intended for intermediate
-to advanced users. To understand this guide, you need to be familiar with the [Hugo](https://gohugo.io/)
-static site generator.
+Welcome to the Mainroad theme documentation. This quick start guide covers Mainroad theme installation and minimal 
+configuration and is intended for intermediate to advanced users. To understand this guide, you need to be familiar 
+with the [Hugo](https://gohugo.io/) static site generator.
 
 <!--more-->
 
@@ -23,7 +23,8 @@ static site generator.
 
 Before installing the **Mainroad** theme, make sure that you've 
 [installed **Hugo** (version 0.48 or later)](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
-[created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). To learn how to install Hugo, visit [Hugo Documentation](https://gohugo.io/getting-started/installing/).
+[created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). To learn how to install 
+Hugo, visit [Hugo Documentation](https://gohugo.io/getting-started/installing/).
 
 There are a few ways to install a theme in Hugo. This can be done via git submodule, git clone, Hugo modules, or
 by downloading the archive and manually copying the files. The three recommended
@@ -33,9 +34,9 @@ installation options are described below.
 
 *Additional requirements: git*
 
-If you don't plan to make significant changes to the theme but still want to track and update it, you can add it as a [git
-submodule](https://git-scm.com/docs/git-submodule) by running the following command from the root directory of your Hugo
-site:
+If you don't plan to make significant changes to the theme but still want to track and update it, you can add it as a 
+[git submodule](https://git-scm.com/docs/git-submodule) by running the following command from the root directory of 
+your Hugo site:
 
 ```sh
 git submodule add https://github.com/vimux/mainroad.git themes/mainroad
@@ -77,9 +78,10 @@ To check it out, build the site via `hugo` command or make it available on a loc
 
 **Do not copy the [example config](https://github.com/vimux/mainroad#configtoml-example) as-is.**
 The Mainroad theme contains required defaults, so you don't need to add all of the configuration parameters to run the
-theme for the first time. Before adding any theme-specific parameters, make sure to edit the `theme` param inside the config file
-and check that the theme works.
+theme for the first time. Before adding any theme-specific parameters, make sure to edit the `theme` param inside the 
+config file and check that the theme works.
 
-To view our example configuration, visit [demo config](https://github.com/vimux/mainroad/blob/master/exampleSite/config.toml). For information about common customization settings, see [Customization](https://github.com/Vimux/Mainroad/blob/master/exampleSite/content/docs/customization.md). 
+To view our example configuration, visit [demo config](https://github.com/vimux/mainroad/blob/master/exampleSite/config.toml). 
+For information about common customization settings, see [Customization](https://github.com/Vimux/Mainroad/blob/master/exampleSite/content/docs/customization.md). 
 
 [Edit this page on GitHub](https://github.com/vimux/mainroad/blob/master/exampleSite/content/docs/getting-started.md)
