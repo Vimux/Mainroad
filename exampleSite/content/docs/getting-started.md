@@ -27,8 +27,7 @@ Before installing the **Mainroad** theme, make sure that you've
 Hugo, visit [Hugo Documentation](https://gohugo.io/getting-started/installing/).
 
 There are a few ways to install a theme in Hugo. This can be done via git submodule, git clone, Hugo modules, or
-by downloading the archive and manually copying the files. The three recommended
-installation options are described below.
+by downloading the archive and manually copying the files. Three installation options are described below.
 
 ### Option A: `git submodule`
 
@@ -76,12 +75,12 @@ To check it out, build the site via `hugo` command or make it available on a loc
 
 ## Minimal configuration
 
-**Do not copy the [example config](https://github.com/vimux/mainroad#configtoml-example) as-is.**
-The Mainroad theme contains required defaults, so you don't need to add all of the configuration parameters to run the
-theme for the first time. Before adding any theme-specific parameters, make sure to edit the `theme` param inside the 
-config file and check that the theme works.
+**Do not copy the [example config](https://github.com/vimux/mainroad#configtoml-example) as-is.** 
+Use only the parameters that you need. The Mainroad theme contains required defaults, so you don't need to add all of 
+the configuration parameters to run the theme for the first time. Before adding any theme-specific parameters, make 
+sure to edit the `theme` param inside the config file and check that the theme works.
 
-To view our example configuration, visit [demo config](https://github.com/vimux/mainroad/blob/master/exampleSite/config.toml). 
-For information about common customization settings, see [Customization](https://github.com/Vimux/Mainroad/blob/master/exampleSite/content/docs/customization.md). 
+For information about common customization settings, see [Customization page]({{< relref "/docs/customization.md" >}} "Mainroad theme customization"). 
+To view our example configuration, visit [demo config](https://github.com/vimux/mainroad/blob/master/exampleSite/config.toml).
 
 [Edit this page on GitHub](https://github.com/vimux/mainroad/blob/master/exampleSite/content/docs/getting-started.md)
