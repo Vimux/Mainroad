@@ -74,8 +74,8 @@ To check it out, build the site via `hugo` command or make it available on a loc
 
 ## Minimal configuration
 
-**Do not copy the [example config](https://github.com/vimux/mainroad#configtoml-example) as-is.**
-The Mainroad theme contains required defaults, so you don't need to add all of the configuration parameters to run the
+**Do not copy the [example config](https://github.com/vimux/mainroad#configtoml-example) as-is.** 
+Use only the parameters that you need. The Mainroad theme contains required defaults, so you don't need to add all of the configuration parameters to run the
 theme for the first time. Before adding any theme-specific parameters, make sure to edit the `theme` param inside the config file
 and check that the theme works.
 
