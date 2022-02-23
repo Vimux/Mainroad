@@ -26,8 +26,7 @@ Before installing the **Mainroad** theme, make sure that you've
 [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). To learn how to install Hugo, visit [Hugo Documentation](https://gohugo.io/getting-started/installing/).
 
 There are a few ways to install a theme in Hugo. This can be done via git submodule, git clone, Hugo modules, or
-by downloading the archive and manually copying the files. The three recommended
-installation options are described below.
+by downloading the archive and manually copying the files. Three installation options are described below.
 
 ### Option A: `git submodule`
 
