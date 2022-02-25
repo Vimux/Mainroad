@@ -28,7 +28,7 @@ The answers have been categorized into two groups:
 
 **Yes.** You'll need to be familiar with Hugo before proceeding.
 [Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is intended for intermediate to 
-advanced users anddevelopers. Our documentation may still be helpful to users with minimal experience, but are not 
+advanced users and developers. Our documentation may still be helpful to users with minimal experience, but are not 
 comprehensive.
 
 ### Do I need to use the extended version of Hugo?
