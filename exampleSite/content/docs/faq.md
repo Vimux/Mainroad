@@ -27,8 +27,8 @@ The answers have been categorized into two groups:
 ### Do I need to have prior experience before proceeding with the Mainroad theme?
 
 **Yes.** You'll need to be familiar with Hugo before proceeding.
-[Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is intended for intermediate to 
-advanced users and developers. Our documentation may still be helpful to users with minimal experience, but are not 
+[Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is intended for intermediate to
+advanced users and developers. Our documentation may still be helpful to users with minimal experience, but are not
 comprehensive.
 
 ### Do I need to use the extended version of Hugo?
@@ -40,7 +40,7 @@ Hugo is not required (but applicable).
 
 **Configuration:**
 
-* See [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings) 
+* See [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings)
 for the full list of Hugo-defined variables with their default values.
 * See [Mainroad config.toml example](https://github.com/Vimux/Mainroad#configtoml-example) for the full list of
 Mainroad-specific variables.
@@ -55,12 +55,12 @@ Mainroad-specific Front Matter variables.
 ### What if I have more questions? Should I create an issue?
 
 **We don't provide personal technical support.** As stated in our
-[contributing guidelines](https://github.com/Vimux/Mainroad/blob/master/CONTRIBUTING.md), please do not use the issue 
-tracker for personal support. This includes reports like: “How do I do this", “Everything is broken; help me”, “I 
-changed something, and it doesn't work anymore”, “It's not a personal issue, but I just want to ask how X or Y works”, 
-“I forked your theme, then something broke; fix this immediately”, and so on. 
+[contributing guidelines](https://github.com/Vimux/Mainroad/blob/master/CONTRIBUTING.md), please do not use the issue
+tracker for personal support. This includes reports like: “How do I do this", “Everything is broken; help me”, “I
+changed something, and it doesn't work anymore”, “It's not a personal issue, but I just want to ask how X or Y works”,
+“I forked your theme, then something broke; fix this immediately”, and so on.
 
-**The issue tracker should only be used for bug reports, feature requests, and discussions that comply with our 
+**The issue tracker should only be used for bug reports, feature requests, and discussions that comply with our
 contributing rules**. All other issues will be closed and marked as invalid.
 
 ## Technical questions
@@ -72,7 +72,7 @@ There is no way to do this on the fly with Hugo, but you can use the one-liners 
 1. Copy:
     * `./themes/mainroad/favicon.ico` to `./static/favicon.ico`
     * `./themes/mainroad/apple-touch-icon.png` to `./static/apple-touch-icon.png`
-1. At the beginning of each script, replace the color in the variable with your preferred color. You must use 
+1. At the beginning of each script, replace the color in the variable with your preferred color. You must use
 six-digit hex triplet notation (e.g., `#E22D30`) to make it work properly.
 
 Go to the root of your project directory in the terminal and execute these two commands accordingly.
