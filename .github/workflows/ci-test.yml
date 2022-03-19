@@ -60,7 +60,7 @@ jobs:
         working-directory: exampleSite
         run: |
           function ver { printf "%03d%03d%03d" $(echo "$1" | tr '.' ' '); }
-          HUGO_VERSION=$(hugo version | grep -Eo '[0-9]\.[0-9]+\.[0-9]+')
+          HUGO_VERSION=$(hugo version | grep -Eo '[0-9]+\.[0-9]+((\.[0-9]+)?)')
           # The option changed in 0.93.0: https://github.com/gohugoio/hugo/releases/tag/v0.93.0
           I18N_OPT=$([ $(ver $HUGO_VERSION) -lt $(ver 0.93.0) ] && echo "--i18n-warnings" || echo "--printI18nWarnings")
           HUGO_THEME="Mainroad" hugo --themesDir ../.. $I18N_OPT -v
