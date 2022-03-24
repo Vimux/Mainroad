@@ -70,8 +70,8 @@ contributing rules**. All other issues will be closed and marked as invalid.
 There is no way to do this on the fly with Hugo, but you can use the one-liners below with some preparations:
 
 1. Copy:
-    * `./themes/mainroad/favicon.ico` to `./static/favicon.ico`
-    * `./themes/mainroad/apple-touch-icon.png` to `./static/apple-touch-icon.png`
+    * `./themes/mainroad/static/favicon.ico` to `./static/favicon.ico`
+    * `./themes/mainroad/static/apple-touch-icon.png` to `./static/apple-touch-icon.png`
 1. At the beginning of each script, replace the color in the variable with your preferred color. You must use
 six-digit hex triplet notation (e.g., `#E22D30`) to make it work properly.
 
