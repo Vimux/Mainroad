@@ -128,7 +128,7 @@ widgets:
 
 Full list of available default widgets:
 
-* `search`, `ddg-search`, `recent`, `categories`, `taglist`, `social`, `languages`
+* `search`, `ddg-search`, `recent`, `categories`, `taglist`, `social`, `languages`, `image`
 
 ---
 
@@ -140,6 +140,7 @@ sections in the example below.
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+  img_src = "/images/example.png"
 ```
 
 ```toml
