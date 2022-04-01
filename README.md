@@ -112,12 +112,14 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
   # alternatively "ddg-search" can be used, to search via DuckDuckGo
-  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages", "image"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+  img_src = "/images/example.png"
+  img_alt = "alt text"
 
 [Params.widgets.social]
   # Enable parts of social widget
