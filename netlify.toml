@@ -1,0 +1,6 @@
+# Hugo build configuration for Netlify
+# (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+
+[build.environment]
+HUGO_VERSION = "0.96.0"
+GO_VERSION = "1.18"

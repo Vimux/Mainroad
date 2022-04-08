@@ -26,12 +26,28 @@ Before installing the **Mainroad** theme, make sure that you've
 [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). To learn how to install
 Hugo, visit [Hugo Documentation](https://gohugo.io/getting-started/installing/).
 
-There are a few ways to install a theme in Hugo. This can be done via git submodule, git clone, Hugo modules, or
-by downloading the archive and manually copying the files. Three installation options are described below.
+There are a few ways to install a theme in Hugo. This can be done via Hugo module, git submodule, git clone, or
+by downloading the archive and manually copying the files. All four installation options are described below.
 
-### Option A: `git submodule`
+### Option A: `Hugo module`
 
-*Additional requirements: git*
+*Additional requirements: git, go*
+
+Run this [hugo mod init](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module) command from the root of your Hugo site:
+
+```sh
+hugo mod init github.com/me/my-new-site
+```
+
+Next declare the Mainroad theme module as a dependency for your site:
+
+```sh
+hugo mod get github.com/Vimux/Mainroad
+```
+
+### Option B: `git submodule`
+
+*Additional requirement: git*
 
 If you don't plan to make significant changes to the theme but still want to track and update it, you can add it as a
 [git submodule](https://git-scm.com/docs/git-submodule) by running the following command from the root directory of
@@ -45,9 +61,9 @@ git submodule add https://github.com/vimux/mainroad.git themes/mainroad
 [Netlify expects git submodule](https://docs.netlify.com/configure-builds/common-configurations/hugo/#hugo-themes)
 instead of git clone.
 
-### Option B: `git clone`
+### Option C: `git clone`
 
-*Additional requirements: git*
+*Additional requirement: git*
 
 Run this [git clone](https://git-scm.com/docs/git-clone) command from the root of your Hugo site:
 
@@ -55,7 +71,7 @@ Run this [git clone](https://git-scm.com/docs/git-clone) command from the root o
 git clone https://github.com/vimux/mainroad.git themes/mainroad
 ```
 
-### Option C: Manual install
+### Option D: Manual install
 
 If you do not want to use git, you can manually
 **[download ZIP](https://github.com/vimux/mainroad/archive/master.zip)** and extract it into the `themes/mainroad`
@@ -65,7 +81,15 @@ within your Hugo site.
 
 ### Activate theme
 
-Whichever installation option you choose, don't forget to edit `theme` param of the site configuration `config.toml`:
+Depending on the option you chose, don't forget to edit `theme` param of the site configuration `config.toml` as given below:
+
+#### Option A: `Hugo module`
+
+```toml
+theme = "github.com/Vimux/Mainroad"
+```
+
+#### Options B - D
 
 ```toml
 theme = "mainroad"
