@@ -182,6 +182,19 @@ widgets: # Enable sidebar widgets in given order per page
 For more information about all available standard front matter variables, please read
 [Hugo Front Matter](https://gohugo.io/content-management/front-matter).
 
+
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+```
+<form action="https://fabform.io/f/{form-id}" method="post">
+ <label for="email">Your Email</label>
+ <input name="email" type="email">
+ <button type="submit">Submit</button> 
+</form>
+```
+
+
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the
