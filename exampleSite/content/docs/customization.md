@@ -130,6 +130,8 @@ Full list of available default widgets:
 
 * `search`, `ddg-search`, `recent`, `categories`, `taglist`, `social`, `languages`
 
+**Note**: DuckDuckGo widget (`ddg-search`) deprecated in favor of `search` widget.
+
 ---
 
 Some of our widgets respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]`
@@ -184,6 +186,41 @@ custom SVG icon needs these attributes:
 
 ```html
 <svg class="{{ with .class }}{{ . }} {{ end }} icon" width="24" height="24">...</svg>
+```
+
+### Search box widget
+
+The search box widget can refer to the results of Google, Bing, and DuckDuckGo searches. By default, Mainroad uses
+Google search if no additional configuration options are specified.
+
+To use a different search engine, first of all, check that the search widget is enabled. Then set the search parameters
+(`Site.Params.widgets.search` section) according to the data below.
+
+**Google (default)**:
+
+```toml
+[Params.widgets.search]
+  url = "https://google.com/search"
+  input.name = "sitesearch"
+  input.pre = ""
+```
+
+**DuckDuckGo**:
+
+```toml
+[Params.widgets.search]
+  url = "https://duckduckgo.com/"
+  input.name = "sites"
+  input.pre = ""
+```
+
+**Bing**:
+
+```toml
+[Params.widgets.search]
+  url = "https://www.bing.com/search"
+  input.name = "q1"
+  input.pre = "site:"
 ```
 
 ### Menus
