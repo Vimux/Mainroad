@@ -111,8 +111,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   single = false # Configure layout for single pages
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
-  # alternatively "ddg-search" can be used, to search via DuckDuckGo
-  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
@@ -140,6 +138,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [[Params.widgets.social.custom]]
   title = "My Home Page"
   url = "https://example.com"
+
+[Params.widgets.search]
+  url = "https://google.com/search"
+  input.name = "sitesearch"
+  input.pre = ""
 ```
 
 **Do not copy example config as-is**. Use only those parameters that you need.
