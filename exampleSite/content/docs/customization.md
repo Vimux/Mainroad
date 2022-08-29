@@ -223,6 +223,19 @@ To use a different search engine, first of all, check that the search widget is 
   input.pre = "site:"
 ```
 
+**Google PSE**:
+
+```toml
+[Params.widgets.search]
+  url = "/search/"
+  input.name = false
+  input.pre = ""
+```
+
+Note that Google PSE requires additional steps to work correctly.
+See [Creating a Programmable Search Engine](https://developers.google.com/custom-search/docs/tutorial/creatingcse) and
+especially our [FAQ]({{< relref "/docs/faq.md" >}} "Mainroad FAQ") for more instructions.
+
 ### Menus
 
 **Mainroad** supports multiple menus. The `main` menu is fully responsive and displayed right under the site header. The
