@@ -1,0 +1,8 @@
+{{- $src := (.Site.Params.widgets.img_src) | default false }}
+{{- $alt := (.Site.Params.widgets.img_alt) | default "" }}
+
+{{- if $src }}
+<div class="widget-image widget">
+	<img src="{{ $src }}" alt="{{ $alt }}" >
+</div>
+{{- end }}
