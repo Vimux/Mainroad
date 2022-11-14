@@ -149,6 +149,7 @@ sections in the example below.
   # Enable parts of social widget
   facebook = "username"
   twitter = "username"
+  mastodon = "example.com/@example
   instagram = "username"
   linkedin = "username"
   telegram = "username"

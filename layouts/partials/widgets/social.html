@@ -18,6 +18,14 @@
 			</a>
 		</div>
 		{{- end }}
+		{{- with .Site.Params.widgets.social.mastodon }}
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Mastodon" rel="noopener noreferrer" href="https://{{ . }}" target="_blank">
+				{{ partial "svg/mastodon.svg" (dict "class" "widget-social__link-icon") }}
+				<span>Mastodon</span>
+			</a>
+		</div>
+		{{- end }}
 		{{- with .Site.Params.widgets.social.instagram }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}" target="_blank">
