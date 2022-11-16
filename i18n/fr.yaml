@@ -28,7 +28,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "À propos {{ .Name }}"
+  translation: "À propos de {{ .Name }}"
 
 # Sidebar
 - id: sidebar_warning
@@ -84,7 +84,7 @@
 - id: noposts_warning_description
   translation:
     "Une fois que vous avez publié quelque chose dans n'importe quel sous-dossier (section) du dossier <b>content</b>, \
-    ça apparaîtra ici. par défaut, une seule section (Celle avec le plus de posts) sera affichée sur la page \
+    cela apparaîtra ici. Par défaut, une seule section (celle avec le plus de posts) sera affichée sur la page \
     principale."
 
 - id: noposts_warning_tip
