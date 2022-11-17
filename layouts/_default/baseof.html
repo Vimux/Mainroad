@@ -25,9 +25,9 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
-    {{- if .Site.Params.widgets.social.mastodon }}
-    <link rel="me" href="https://{{ .Site.Params.widgets.social.mastodon }}">
-    {{- end }}
+	{{- if .Site.Params.widgets.social.mastodon }}
+	<link rel="me" href="https://{{ .Site.Params.widgets.social.mastodon }}">
+	{{- end }}
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
