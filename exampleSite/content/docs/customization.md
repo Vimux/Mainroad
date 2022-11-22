@@ -201,8 +201,9 @@ To use a different search engine, first of all, check that the search widget is 
 ```toml
 [Params.widgets.search]
   url = "https://google.com/search"
-  input.name = "sitesearch"
-  input.pre = ""
+  [Params.widgets.search.input]
+    name = "sitesearch"
+    pre = ""
 ```
 
 **DuckDuckGo**:
@@ -210,8 +211,9 @@ To use a different search engine, first of all, check that the search widget is 
 ```toml
 [Params.widgets.search]
   url = "https://duckduckgo.com/"
-  input.name = "sites"
-  input.pre = ""
+  [Params.widgets.search.input]
+    name = "sites"
+    pre = ""
 ```
 
 **Bing**:
@@ -219,8 +221,9 @@ To use a different search engine, first of all, check that the search widget is 
 ```toml
 [Params.widgets.search]
   url = "https://www.bing.com/search"
-  input.name = "q1"
-  input.pre = "site:"
+  [Params.widgets.search.input]
+    name = "q1"
+    pre = "site:"
 ```
 
 **Google PSE**:
@@ -228,8 +231,9 @@ To use a different search engine, first of all, check that the search widget is 
 ```toml
 [Params.widgets.search]
   url = "/search/"
-  input.name = false
-  input.pre = ""
+  [Params.widgets.search.input]
+    name = false
+    pre = ""
 ```
 
 Note that Google PSE requires additional steps to work correctly.

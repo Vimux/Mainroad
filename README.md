@@ -141,8 +141,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets.search]
   url = "https://google.com/search"
-  input.name = "sitesearch"
-  input.pre = ""
+  [Params.widgets.search.input]
+    name = "sitesearch"
+    pre = ""
 ```
 
 **Do not copy example config as-is**. Use only those parameters that you need.
