@@ -134,11 +134,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   title = "Youtube"
   url = "https://youtube.com/user/username"
   icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+  rel = "noopener noreferrer" # Set to false to remove the rel attribute
 
 [[Params.widgets.social.custom]]
   title = "My Home Page"
   url = "https://example.com"
-  rel = "me" # Optional. The default is "noopener noreferrer". Set to false to remove the rel attribute
 
 [Params.widgets.search]
   url = "https://google.com/search"
