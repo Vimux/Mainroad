@@ -188,6 +188,20 @@ custom SVG icon needs these attributes:
 <svg class="{{ with .class }}{{ . }} {{ end }} icon" width="24" height="24">...</svg>
 ```
 
+You can also specify the `rel` attribute for the link. By default, the attribute value is `"noopener noreferrer"`. You can remove the attribute completely by setting its value to `false`.
+
+```toml
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "https://example.com"
+  rel = "me"
+
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+  rel = false
+```
+
 ### Search box widget
 
 The search box widget can refer to the results of Google, Bing, and DuckDuckGo searches. By default, Mainroad uses
