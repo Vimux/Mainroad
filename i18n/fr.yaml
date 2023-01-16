@@ -91,3 +91,7 @@
   translation:
     "<b>Astuce:</b> Vous pouvez afficher autant de sections que vous voulez avec le paramètre de configuration \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Basculer entre les modes sombre et clair"

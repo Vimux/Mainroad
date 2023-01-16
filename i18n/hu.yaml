@@ -93,3 +93,7 @@
     "<b>Tipp:</b> Megjeleníthet annyi szakaszt, amennyit csak akar a \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     konfigurációs paraméterrel."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Váltás a sötét és a világos mód között"

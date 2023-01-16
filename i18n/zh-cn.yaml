@@ -90,3 +90,7 @@
     "<b>提示:</b> 您可以通过 \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     参数来控制展示您想要展示的板块内容。"
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "在深色和浅色模式之间切换"

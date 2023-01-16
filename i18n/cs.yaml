@@ -92,3 +92,7 @@
     "<b>Tip:</b> Pomocí parametru \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     můžete zobrazit libovolný počet sekcí."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Přepínání mezi tmavým a světlým režimem"

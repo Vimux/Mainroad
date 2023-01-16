@@ -93,3 +93,7 @@
   translation:
     "<b>Совет:</b> Вы можете отображать сколько угодно разделов с помощью параметра конфигурации \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Переключение между темным и светлым режимом"

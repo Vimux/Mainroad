@@ -92,3 +92,7 @@
     "<b>Tipp:</b> Mit dem \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     Parameter lassen sich beliebig viele weitere Gruppen konfigurieren."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Wechseln Sie zwischen dunklem und hellem Modus"

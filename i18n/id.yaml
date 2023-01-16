@@ -91,3 +91,7 @@
   translation:
     "<b>Tip:</b> Kamu dapat menampilkan sebanyak mungkin bagian dengan parameter konfigurasi \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Beralih antara mode gelap dan terang"

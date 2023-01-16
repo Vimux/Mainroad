@@ -91,3 +91,7 @@
   translation:
     "<b>Gợi ý:</b> Bạn có thể hiện bao nhiêu phần tuỳ ý bằng tham số parameter \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Chuyển đổi giữa chế độ tối và sáng"

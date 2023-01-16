@@ -91,3 +91,7 @@
     "<b>Tip:</b> Je kunt zoveel secties laten zien als je wilt met de \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     config parameter."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Schakel tussen donkere en lichte modus"

@@ -92,3 +92,7 @@
     "<b>Tip:</b> You can show as many sections as you like with \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
     config parameter."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Switch between dark and light mode"

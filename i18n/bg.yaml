@@ -92,3 +92,7 @@
   translation:
     "<b>Tip:</b> Можеш да покажеш колкото искаш на брой секции, като ги укажеш в конфигурационния параметър \
     <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+
+# Lighting mode toggle widget
+- id: toggle_lighting
+  translation: "Превключване между тъмен и светъл режим"
