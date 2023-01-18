@@ -1,6 +1,11 @@
-{{- $logoTitle := .Site.Params.logo.title | default .Site.Title -}}
-{{- $logoSubtitle := .Site.Params.logo.subtitle | default .Site.Params.subtitle -}}
-{{- $logoImage := .Site.Params.logo.image -}}
+{{- $config := site.Params }}
+{{- $logo := $config.logo -}}
+
+{{- $logoTitle := default site.Title $logo.title -}}
+{{- $logoSubtitle := default $config.subtitle $logo.subtitle -}}
+{{- $logoImage := $logo.image -}}
+
+{{- $defaultLightingMode := $config.defaultLightingMode }}
 
 {{- if or $logoTitle $logoImage }}
 	{{/* Defined when logo is mixed (image + text) */}}
@@ -20,5 +25,8 @@
 				</div>
 			{{- end }}
 		</a>
+		{{ with $defaultLightingMode }}
+			{{ partialCached "widgets/lighting" . }}
+		{{ end }}
 	</div>
 {{- end }}
