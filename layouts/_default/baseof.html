@@ -1,23 +1,28 @@
+{{- $config := site.Params }}
 <!DOCTYPE html>
-<html class="no-js" lang="{{ .Site.Language.Lang }}">
+<html class="no-js"
+			lang="{{ site.Language.Lang }}"
+			{{ with $config.defaultLightingMode }}
+				data-mode="{{ . }}"
+			{{ end }}>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
-	{{- if .Site.Params.opengraph }}
+	<meta name="description" content="{{ if .IsHome }}{{ $config.description }}{{ else }}{{ .Params.Description }}{{ end }}">
+	{{- if $config.opengraph }}
 		{{ template "_internal/opengraph.html" . }}
 	{{- end }}
-	{{- if .Site.Params.schema }}
+	{{- if $config.schema }}
 		{{ template "_internal/schema.html" . }}
 	{{- end }}
-	{{- if .Site.Params.twitter_cards }}
+	{{- if $config.twitter_cards }}
 		{{ template "_internal/twitter_cards.html" . }}
 	{{- end }}
 
-	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
+	{{- $googleFontsLink := $config.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
 	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -27,7 +32,7 @@
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-	{{ range .Site.Params.customCSS -}}
+	{{ range $config.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{- end }}
 
@@ -61,8 +66,17 @@
 		</div>
 		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 	</div>
-<script async defer src="{{ "js/menu.js" | relURL }}"></script>
-{{ range .Site.Params.customJS -}}
+
+{{- $funcPath := "js/functions.js" }}
+{{- $functions := resources.Get $funcPath | resources.ExecuteAsTemplate $funcPath . }}
+
+{{- $mainScriptPath := "js/index.js" }}
+{{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
+
+{{- $bundle := slice $functions $main | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $bundle.Permalink }}"></script>
+
+{{ range $config.customJS -}}
 <script src="{{ . | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
