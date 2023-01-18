@@ -27,6 +27,7 @@
 	--footer-border-color: var(--dark-color-5);
 	--meta-text-color: var(--dark-color-4);
 	--mode-bg-color: var(--light-color-4);
+	--search-bg-color: var(--light-color-3);
 
 	--highlight-color: {{ default "#e22d30" $config.highlightColor }};
 	--font-primary: {{ default (`"Open Sans", Helvetica, Arial, sans-serif`) $config.fontFamilyPrimary }};
@@ -48,6 +49,7 @@
 	--footer-border-color: transparent;
 	--meta-text-color: var(--dark-color-5);
 	--mode-bg-color: var(--dark-color-3);
+	--search-bg-color: var(--dark-color-3);
 `}}
 
 :root[data-mode="dark"] {
@@ -1154,7 +1156,7 @@ textarea {
 	display: block;
 	padding: 5%;
 	margin: 0 auto;
-	background: var(--accent-bg-color);
+	background: var(--search-bg-color);
 }
 
 .widget-search__form .widget-search__submit {
