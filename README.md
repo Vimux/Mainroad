@@ -19,6 +19,7 @@
   + *Desktop: IE11+, Chrome, Firefox, Safari*
   + *Mobile: Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini*
 + Custom Google Fonts support, MathJax, Table of Contents, SVG icons and much more…
++ Dark Mode
 
 ## Installation
 
@@ -83,6 +84,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
+  defaultLightingMode = "auto" # other possible values: "dark", "light" ... if set to auto, the website will load in darkmode if the device is set to darkmode
 
   # DEPRECATED PARAMS
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
