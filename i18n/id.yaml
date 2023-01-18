@@ -95,3 +95,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Beralih antara mode gelap dan terang"
+
+# Copied to clipboard
+- id: copied
+  translation: "Disalin"

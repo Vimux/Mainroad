@@ -96,3 +96,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Қараңғы және ашық режим арасында ауысыңыз"
+
+# Copied to clipboard
+- id: copied
+  translation: "көшірілген"

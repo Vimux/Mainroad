@@ -95,3 +95,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Basculer entre les modes sombre et clair"
+
+# Copied to clipboard
+- id: copied
+  translation: "Copié"

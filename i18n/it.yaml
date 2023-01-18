@@ -96,3 +96,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Passa dalla modalità scura a quella chiara"
+
+# Copied to clipboard
+- id: copied
+  translation: "Copiato"

@@ -96,3 +96,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Přepínání mezi tmavým a světlým režimem"
+
+# Copied to clipboard
+- id: copied
+  translation: "Zkopírováno"

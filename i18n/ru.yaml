@@ -97,3 +97,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Переключение между темным и светлым режимом"
+
+# Copied to clipboard
+- id: copied
+  translation: "скопировано"

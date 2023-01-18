@@ -97,3 +97,7 @@
 # Lighting mode toggle widget
 - id: toggle_lighting
   translation: "Váltás a sötét és a világos mód között"
+
+# Copied to clipboard
+- id: copied
+  translation: "Másolva"
