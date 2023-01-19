@@ -1,3 +1,7 @@
+'use strict';
+
+const rootURL = `{{ replace (absURL "/") "//" "http://" }}`;
+
 function isObj(obj) {
   return (obj && typeof obj === 'object' && obj !== null) ? true : false;
 }
@@ -48,6 +52,13 @@ function containsClass(el, target_class) {
   }
 }
 
+function hasClasses(el) {
+  if(isObj(el)) {
+    const classes = el.classList;
+    return classes.length
+  }
+}
+
 function getSetAttribute(elem, attr, value = null) {
   if (value) {
     elem.setAttribute(attr, value);
@@ -69,6 +80,11 @@ function isTarget(element, selector) {
       actual: exact_target,
     };
   }
+}
+
+function wrapEl(el, wrapper) {
+  el.parentNode.insertBefore(wrapper, el);
+  wrapper.appendChild(el);
 }
 
 function copyToClipboard(str) {

@@ -11,6 +11,8 @@ const data = 'data-mode';
 const bank = window.localStorage;
 const doc = document.documentElement;
 const lighting_mode_toggle = elem('.light__toggle');
+const lineClass = '.line';
+const iconsPath = '{{ default "icons/" site.Params.iconsDir }}';
 
 function initializeMenu() {
 	var menuBtn = document.querySelector('.menu__btn');
@@ -88,8 +90,6 @@ function addDeepLinks() {
     Array.prototype.push.apply(headingNodes, results);
   });
 
-  console.log(tags);
-
   function sanitizeURL(url) {
     // removes any existing id on url
     const hash = '#';
@@ -133,29 +133,144 @@ function copyFeedback(parent) {
   }
 }
 
-function copyDeepLinks() {
-  let deeplink, deeplinks, newLink, parent, target;
+function copyDeepLinks(target) {
+  let deeplink, deeplinks, newLink, parent;
   deeplink = 'link';
   deeplinks = elems(`.${deeplink}`);
   if(deeplinks) {
-    document.addEventListener('click', function(event)
-    {
-      target = event.target;
-      parent = target.parentNode;
-      if (target && containsClass(target, deeplink) || containsClass(parent, deeplink)) {
-        event.preventDefault();
-        newLink = target.href != undefined ? target.href : target.parentNode.href;
-        copyToClipboard(newLink);
-        target.href != undefined ?  copyFeedback(target) : copyFeedback(target.parentNode);
-      }
-    });
+    parent = target.parentNode;
+    if (target && containsClass(target, deeplink) || containsClass(parent, deeplink)) {
+      event.preventDefault();
+      newLink = target.href != undefined ? target.href : target.parentNode.href;
+      copyToClipboard(newLink);
+      target.href != undefined ?  copyFeedback(target) : copyFeedback(target.parentNode);
+    }
   }
 }
+
+const code_action_buttons = [
+  {
+    icon: 'copy',
+    id: 'copy',
+    title: 'Copy Code',
+    show: true
+  },
+];
+
+const copy_id = 'panel_copy';
+const panel_box = 'panel_box';
+const highlight_wrap = 'highlight_wrap'
+
+function wrapOrphanedPreElements() {
+  const pres = elems('pre');
+  Array.from(pres).forEach(function(pre){
+    const parent = pre.parentNode;
+    const is_orpaned = !containsClass(parent, 'highlight');
+    if(is_orpaned) {
+      const pre_wrapper = createEl();
+      pre_wrapper.className = 'highlight';
+      const outer_wrapper = createEl();
+      outer_wrapper.className = highlight_wrap;
+      wrapEl(pre, pre_wrapper);
+      wrapEl(pre_wrapper, outer_wrapper);
+    }
+  })
+}
+
+wrapOrphanedPreElements();
+
+function codeBlocks() {
+  const marked_code_blocks = elems('code');
+  const blocks = Array.from(marked_code_blocks).filter(function(block){
+    return hasClasses(block) && !Array.from(block.classList).includes('noClass');
+  }).map(function(block){
+    return block
+  });
+  return blocks;
+}
+
+function maxHeightIsSet(elem) {
+  let max_height = elem.style.maxHeight;
+  return max_height.includes('px')
+}
+
+const blocks = codeBlocks();
+
+function actionPanel() {
+  const panel = createEl();
+  panel.className = panel_box;
+
+  code_action_buttons.forEach(function(button) {
+    // create button
+    const btn = createEl('div');
+    btn.title = button.title;
+    btn.className = `icon panel_icon panel_${button.id}`;
+    button.show ? false : pushClass(btn, panelHide);
+    // load icon inside button
+    btn.style.backgroundImage = `url(${rootURL}${iconsPath}${button.icon}.svg)`;
+    // append button on panel
+    panel.appendChild(btn);
+  });
+
+  return panel;
+}
+
+function copyCode(code_element) {
+  line_numbers = elems('.ln', code_element);
+  // remove line numbers before copying
+  if(line_numbers.length) {
+    line_numbers.forEach(function(line){
+      line.remove();
+    });
+  }
+  // copy code
+  copyToClipboard(code_element.textContent);
+}
+
+(function codeActions(){
+  const blocks = codeBlocks();
+
+  const highlight_wrap_id = highlight_wrap;
+  blocks.forEach(function(block){
+    // disable line numbers if disabled globally
+    const highlightElement = block.parentNode.parentNode;
+    // wrap code block in a div
+    const highlight_wrapper = createEl();
+    highlight_wrapper.className = highlight_wrap_id;
+    wrapEl(highlightElement, highlight_wrapper);
+
+    const panel = actionPanel();
+    // append buttons
+    highlight_wrapper.appendChild(panel);
+  });
+})();
+
+function copyCodeBlockContents(target){
+  // copy code block
+  const is_copy_icon = isTarget(target, `.${copy_id}`);
+  const highlight_wrap_id = highlight_wrap;
+
+  if(is_copy_icon.exact) {
+    pushClass(target, active);
+
+    setTimeout(function() {
+      deleteClass(target, active)
+    }, 1000)
+
+    const code_element = target.closest(`.${highlight_wrap_id}`).firstElementChild.firstElementChild;
+
+    copyCode(code_element.cloneNode(true));
+  }
+}
+
+(function highlightCommands() {
+  const blocks = codeBlocks();
+  blocks.forEach(block => block.dataset.lang === 'sh' ? pushClass(block.parentNode, 'shell') : false);
+})();
 
 window.addEventListener('load', () => {
   initializeMenu();
   addDeepLinks();
-  copyDeepLinks();
 
   doc.addEventListener('click', function(event) {
     let target = event.target;
@@ -163,5 +278,8 @@ window.addEventListener('load', () => {
     if(is_mode_toggle.valid) {
       setUserColorMode(true);
     }
+
+    copyCodeBlockContents(target);
+    copyDeepLinks(target);
   });
 });
