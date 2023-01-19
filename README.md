@@ -85,6 +85,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
   defaultLightingMode = "auto" # other possible values: "dark", "light" ... if set to auto, the website will load in darkmode if the device is set to darkmode
+  iconsDir = "img/" #defaults to "icons/"
 
   # DEPRECATED PARAMS
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle

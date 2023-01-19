@@ -21,6 +21,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   post_meta = ["date", "categories"] # Order of post meta information
   mainSections = ["post", "docs"]
   defaultLightingMode = "auto" # other possible values: "dark", "light"
+  iconsDir = "img/" #defaults to "icons/"
 
 [Params.logo]
   subtitle = "Just another site" # Logo subtitle
