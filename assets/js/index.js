@@ -265,7 +265,11 @@ function copyCodeBlockContents(target){
 
 (function highlightCommands() {
   const blocks = codeBlocks();
-  blocks.forEach(block => block.dataset.lang === 'sh' ? pushClass(block.parentNode, 'shell') : false);
+  const shell_based = ['sh', 'shell', 'zsh', 'bash'];
+  blocks.forEach(block => {
+    const is_shell_based = shell_based.includes(block.dataset.lang);
+    is_shell_based ? pushClass(block.parentNode, 'shell') : false;
+  });
 })();
 
 window.addEventListener('load', () => {
