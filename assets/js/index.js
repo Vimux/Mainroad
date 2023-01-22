@@ -216,15 +216,23 @@ function actionPanel() {
 }
 
 function copyCode(code_element) {
-  line_numbers = elems('.ln', code_element);
+  const line_numbers = elems('.ln', code_element);
   // remove line numbers before copying
-  if(line_numbers.length) {
-    line_numbers.forEach(function(line){
-      line.remove();
-    });
-  }
+  line_numbers.length ? line_numbers.forEach(line => line.remove()) : false;
+
+  // remove leading '$' from all shell snippets
+  code_element = code_element.cloneNode(true);
+  const lines = elems('span', code_element);
+  lines.forEach(line => {
+    const text = line.textContent.trim(' ');
+    if(text.indexOf('$') === 0) {
+      line.textContent = line.textContent.replace('$ ', '');
+    }
+  })
+
+  const snippet = code_element.textContent;
   // copy code
-  copyToClipboard(code_element.textContent);
+  copyToClipboard(snippet);
 }
 
 (function codeActions(){
@@ -268,7 +276,15 @@ function copyCodeBlockContents(target){
   const shell_based = ['sh', 'shell', 'zsh', 'bash'];
   blocks.forEach(block => {
     const is_shell_based = shell_based.includes(block.dataset.lang);
-    is_shell_based ? pushClass(block.parentNode, 'shell') : false;
+    if(is_shell_based) {
+      const lines = elems('span', block);
+      Array.from(lines).forEach(line => {
+        let line_contents = line.textContent.trim(' ');
+        if(line_contents.indexOf('$') !== 0) {
+          pushClass(line.lastElementChild, 'shell');
+        }
+      });
+    }
   });
 })();
 
