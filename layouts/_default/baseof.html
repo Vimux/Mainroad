@@ -30,11 +30,7 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
-	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-	{{ range $config.customCSS -}}
-	<link rel="stylesheet" href="{{ . | relURL }}">
-	{{- end }}
+  {{ partialCached "functions/getStyles" . }}
 
 	{{- with .OutputFormats.Get "rss" }}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

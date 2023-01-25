@@ -1,0 +1,8 @@
+{{ $variables := resources.Get "css/variables.css" | resources.ExecuteAsTemplate "css/variables.css" . -}}
+{{ $syntax := resources.Get "css/syntax.css" | resources.ExecuteAsTemplate "css/syntax.css" . -}}
+{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+{{ $style =  slice $variables $style $syntax | resources.Concat "js/main.css" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ range site.Params.customCSS -}}
+  <link rel="stylesheet" href="{{ . | relURL }}">
+{{- end }}
