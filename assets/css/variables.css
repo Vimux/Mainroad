@@ -1,0 +1,99 @@
+{{- $config := site.Params.style.vars -}}
+
+:root {
+	--light-color: #fff;
+	--light-color-2: #f5f5f5;
+	--light-color-3: #f7f7f7;
+	--light-color-4: #ebebeb;
+	--dark-color: #000;
+	--dark-color-1: #1a1a1a;
+	--dark-color-2: #2a2a2a;
+	--dark-color-3: #333;
+	--dark-color-4: #666;
+	--dark-color-5: #999;
+	--underline-color: #dadada;
+	--warning-color: #ddd;
+
+	--body-text-color: var(--dark-color);
+	--body-bg-color: var(--light-color-3);
+	--content-bg-color: var(--light-color);
+	--content-text-color: var(--dark-color);
+	--pre-bg-color: var(--light-color-2);
+	--button-text-color: var(--light-color);
+	--button-bg-color: var(--dark-color);
+	--border-color: var(--light-color-4);
+	--accent-bg-color: var(--dark-color-2);
+	--footer-text-color: var(--dark-color-5);
+	--footer-border-color: var(--dark-color-5);
+	--meta-text-color: var(--dark-color-4);
+	--mode-bg-color: var(--light-color-4);
+	--search-bg-color: var(--light-color-3);
+
+  --syntax-color-1: #008800;
+  --syntax-color-2: #282a36;
+  --syntax-color-3: #e2e4e5;
+  --syntax-color-4:  #ff5c57;
+  --syntax-color-5: #dd2200;
+  --syntax-color-6: #ff9f43;
+  --syntax-color-7: #7f7f7f;
+  --syntax-color-8: #78787e;
+  --syntax-color-9: #57c7ff;
+  --keyword-type-color: #9aedfe;
+  --line-highlight-color: #ffffcc;
+  --name-class-color: #f3f99d;
+  --generic-output-color: #43454f;
+
+	--ease: ease;
+
+	--highlight-color: {{ default "#e22d30" $config.highlightColor }};
+	--font-primary: {{ default (`"Open Sans", Helvetica, Arial, sans-serif`) $config.fontFamilyPrimary }};
+	--font-secondary: {{ default (`SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`) $config.fontFamilySecondary }};
+}
+
+{{- $darkModeStyles := `
+	--body-bg-color: var(--dark-color-1);
+	--body-text-color: var(--light-color);
+	--content-bg-color: var(--dark-color-2);
+	--content-text-color: var(--light-color-3);
+	--pre-bg-color: var(--body-bg-color);
+	--border-color: rgb(63, 65, 68);
+	--border-color-2: rgb(44, 45, 45);
+	--button-text-color: var(--light-color-3);
+	--button-bg-color: transparent;
+	--underline-color: var(--border-color);
+	--accent-bg-color: var(--dark-color-3);
+	--footer-border-color: transparent;
+	--meta-text-color: var(--dark-color-5);
+	--mode-bg-color: var(--dark-color-3);
+	--search-bg-color: var(--dark-color-3);
+
+  --syntax-color-1: #5af78e;
+	--syntax-color-5: #ff6ac1;
+`}}
+
+:root[data-mode="dark"] {
+	{{ $darkModeStyles }}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root[data-mode="auto"]:not([data-mode="light"]) {
+		{{ $darkModeStyles }}
+	}
+}
+
+/* unused color options */
+/* --syntax-color-1: #ffffff;
+--syntax-color-2: #fff0f0;
+--syntax-color-4: #aa0000;
+--syntax-color-5: #008800;
+--syntax-color-6: #0000dd;
+--syntax-color-7: #7f7f7f;
+--syntax-color-8: #888888;
+--syntax-color-9: #dd2200;
+--syntax-color-10: #22bb22;
+--syntax-color-11: #a61717;
+--syntax-color-12: #336699;
+--syntax-color-13: #3333bb;
+--syntax-color-14: #dd7700;
+--syntax-color-15: #aa6600;
+--syntax-color-16: #bb0066; */
