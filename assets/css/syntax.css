@@ -1,0 +1,170 @@
+.highlight .lnlinks {
+  outline: none;
+  text-decoration: none;
+  color: inherit
+}
+
+.highlight .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+}
+.highlight .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.highlight .lnt {
+  white-space: pre;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+
+.highlight .ln {
+  white-space: pre;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+
+.highlight .line {
+  display: flex;
+}
+
+/* .bg {
+  color: var(--syntax-color-3);
+  background-color: var(--syntax-color-2);
+} */
+.highlight {
+  color: var(--syntax-color-3);
+  /* background-color: var(--syntax-color-2); */
+}
+
+.highlight .err {
+  color: var(--syntax-color-4);
+}
+
+.highlight .hl {
+  background-color: var(--line-highlight-color);
+}
+.highlight .lnt {
+  color: var(--syntax-color-7);
+}
+.highlight .ln {
+  color: var(--syntax-color-7);
+}
+.highlight .k,
+.highlight .kc {
+  color: var(--syntax-color-5);
+}
+.highlight .kd {
+  color: var(--syntax-color-4);
+}
+.highlight .kn,
+.highlight .kp,
+.highlight .kr {
+  color: var(--syntax-color-5);
+}
+.highlight .kt {
+  color: var(--keyword-type-color);
+}
+.highlight .na {
+  color: var(--syntax-color-9);
+}
+.highlight .nb {
+  color: var(--syntax-color-4);
+}
+.highlight .nc {
+  color: var(--name-class-color);
+}
+.highlight .no,
+.highlight .nd {
+  color: var(--syntax-color-6);
+}
+
+.highlight .nf {
+  color: var(--syntax-color-9);
+}
+
+.highlight .nl {
+  color: var(--syntax-color-4);
+}
+.highlight .nt {
+  color: var(--syntax-color-5);
+}
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: var(--syntax-color-4);
+}
+
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: var(--syntax-color-1);
+}
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo {
+  color: var(--syntax-color-6);
+}
+.highlight .o,
+.highlight .ow {
+  color: var(--syntax-color-5);
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs,
+.highlight .cp,
+.highlight .cpf {
+  color: var(--syntax-color-8);
+}
+
+.highlight .gd {
+  color: var(--syntax-color-4);
+}
+.highlight .ge {
+  text-decoration: underline
+}
+.highlight .gr {
+  color: var(--syntax-color-4);
+}
+.highlight .gh,
+.highlight .gi {
+  font-weight: bold
+}
+.highlight .go {
+  color: var(--generic-output-color);
+}
+.highlight .gs {
+  font-style: italic
+}
+.highlight .gu {
+  font-weight: bold
+}
+.highlight .gl {
+  text-decoration: underline
+}
