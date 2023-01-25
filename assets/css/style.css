@@ -1359,14 +1359,27 @@ textarea {
 
 .link {
 	opacity: 0;
-	position: relative;
+	position: absolute;
+	left: -2.1rem;
+	color: var(--body-text-color);
+	text-decoration: none;
+	display: inline-flex;
+	top: 0;
+	padding-top: calc(0.2 * var(--height));
+	min-height: 2rem;
+	padding-left: 0.5rem;
+	cursor: pointer;
 }
 .link svg,
 .link img {
 	--size: 1.5rem;
 	width: var(--size);
 	height: var(--size);
-	fill: var(--highlight-color);
+	fill: var(--body-text-color);
+}
+
+.link__owner {
+	position: relative;
 }
 .link__owner:hover .link {
 	opacity: 1;
@@ -1374,42 +1387,52 @@ textarea {
 .link__copy {
 	opacity: 1;
 }
-.link__copied {
+
+.copied::before,
+.copied::after{
 	position: absolute;
-	right: -2.2rem;
-	top: -2rem;
-	background-color: var(--search-bg-color);
-	color: var(--light);
-	width: 7rem;
-	padding: 0.25rem 0.5rem;
-	font-size: 0.9rem;
-	border-radius: 1rem;
-	text-align: center;
 }
-.link__copied::after {
+.copied::before {
+	--horizontal-offset: 2.4rem;
+	content: var(--copied-text);
+	top: 0;
+	background-color: var(--search-bg-color);
+	color: var(--syntax-color-1);
+	min-width: 5rem;
+	padding: 0.3rem 0.5rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	border-radius: 0.33rem;
+	text-align: center;
+	display: flex;
+	text-transform: capitalize;
+	align-items: center;
+	justify-content: center;
+}
+.copied::after {
+	--horizontal-offset: 1.65rem;
 	position: absolute;
-	top: 1rem;
+	top: 0.67rem;
 	content: "";
 	border-color: var(--search-bg-color) transparent;
 	border-style: solid;
-	border-width: 1rem 1rem 0 1rem;
+	border-width: 0.5rem 0.5rem 0 0.5rem;
 	height: 0;
 	width: 0;
 	transform-origin: 50% 50%;
-	transform: rotate(145deg);
-	right: 0.45rem;
+	transform: rotate(90deg);
+}
+.copied:not(.js-left)::before,
+.copied:not(.js-left)::after {
+	left: var(--horizontal-offset);
+}
+.copied.js-left::before,
+.copied.js-left::after {
+  right: var(--horizontal-offset);
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
+.copied.js-left::after {
+	transform: rotate(-90deg);
 }
 
 .highlight_wrap .icon {
@@ -1417,17 +1440,15 @@ textarea {
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
-}
-.highlight_wrap .icon,
-.highlight_wrap .icon img,
-.highlight_wrap .icon svg,
-.highlight_wrap .icon_2 {
-  --size: 1.1rem;
-  width: var(--size);
-  height: var(--size);
-}
-.highlight_wrap .icon_2 {
-	--size: 2.2rem;
+	--size: 2rem;
+	width: var(--size);
+	height: var(--size);
+	border: 1.5px solid var(--border-color);
+	border-radius: 0.33rem;
+	opacity: 0.8 !important;
+	position: relative !important;
+	left: initial !important;
+	min-height: auto !important;
 }
 
 .windows .highlight {
@@ -1503,33 +1524,16 @@ textarea {
   background-repeat: no-repeat;
 	color: var(--light-color);
 }
-.panel_icon.active {
-  animation: pulse 0.1s linear;
-	background-image: url(/img/check.svg) !important;
-}
+
 .panel_icon svg {
-  fill: var(--light);
-  width: 1.5rem;
-  height: 1.5rem;
+	--size: 1rem;
+	opacity: 0.8;
+  fill: var(--content-text-color);
+	width: var(--size);
+	height: var(--size);
 }
 
 .panel_hide {
-  display: none;
-}
-
-.panel_from {
-  position: absolute;
-  color: var(--theme);
-  bottom: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.5rem 0;
-  cursor: pointer;
-  letter-spacing: 0.1px;
-  z-index: 19;
-}
-
-.panel_expanded .panel_from {
   display: none;
 }
 

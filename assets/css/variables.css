@@ -48,6 +48,8 @@
 	--highlight-color: {{ default "#e22d30" $config.highlightColor }};
 	--font-primary: {{ default (`"Open Sans", Helvetica, Arial, sans-serif`) $config.fontFamilyPrimary }};
 	--font-secondary: {{ default (`SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`) $config.fontFamilySecondary }};
+
+  --copied-text: "{{ default "Copied" (T "copied") }}";
 }
 
 {{- $darkModeStyles := `
