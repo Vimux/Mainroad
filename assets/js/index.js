@@ -12,6 +12,8 @@ const bank = window.localStorage;
 const doc = document.documentElement;
 const lighting_mode_toggle = elem('.light__toggle');
 const lineClass = '.line';
+const copied_class = 'copied';
+const deeplink_class = '.link';
 const iconsPath = '{{ default "icons/" site.Params.iconsDir }}';
 
 function initializeMenu() {
@@ -80,71 +82,72 @@ function setUserColorMode(manual = false) {
 setUserColorMode(); // kicks in immediately
 
 function addDeepLinks() {
-  let headingNodes = [], results, link, icon, current, id,
-  tags = ['h2', 'h3', 'h4', 'h5', 'h6'];
+  let headingNodes = [], results, current, id,
+  tags = [1,2,3,4,5,6];
 
   current = document.URL;
 
   tags.forEach(function(tag){
-    results = document.getElementsByTagName(tag);
+    results = document.getElementsByTagName(`h${tag}`);
     Array.prototype.push.apply(headingNodes, results);
   });
 
   function sanitizeURL(url) {
     // removes any existing id on url
     const hash = '#';
-    const positionOfHash = url.indexOf(hash);
-    if(positionOfHash > -1 ) {
-      const id = url.substr(positionOfHash, url.length - 1);
+    const position_of_hash = url.indexOf(hash);
+    if(position_of_hash > -1 ) {
+      const id = url.substr(position_of_hash, url.length - 1);
       url = url.replace(id, '');
     }
     return url
   }
 
   headingNodes.forEach(function(node){
-    link = createEl('a');
-    icon = createEl('img');
-    icon.src = '{{ absURL "img/link.svg" }}';
-    link.className = 'link icon';
-    link.appendChild(icon);
+    let copy_btn = createEl('span');
+    copy_btn.className = 'link icon';
+    copy_btn.dataset.icon = 'link';
+    toggleSprite('link', copy_btn);
     id = node.getAttribute('id');
+    const node_styles = window.getComputedStyle(node);
+    let node_height = node_styles.getPropertyValue('line-height');
+    node_height = parseFloat(node_height) > 31 ? node_height : 0;
+    node.style.setProperty('--height', node_height);
+    if(!id) {
+      id = node.innerText.toLowerCase().replaceAll(' ', '-');
+      node.setAttribute('id', id);
+    }
     if(id) {
-      link.href = `${sanitizeURL(current)}#${id}`;
-      node.appendChild(link);
+      copy_btn.dataset.link = `${sanitizeURL(current)}#${id}`;
+      node.appendChild(copy_btn);
       pushClass(node, 'link__owner');
     }
   });
 }
 
-function copyFeedback(parent) {
-  const copyText = document.createElement('div');
-  const yanked = 'link__copied';
-  copyText.classList.add(yanked);
-  copyText.innerText = copied_text;
-  if(!elem(`.${yanked}`, parent)) {
-    const icon = parent.getElementsByTagName('img')[0];
-    const originalSrc = icon.src;
-    icon.src = '{{ absURL "img/check.svg" }}';
-    parent.appendChild(copyText);
+function copyFeedback(target) {
+  const is_copy_button = isTarget(target, deeplink_class);
+  if(is_copy_button.valid) {
+    target = is_copy_button.exact ? target : target.closest(deeplink_class);
+    toggleSprite('check', target); // under review
+    pushClass(target, copied_class);
+    const copy_btn_x_pos = target.getBoundingClientRect().x;
+    copy_btn_x_pos > window.innerWidth / 2 ? pushClass(target, 'js-left') : false;
     setTimeout(function() {
-      parent.removeChild(copyText)
-      icon.src = originalSrc;
+      toggleSprite(target.dataset.icon, target);
+      deleteClass(target, copied_class);
     }, 1500);
   }
 }
 
 function copyDeepLinks(target) {
-  let deeplink, deeplinks, newLink, parent;
-  deeplink = 'link';
-  deeplinks = elems(`.${deeplink}`);
-  if(deeplinks) {
-    parent = target.parentNode;
-    if (target && containsClass(target, deeplink) || containsClass(parent, deeplink)) {
-      event.preventDefault();
-      newLink = target.href != undefined ? target.href : target.parentNode.href;
-      copyToClipboard(newLink);
-      target.href != undefined ?  copyFeedback(target) : copyFeedback(target.parentNode);
-    }
+  let deeplinks, new_link;
+  deeplinks = elems(deeplink_class);
+  const is_deeplink = isTarget(target, deeplink_class);
+  if(deeplinks && is_deeplink.valid && !target.closest(`.${panel_box}`)) {
+    target = is_deeplink.exact ? target : target.closest(deeplink_class);
+    new_link = target.dataset.link;
+    copyToClipboard(new_link);
   }
 }
 
@@ -204,10 +207,11 @@ function actionPanel() {
     // create button
     const btn = createEl('div');
     btn.title = button.title;
-    btn.className = `icon panel_icon panel_${button.id}`;
+    btn.className = `link icon panel_icon panel_${button.id}`;
+    btn.dataset.icon = button.id;
     button.show ? false : pushClass(btn, panelHide);
     // load icon inside button
-    btn.style.backgroundImage = `url(${rootURL}${iconsPath}${button.icon}.svg)`;
+    toggleSprite(button.id, btn);
     // append button on panel
     panel.appendChild(btn);
   });
@@ -258,7 +262,8 @@ function copyCodeBlockContents(target){
   const is_copy_icon = isTarget(target, `.${copy_id}`);
   const highlight_wrap_id = highlight_wrap;
 
-  if(is_copy_icon.exact) {
+  if(is_copy_icon.valid) {
+    target = is_copy_icon.exact ? target : target.closest(`.${copy_id}`);
     pushClass(target, active);
 
     setTimeout(function() {
@@ -301,5 +306,6 @@ window.addEventListener('load', () => {
 
     copyCodeBlockContents(target);
     copyDeepLinks(target);
+    copyFeedback(target);
   });
 });

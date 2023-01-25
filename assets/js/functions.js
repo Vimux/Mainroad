@@ -21,8 +21,8 @@ function elem(selector, parent = document){
 }
 
 function elems(selector, parent = document) {
-  let elems = isObj(parent) ? parent.querySelectorAll(selector) : [];
-  return elems.length ? elems : false;
+  const elems = isObj(parent) ? parent.querySelectorAll(selector) : [];
+  return elems;
 }
 
 function pushClass(el, target_class) {
@@ -105,4 +105,12 @@ function copyToClipboard(str) {
     selection.removeAllRanges(); // unselect existing selection
     selection.addRange(selected); // restore the original selection
   }
+}
+
+function toggleSprite(name, parent) {
+  parent.innerHTML = `
+    <svg>
+      <use xlink:href="#${name}-icon"></use>
+    </svg>
+  `;
 }
