@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Read more…"
+
+- id: menu_label
+  translation: "Menu"
+
+- id: sidemenu_title
+  translation: "Menu"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Last Modified"
+
+- id: meta_translations
+  translation: "Translations"
+
+# Table of Contents
+- id: toc_title
+  translation: "Page content"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Previous"
+
+- id: post_nav_next
+  translation: "Next"
+
+# Authorbox
+- id: authorbox_name
+  translation: "About {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "WARNING"
+
+- id: sidebar_recommendation
+  translation: "Please activate at least one sidebar widget."
+
+# Search widget
+- id: search_placeholder
+  translation: "SEARCH…"
+
+# Languages widget
+- id: languages_title
+  translation: "Languages"
+
+# Categories widget
+- id: categories_title
+  translation: "Categories"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Recent Posts"
+
+# Social widget
+- id: social_title
+  translation: "Social"
+
+# Tags List widget
+- id: tags_title
+  translation: "Tags"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+
+# 404
+- id: 404_title
+  translation: "404. Page not found"
+
+- id: 404_text
+  translation:
+    "The page you were looking for appears to have been moved, deleted or does not exist. Please, use search or go to"
+
+- id: 404_linktext
+  translation: "main page"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "You don't have any posts yet!"
+
+- id: noposts_warning_description
+  translation:
+    "Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one \
+    section (with the most posts) will be displayed on the main page by default."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Tip:</b> You can show as many sections as you like with \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    config parameter."
