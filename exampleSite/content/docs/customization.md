@@ -158,6 +158,46 @@ sections in the example below.
   email = "example@example.com"
 ```
 
+### Widget caching
+
+Sidebar strongly affects overall build time, especially if you are using all of our widgets or even more. Widget caching
+can significantly improve the generation time. Cached partials remain the same for all affected pages and are not
+generated multiple times by Hugo. All built-in widgets (`search`, `recent`, `categories`, `social`, `languages`) support
+caching.
+
+Add `cached = true` inside the corresponding widget's dictionary table to activate caching. For example, to cache the
+`recent` widget:
+
+```toml
+[Params.widgets.recent]
+  cached = true
+```
+
+The following sample configuration extract shows how to cache all standard widgets and generate your website faster:
+
+```toml
+[Params.widgets.search]
+  cached = true
+
+[Params.widgets.recent]
+  cached = true
+
+[Params.widgets.categories]
+  cached = true
+
+[Params.widgets.taglist]
+  cached = true
+
+[Params.widgets.social]
+  cached = true
+
+[Params.widgets.languages]
+  cached = true
+```
+
+Not all widgets are cacheable. If a widget contains (can contain) different data for different pages (e.g., for TOC
+generation), then it should not be cached. Always check that your modified/customized widget is cached correctly.
+
 ### Social Widget: custom links
 
 **Mainroad** contains built-in social links in the social widget. In addition to default social links, you may set

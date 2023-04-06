@@ -118,6 +118,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   tags_counter = false # Enable counter for each tag in "Tags" widget
 
 [Params.widgets.social]
+  cached = false # activate cache if true
   # Enable parts of social widget
   facebook = "username"
   twitter = "username"
@@ -141,6 +142,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   url = "https://example.com"
 
 [Params.widgets.search]
+  cached = false # activate cache if true
   url = "https://google.com/search"
   [Params.widgets.search.input]
     name = "sitesearch"
