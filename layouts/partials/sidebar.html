@@ -12,8 +12,16 @@
 {{- $root := . }}
 {{- with (default .Site.Params.sidebar.widgets .Params.widgets) -}}
 	{{- range $widget := . }}
-		{{- $p := printf "widgets/%s.html" $widget }}
-		{{- partial $p $root }}
+		{{- $widgetPath := printf "widgets/%s.html" $widget }}
+		{{- $widgetCached := false }}
+		{{- if isset $.Site.Params "widgets" }}
+			{{- $widgetCached = (index $.Site.Params.widgets $widget).cached }}
+		{{- end }}
+		{{- if eq $widgetCached true }}
+			{{- partialCached $widgetPath $root }}
+		{{- else }}
+			{{- partial $widgetPath $root }}
+		{{- end }}
 	{{- end }}
 {{- else }}
 	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
