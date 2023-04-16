@@ -162,8 +162,8 @@ sections in the example below.
 
 Sidebar strongly affects overall build time, especially if you are using all of our widgets or even more. Widget caching
 can significantly improve the generation time. Cached partials remain the same for all affected pages and are not
-generated multiple times by Hugo. All built-in widgets (`search`, `recent`, `categories`, `social`, `languages`) support
-caching.
+generated multiple times by Hugo. All built-in widgets (`search`, `recent`, `categories`, `taglist`, `social`,
+`languages`) support caching.
 
 Add `cached = true` inside the corresponding widget's dictionary table to activate caching. For example, to cache the
 `recent` widget:
