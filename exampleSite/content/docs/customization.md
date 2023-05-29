@@ -62,6 +62,24 @@ Mainroad uses `#e22d30` as a default highlight color, but you may choose and set
   highlightColor = "#e22d30"
 ```
 
+### Post meta
+
+Post meta is a feature that refers to including additional meta information (such as author name, categories, date,
+translations, etc.) on pages. It can be enabled via config using the `post_meta` key with a list of meta field names as
+value. Order matters here: rearrange fields if you want to.
+
+```toml
+[Params]
+  post_meta = ["author", "date", "categories", "translations"]
+```
+
+Full list of available default post meta fields:
+
+* `author`, `categories`, `date`, `translations`
+
+In addition to the default meta fields, you can add your own by placing a custom partial under
+`layouts/partials/post_meta/<name>.html`.
+
 ### Thumbnail visibility
 
 By default, a thumbnail image has shown for a list and single pages simultaneously. In some cases, you may want to show
