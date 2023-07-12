@@ -1,0 +1,88 @@
+# General
+- id: read_more
+  translation: "더보기"
+
+- id: menu_label
+  translation: "메뉴"
+
+- id: sidemenu_title
+  translation: "메뉴"
+
+# Post meta
+- id: meta_lastmod
+  translation: "최근 수정"
+
+- id: meta_translations
+  translation: "번역"
+
+# Table of Contents
+- id: toc_title
+  translation: "목차"
+
+# Post nav
+- id: post_nav_prev
+  translation: "이전"
+
+- id: post_nav_next
+  translation: "다음"
+
+# Authorbox
+- id: authorbox_name
+  translation: "안녕하세요, {{ .Name }}입니다."
+
+# Sidebar
+- id: sidebar_warning
+  translation: "주의"
+
+- id: sidebar_recommendation
+  translation: "하나 이상의 사이드바 위젯(params.sidebar.widgets)을 활성화해 주시기 바랍니다."
+
+# Search widget
+- id: search_placeholder
+  translation: "검색어를 입력해 주십시오."
+
+# Languages widget
+- id: languages_title
+  translation: "언어"
+
+# Categories widget
+- id: categories_title
+  translation: "카테고리"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "최근 게시물"
+
+# Social widget
+- id: social_title
+  translation: "소셜"
+
+# Tags List widget
+- id: tags_title
+  translation: "태그"
+
+# Footer
+- id: footer_credits
+  translation:
+    "본 웹사이트는 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> 와 \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> 테마로 제작되었습니다."
+
+# 404
+- id: 404_title
+  translation: "헐, 페이지가 없습니다!"
+
+- id: 404_text
+  translation: "찾고자 하는 페이지가 이동 혹은 삭제되었을 수 있습니다."
+
+- id: 404_linktext
+  translation: "홈으로 가기"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "표시할 게시물이 없습니다!"
+
+- id: noposts_warning_description
+  translation: "<b>$HUGE_HOME/content</b> 디렉토리 아래에 게시물(*.md)을 게시하면 여기에 표시됩니다.<br />기본적으로, 가장 많은 글이 있는 하나의 섹션을 기준으로 합니다."
+
+- id: noposts_warning_tip
+  translation: 'Tip: <a href="https://gohugo.io/functions/where/#mainsections" rel="nofollow noopener" target="_blank">params.mainSections</a> 설정 매개변수를 사용하여, 원하는 만큼의 섹션을 표시할 수 있습니다.'
