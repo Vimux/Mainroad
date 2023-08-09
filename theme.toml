@@ -1,16 +1,16 @@
-name = "Mainroad"
+name = "Mainroad-Yuito-Remix"
 license = "GPLv2"
-licenselink = "https://github.com/vimux/mainroad/blob/master/LICENSE.md"
+licenselink = "https://github.com/yuito-it/Mainroad/blob/master/LICENSE.md"
 description = "Mainroad is a responsive, clean and content-focused Hugo theme."
-homepage = "https://github.com/vimux/mainroad/"
-demosite = "https://mainroad-demo.netlify.app/"
+homepage = "https://github.com/yuito-it/Mainroad/"
+demosite = "https://yuito-it.github.io/"
 tags = ["blog", "responsive", "light", "multilingual", "customizable", "widgets", "wordpress"]
 features = ["blog", "responsive", "multilingual", "widgets", "rss", "disqus", "google analytics", "wordpress"]
 min_version = "0.48"
 
 [author]
-  name = "Vimux"
-  homepage = "https://github.com/vimux"
+  name = "Yuito-it"
+  homepage = "https://yuito-it.github.io/blog"
 
 # If porting an existing theme
 [original]
