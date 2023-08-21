@@ -1,5 +1,21 @@
-{{ if and .Site.DisqusShortname (index .Params "comments" | default "true") (not .Site.IsServer) }}
+{{ if (index .Params "comments" | default "true") }}
 <section class="comments">
-	{{ template "_internal/disqus.html" . }}
+	<script
+		src="https://giscus.app/client.js"
+		data-repo="yuito-it/blog"
+		data-repo-id="R_kgDOKE-4GQ"
+		data-category="Announcements"
+		data-category-id="DIC_kwDOKE-4Gc4CYvd8"
+		data-mapping="pathname"
+		data-strict="1"
+		data-reactions-enabled="1"
+		data-emit-metadata="1"
+		data-input-position="top"
+		data-theme="noborder_light"
+		data-lang="ja"
+		data-loading="lazy"
+		crossorigin="anonymous"
+		async
+	></script>
 </section>
 {{ end }}
