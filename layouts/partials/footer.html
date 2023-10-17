@@ -1,9 +1,62 @@
 <footer class="footer">
 	<div class="container footer__container flex">
-		{{ partial "footer_links.html" . }}
-		<div class="footer__copyright">
-			&copy; {{ now.Format "2006" }} {{ .Site.Params.copyright | default .Site.Title }}.
-			<span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span>
+		<div class="footer_headers">
+			<div class="footer_contact_container">
+				<p class="footer_contact_header">Contact Info</p>
+				<div class="footer_contant_info_container">
+					<p>
+						OSU Open Source Lab<br>
+						224 Milne Computer Center<br>
+						1800 SW Campus Way<br>
+						Corvallis, OR 97331<br>
+						<a href="mailto:info@osuosl.org" style="margin: 0px">info@osuosl.org</a><br>
+						Phone: 541-737-9900<br>
+
+						<div class="footer_map_container">
+						<a href="https://www.google.com/maps/place/Milne+Computer+Center,+1800+SW+Campus+Way,+Corvallis,+OR+97331">
+							<img src="/images/milne_street.png">
+						</a>
+						</div>
+
+						<div>
+						<a href="https://oregonstate.edu/copyright">Copyright</a>
+						&copy;2023<br> Oregon State University<br />
+						<a href="https://oregonstate.edu/official-web-disclaimer">Disclaimer</a>
+						</div>
+					</p>
+				</div>
+			</div>
+
+			<div class="footer_menu_link_container"><a class="footer_links">HOME</a></div>
+			<div class="footer_menu_link_container">
+				<a href="/about" class="footer_links">ABOUT</a>
+				<div class="footer_link_container">
+					<a href="/about">About OSL</a>
+					<a href="/faq">FAQ</a>
+					<a href="/contact">Contact Us</a>
+					<a href="/people">Staff</a>
+					<a href="/logos">Logos</a>
+					<a href="/donate">Donate</a>
+				</div>
+			</div>
+			<div class="footer_menu_link_container">
+				<a href="/services" class="footer_links">SERVICES</a>
+				<div class="footer_link_container">
+					<a href="/services/hosting">Hosting</a>
+					<a href="/services/aarch64">AARCH64 Development Hosting</a>
+					<a href="/services/powerdev">POWERLinux/OpnePOWER Development Hosting</a>
+					<a href="/services/ibm-z">IBM Z Development Hosting</a>
+				</div>
+			</div>
+			<div class="footer_menu_link_container">
+				<a href="/students" class="footer_links">STUDENT EXPERIENCE</a>
+				<div class="footer_link_container">
+					<a href="/about/employement">Employement</a>
+					<a href="/about/education">Education</a>
+					<a href="/student-stories">Student Stories</a>
+				</div>
+			</div>
+			<div class="footer_menu_link_container"><a href="/blog" class="footer_links">BLOG</a></div>
 		</div>
 	</div>
 </footer>

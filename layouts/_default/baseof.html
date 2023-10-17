@@ -49,6 +49,7 @@
 		{{ block "header" . }}{{ partial "header.html" . }}{{ end }}
 		<div class="wrapper flex">
 			<div class="primary">
+			{{ partial "menu.html" . }}
 			{{ block "main" . }}
 				{{ with .Content }}
 				<div class="content main__content clearfix">
