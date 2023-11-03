@@ -4,14 +4,14 @@
   "description": "Responsive, simple, clean and content-focused Hugo theme based on the MH Magazine lite WordPress theme",
   "license": "GPL-2.0",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.16",
     "editorconfig-checker": "^5.1.1",
-    "eslint": "^8.45.0",
+    "eslint": "^8.52.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-node": "^11.1.0",
     "postcss-cli": "^10.1.0",
-    "stylelint": "^15.10.1",
+    "stylelint": "^15.11.0",
     "stylelint-order": "^6.0.3"
   },
   "scripts": {
