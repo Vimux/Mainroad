@@ -1,3 +1,4 @@
+---
 name: Test
 
 on:
@@ -19,7 +20,7 @@ jobs:
           - '20.x'
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
@@ -43,11 +44,12 @@ jobs:
           # - '0.80.0' # https://github.com/gohugoio/hugo/issues/8340
           - '0.86.1' # https://github.com/gohugoio/hugo/issues/9150
           - '0.93.3' # https://github.com/gohugoio/hugo/commit/837fdfdf45014e3d5ef3b00b01548b68a4489c5f
+          - '0.120.3'
           - 'latest'
       fail-fast: true
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # https://github.com/peaceiris/actions-hugo (community action)
       - name: Run Hugo ${{ matrix.hugo }}
@@ -63,4 +65,4 @@ jobs:
           HUGO_VERSION=$(hugo version | grep -Eo '[0-9]+\.[0-9]+((\.[0-9]+)?)')
           # The option changed in 0.93.0: https://github.com/gohugoio/hugo/releases/tag/v0.93.0
           I18N_OPT=$([ $(ver $HUGO_VERSION) -lt $(ver 0.93.0) ] && echo "--i18n-warnings" || echo "--printI18nWarnings")
-          HUGO_THEME="Mainroad" hugo --themesDir ../.. $I18N_OPT -v
+          HUGO_THEME="Mainroad" hugo --themesDir --panicOnWarning ../.. $I18N_OPT -v
