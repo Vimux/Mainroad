@@ -56,8 +56,13 @@ title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
-disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+disqusShortname = "" # DEPRECATED! Use .Services.Disqus.Shortname
+googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
+
+[services.disqus]
+  shortname = "" # Enable Disqus by entering your Disqus shortname
+[services.googleAnalytics]
+  ID = "" # Enable Google Analytics by entering your tracking ID
 
 [Author] # Used in authorbox
   name = "John Doe"
