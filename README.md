@@ -127,6 +127,7 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   # Enable parts of social widget
   facebook = "username"
   twitter = "username"
+  x = "username" #X (Formerly Twitter)
   instagram = "username"
   linkedin = "username"
   telegram = "username"
