@@ -133,6 +133,10 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   github = "username"
   gitlab = "username"
   bitbucket = "username"
+  weibo = "username"
+  zhihu = "username"
+  wechat = "username"
+  qq = "qq number"
   email = "example@example.com"
 
 # Custom social links

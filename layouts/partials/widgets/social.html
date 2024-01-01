@@ -66,6 +66,38 @@
 			</a>
 		</div>
 		{{- end }}
+		{{- with .Site.Params.widgets.social.weibo }}
+		<div class="widget-social__item widget__item">
+			<span class="widget-social__link widget__link btn" title="Weibo">
+				{{ partial "svg/weibo.svg" (dict "class" "widget-social__link-icon") }}
+				<span>@{{ . }}</span>
+			</span>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.zhihu }}
+		<div class="widget-social__item widget__item">
+			<span class="widget-social__link widget__link btn" title="Zhihu">
+				{{ partial "svg/zhihu.svg" (dict "class" "widget-social__link-icon") }}
+				<span>@{{ . }}</span>
+			</span>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.wechat }}
+		<div class="widget-social__item widget__item">
+			<span class="widget-social__link widget__link btn" title="WeChat">
+				{{ partial "svg/wechat.svg" (dict "class" "widget-social__link-icon") }}
+				<span>@{{ . }}</span>
+			</span>
+		</div>
+		{{- end }}
+		{{- with .Site.Params.widgets.social.qq }}
+		<div class="widget-social__item widget__item">
+			<span class="widget-social__link widget__link btn" title="QQ">
+				{{ partial "svg/qq.svg" (dict "class" "widget-social__link-icon") }}
+				<span>{{ . }}</span>
+			</span>
+		</div>
+		{{- end }}
 		{{- with .Site.Params.widgets.social.email }}
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="Email" href="mailto:{{ . }}">
