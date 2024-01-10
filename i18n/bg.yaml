@@ -39,7 +39,7 @@
 
 # Search widget
 - id: search_placeholder
-  translation: "ТЪРСЕНЕ…"
+  translation: "Търсене…"
 
 # Languages widget
 - id: languages_title

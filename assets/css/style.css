@@ -1093,27 +1093,21 @@ textarea {
 
 /* Search widget */
 .widget-search__form {
-	display: block;
-	padding: 5%;
-	margin: 0 auto;
+	padding: 16px 24px;
 	background: #f5f5f5;
 }
 
-.widget-search__form .widget-search__submit {
+.widget-search__submit[type=submit] {
 	display: none;
 }
 
 .widget-search__field {
-	position: relative;
-	display: block;
-	width: 90%;
-	padding: 8px;
-	margin: 0 auto;
-	font-size: 11px;
+	width: 100%;
+	padding: 6px 8px;
+	font-size: 13px;
 	cursor: pointer;
 	background: #fff;
 	border: 1px solid #ebebeb;
-	border-radius: 0;
 	outline-offset: -2px;
 	transition: none;
 	-webkit-appearance: none;
@@ -1122,6 +1116,7 @@ textarea {
 .widget-search__field:active,
 .widget-search__field:focus {
 	cursor: text;
+	outline: 2px solid #005fcc;
 }
 
 /* Social widget */
