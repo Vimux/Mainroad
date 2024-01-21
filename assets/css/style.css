@@ -197,7 +197,7 @@ h6 {
 }
 
 a {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -269,13 +269,13 @@ samp {
 
 pre,
 code {
-	background-color: #f5f5f5;
-	border: 1px solid #ebebeb;
+	background-color: #e6e6e6;
+	border: 1px solid #afaeae;
 }
 
 code {
 	padding: 0 5px;
-	color: #c33;
+	color: #6d6c6c;
 }
 
 pre {
@@ -430,7 +430,7 @@ select {
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #000;
+	color: #fff;
 }
 
 .logo__tagline {
