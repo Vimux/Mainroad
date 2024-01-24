@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Ары қарай оқу…"
+
+- id: menu_label
+  translation: "Мәзір"
+
+- id: sidemenu_title
+  translation: "Мәзір"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Соңғы өзгеріс"
+
+- id: meta_translations
+  translation: "Аудармалар"
+
+# Table of Contents
+- id: toc_title
+  translation: "Беттің мазмұны"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Артқа"
+
+- id: post_nav_next
+  translation: "Алға"
+
+# Authorbox
+- id: authorbox_name
+  translation: "Автор туралы {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "Назар аударыңыз"
+
+- id: sidebar_recommendation
+  translation: "Бүйірлік тақтаның кем дегенде бір виджетін іске қосыңыз."
+
+# Search widget
+- id: search_placeholder
+  translation: "Іздеу…"
+
+# Languages widget
+- id: languages_title
+  translation: "Тілдер"
+
+# Categories widget
+- id: categories_title
+  translation: "Санаттар"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Соңғы жарияланымдар"
+
+# Social widget
+- id: social_title
+  translation: "Әлеуметтік желілер"
+
+# Tags List widget
+- id: tags_title
+  translation: "Тегтер"
+
+# Footer
+- id: footer_credits
+  translation:
+    "<a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> және \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> тақырыптар \
+    көмегімен жасалған."
+
+# 404
+- id: 404_title
+  translation: "404. Бет табылмады"
+
+- id: 404_text
+  translation:
+    "Сіз іздеген бет жылжытылған, жойылған немесе мүлдем жоқ сияқты. Өтінемін, іздеуді қолданыңыз немесе өтіңіз"
+
+- id: 404_linktext
+  translation: "Басты бет"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Сізде бірде-бір жарияланым жоқ!"
+
+- id: noposts_warning_description
+  translation:
+    "Сіз кез-келген қалтада (бөлімде) <b>content</b > каталогының ішінде бірдеңе жариялағаннан кейін ол пайда болады \
+    мындасыз. Әдепкі бойынша, басты бетте тек бір бөлім көрсетіледі (ең көп саны бар жарияланым)."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Кеңес:</b> конфигурация опциясы арқылы қалаған бөлімдерді көрсетуге болады \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."

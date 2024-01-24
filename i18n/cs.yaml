@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Číst více…"
+
+- id: menu_label
+  translation: "Menu"
+
+- id: sidemenu_title
+  translation: "Menu"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Naposledy upraveno"
+
+- id: meta_translations
+  translation: "Překlady"
+
+# Table of Contents
+- id: toc_title
+  translation: "Obsah stránky"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Předchozí"
+
+- id: post_nav_next
+  translation: "Následující"
+
+# Authorbox
+- id: authorbox_name
+  translation: "O {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "POZOR"
+
+- id: sidebar_recommendation
+  translation: "Prosím aktivujte aspoň jeden widget postranní lišty."
+
+# Search widget
+- id: search_placeholder
+  translation: "Hledat…"
+
+# Languages widget
+- id: languages_title
+  translation: "Jazyky"
+
+# Categories widget
+- id: categories_title
+  translation: "Kategorie"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Poslední příspěvky"
+
+# Social widget
+- id: social_title
+  translation: "Sociální sítě"
+
+# Tags List widget
+- id: tags_title
+  translation: "Štítky"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Vytvořeno pomocí <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> a tématu \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. Stránka nebyla nalezena"
+
+- id: 404_text
+  translation:
+    "Požadovaná stránka neexistuje, nebo byla přesunuta či smazána. Využijte, prosím, vyhledávání, nebo pokračujte na"
+
+- id: 404_linktext
+  translation: "hlavní stránka"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Zatím nemáte žádné příspěvky!"
+
+- id: noposts_warning_description
+  translation:
+    "Jakmile vytvoříte příspěvek v libovolném podadresáři (sekci) adresáře <b>content</b>, objeví se zde. Ve výchozím \
+    nastavení je na hlavní stránce zobrazena pouze jedna sekce (s největším množstvím příspěvků)."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Tip:</b> Pomocí parametru \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    můžete zobrazit libovolný počet sekcí."

@@ -1,0 +1,93 @@
+# General
+- id: read_more
+  translation: "閱讀全文…"
+
+- id: menu_label
+  translation: "選單"
+
+- id: sidemenu_title
+  translation: "選單"
+
+# Post meta
+- id: meta_lastmod
+  translation: "最後修改"
+
+- id: meta_translations
+  translation: "翻譯"
+
+# Table of Contents
+- id: toc_title
+  translation: "內文"
+
+# Post nav
+- id: post_nav_prev
+  translation: "前一則"
+
+- id: post_nav_next
+  translation: "下一則"
+
+# Authorbox
+- id: authorbox_name
+  translation: "關於 {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "警告"
+
+- id: sidebar_recommendation
+  translation: "請至少選擇一個側邊欄元件"
+
+# Search widget
+- id: search_placeholder
+  translation: "搜尋…"
+
+# Languages widget
+- id: languages_title
+  translation: "語言"
+
+# Categories widget
+- id: categories_title
+  translation: "分類"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "近期文章"
+
+# Social widget
+- id: social_title
+  translation: "社群"
+
+# Tags List widget
+- id: tags_title
+  translation: "標籤"
+
+# Footer
+- id: footer_credits
+  translation:
+    "使用 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> 技術與 \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>主題"
+
+# 404
+- id: 404_title
+  translation: "404. 糟糕！我們似乎無法找到您要找的頁面。"
+
+- id: 404_text
+  translation: "您要找的頁面可能已經被移除、刪除或是不存在。請回到首頁或是使用搜尋功能。"
+
+- id: 404_linktext
+  translation: "回到首頁"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "目前還沒有任何内容！"
+
+- id: noposts_warning_description
+  translation:
+    "在 <b>content</b> 目錄下的任意資料夾（區塊）中發布内容後，就會被顯示在此處。\
+    其中只有一個區塊的内容（預設是擁有文章數量最多的資料夾）會被顯示在主要頁面上"
+
+- id: noposts_warning_tip
+  translation:
+    "<b>提示:</b> 您可以透過 \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    參數來控制所要展示的區塊內容。"

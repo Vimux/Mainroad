@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Više…"
+
+- id: menu_label
+  translation: "Meni"
+
+- id: sidemenu_title
+  translation: "Meni"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Ažurirano"
+
+- id: meta_translations
+  translation: "Prijevodi"
+
+# Table of Contents
+- id: toc_title
+  translation: "Podnaslovi"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Prethodni"
+
+- id: post_nav_next
+  translation: "Slijedeći"
+
+# Authorbox
+- id: authorbox_name
+  translation: "O {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "PAŽNJA"
+
+- id: sidebar_recommendation
+  translation: "Aktivirajte barem jedan widget bočne trake."
+
+# Search widget
+- id: search_placeholder
+  translation: "Upišite traženi pojam"
+
+# Languages widget
+- id: languages_title
+  translation: "Jezici"
+
+# Categories widget
+- id: categories_title
+  translation: "Kategorije"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Najnoviji postovi"
+
+# Social widget
+- id: social_title
+  translation: "Društvene mreže"
+
+# Tags List widget
+- id: tags_title
+  translation: "Ključne riječi"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Generirao <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> Tema \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+
+# 404
+- id: 404_title
+  translation: "404. stranica nije pronađena"
+
+- id: 404_text
+  translation:
+    "Tražena stranica ne postoji ili je premještena ili izbrisana. Koristite pretragu ili idite na "
+
+- id: 404_linktext
+  translation: "na početnu stranicu"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Još nemate objava!!"
+
+- id: noposts_warning_description
+  translation:
+    "Nakon što stvorite objavu u bilo kojem poddirektoriju direktorija <b>content</b>, će se pojaviti ovdje. Prema zadanim postavkama, \
+    na naslovnici se prikazuje samo jedan odjeljak (s najvećim brojem postova)."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Savjet:</b> Korištenje parametra \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    možete vidjeti bilo koji broj odjeljaka."

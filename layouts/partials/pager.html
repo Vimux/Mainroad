@@ -1,0 +1,22 @@
+{{- if .Param "pager" }}
+{{- if or (.PrevInSection) (.NextInSection) }}
+<nav class="pager flex">
+	{{- if .PrevInSection }}
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="{{ .PrevInSection.RelPermalink }}" rel="prev">
+			<span class="pager__subtitle">«&thinsp;{{ T "post_nav_prev" }}</span>
+			<p class="pager__title">{{ .PrevInSection.Title }}</p>
+		</a>
+	</div>
+	{{- end }}
+	{{- if .NextInSection }}
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="{{ .NextInSection.RelPermalink }}" rel="next">
+			<span class="pager__subtitle">{{ T "post_nav_next" }}&thinsp;»</span>
+			<p class="pager__title">{{ .NextInSection.Title }}</p>
+		</a>
+	</div>
+	{{- end }}
+</nav>
+{{- end }}
+{{- end }}

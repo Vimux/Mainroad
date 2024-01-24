@@ -1,0 +1,1 @@
+<svg class="{{ with .class }}{{ . }} {{ end }}icon icon-files" width="96" height="96" viewBox="0 0 384 384"><path d="m368 64h-224-16v16 288 16h16 224 16v-16-288-16zm-16 288h-192v-256h192zm-320-320h192v16h32v-32-16h-16-224-16v16 288 16h16 96v-32h-80zm144 272h160v-32h-160zm0-64h160v-32h-160zm0-64h160v-32h-160zm-128 64h64v-32h-64zm0-64h64v-32h-64zm0-64h64v-32h-64z"/></svg>

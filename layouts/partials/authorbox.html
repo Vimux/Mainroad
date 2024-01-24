@@ -1,0 +1,31 @@
+{{- if .Param "authorbox" }}
+{{- if .Params.author }}
+{{- with (index .Site.Author .Params.author) }}
+<div class="authorbox clearfix">
+  <figure class="authorbox__avatar">
+    <img alt="{{ .name }} avatar" src="{{ .avatar | relURL }}" class="avatar" height="90" width="90">
+  </figure>
+  <div class="authorbox__header">
+    <span class="authorbox__name">{{ T "authorbox_name" (dict "Name" .name) }}</span>
+  </div>
+  <div class="authorbox__description">
+    {{ .bio | markdownify }}
+  </div>
+</div>
+{{- end }}
+{{- else }}
+{{- with .Site.Author }}
+<div class="authorbox clearfix">
+  <figure class="authorbox__avatar">
+    <img alt="{{ .name }} avatar" src="{{ .avatar | relURL }}" class="avatar" height="90" width="90">
+  </figure>
+  <div class="authorbox__header">
+    <span class="authorbox__name">{{ T "authorbox_name" (dict "Name" .name) }}</span>
+  </div>
+  <div class="authorbox__description">
+    {{ .bio | markdownify }}
+  </div>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}
