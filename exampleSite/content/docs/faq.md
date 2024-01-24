@@ -65,7 +65,7 @@ contributing rules**. All other issues will be closed and marked as invalid.
 
 ## Technical questions
 
-**I want to get the `favicon.ico` and `apple-touch-icon.png` to match my `hightlightColor`. What should I do?**
+### I want to get the `favicon.ico` and `apple-touch-icon.png` to match my `hightlightColor`. What should I do?
 
 There is no way to do this on the fly with Hugo, but you can use the one-liners below with some preparations:
 
@@ -84,5 +84,49 @@ a=#E22D30;a=\\x${a:5:2}\\x${a:3:2}\\x${a:1:2};for i in 98 274 578;do printf $a|d
 ```
 a=#E22D30;a=$(echo 504C54452A2A2A${a:1:6}|sed -e 's/../\\x&/g');printf $a|gzip|tail -c8|od -tx4 -N4 -An|xargs|sed -e 's/../\\x&/g'|printf $a$(cat -)|dd of=static/apple-touch-icon.png bs=1 seek=37 conv=notrunc
 ```
+
+### I want to use Google Programmable Search Engine as a site search engine. Is it possible?
+
+**Yes, it is possible to use [Google PSE (CSE)](https://developers.google.com/custom-search/docs/overview) as a site
+search engine.**
+
+1. Create a new search engine with [Google PSE](https://programmablesearchengine.google.com/about/). Google account
+required.
+
+1. Add a new layout.
+
+    Create file `./layouts/search/index.html` with the following content:
+
+    ```
+    {{ define "main" }}
+    <script async src="https://cse.google.com/cse.js?cx=YOUR_PSE_ENGINE_ID"></script>
+    <div class="gcse-search"></div>
+    {{ end }}
+    ```
+
+    Don't forget to paste your Google PSE ID.
+
+1. Add search page by creating file `./content/search.md` with the following content:
+
+    ```
+    ---
+    title: Search
+    authorbox: false
+    sidebar: false
+    pager: false
+    ---
+    ```
+
+1. Optional. If you use the search widget, don't forget to change the search box parameters:
+
+    ```toml
+    [Params.widgets.search]
+      url = "/search/"
+      input.name = false
+      input.pre = ""
+    ```
+
+Google PSE (CSE) should work when it's done. Look and feel will be far from perfect, but you have to solve this problem
+with [Google PSE Control Panel](https://programmablesearchengine.google.com/controlpanel/all) and additional CSS.
 
 [Edit this page on GitHub](https://github.com/vimux/mainroad/blob/master/exampleSite/content/docs/faq.md)

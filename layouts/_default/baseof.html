@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
@@ -37,11 +36,7 @@
 
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 	{{- if not .Site.IsServer }}
-		{{- if hasPrefix .Site.GoogleAnalytics "G-" }}
 		{{ template "_internal/google_analytics.html" . }}
-		{{- else }}
-		{{ template "_internal/google_analytics_async.html" . }}
-		{{- end }}
 	{{- end }}
 </head>
 <body class="body">

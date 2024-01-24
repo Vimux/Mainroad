@@ -62,6 +62,34 @@ Mainroad uses `#e22d30` as a default highlight color, but you may choose and set
   highlightColor = "#e22d30"
 ```
 
+### Post meta
+
+Post meta is a feature that refers to including additional meta information (such as author name, categories, date,
+translations, etc.) on pages. It can be enabled via config using the `post_meta` key with a list of meta field names as
+value. Order matters here: rearrange fields if you want to.
+
+```toml
+[Params]
+  post_meta = ["author", "date", "categories", "translations"]
+```
+
+Full list of available default post meta fields:
+
+* `author`, `categories`, `date`, `translations`
+
+In addition to the default meta fields, you can add your own by placing a custom partial under
+`layouts/partials/post_meta/<name>.html`.
+
+#### Post meta: `date` localization
+
+With [Hugo v0.87.0](https://gohugo.io/news/0.87.0-relnotes/) (or later), `date` meta field shows localized dates (with
+weekdays and months in the current language) by default. In most cases, such a transition is painless, but owners of
+multilingual sites should be careful and check that everything translates as expected after the upgrade.
+
+You can also use a predefined layout, like `:date_full`, and it will output localized dates or times. For additional
+information about localized dates and possible date/time formatting layouts, please see
+[Hugo: time.Format](https://gohugo.io/functions/dateformat/).
+
 ### Thumbnail visibility
 
 By default, a thumbnail image has shown for a list and single pages simultaneously. In some cases, you may want to show
@@ -130,6 +158,8 @@ Full list of available default widgets:
 
 * `search`, `ddg-search`, `recent`, `categories`, `taglist`, `social`, `languages`
 
+**Note**: DuckDuckGo widget (`ddg-search`) deprecated in favor of `search` widget.
+
 ---
 
 Some of our widgets respect optional configuration. Have a look at the `[Params.widgets]` and `[Params.widgets.social]`
@@ -155,6 +185,46 @@ sections in the example below.
   bitbucket = "username"
   email = "example@example.com"
 ```
+
+### Widget caching
+
+Sidebar strongly affects overall build time, especially if you are using all of our widgets or even more. Widget caching
+can significantly improve the generation time. Cached partials remain the same for all affected pages and are not
+generated multiple times by Hugo. All built-in widgets (`search`, `recent`, `categories`, `taglist`, `social`,
+`languages`) support caching.
+
+Add `cached = true` inside the corresponding widget's dictionary table to activate caching. For example, to cache the
+`recent` widget:
+
+```toml
+[Params.widgets.recent]
+  cached = true
+```
+
+The following sample configuration extract shows how to cache all standard widgets and generate your website faster:
+
+```toml
+[Params.widgets.search]
+  cached = true
+
+[Params.widgets.recent]
+  cached = true
+
+[Params.widgets.categories]
+  cached = true
+
+[Params.widgets.taglist]
+  cached = true
+
+[Params.widgets.social]
+  cached = true
+
+[Params.widgets.languages]
+  cached = true
+```
+
+Not all widgets are cacheable. If a widget contains (can contain) different data for different pages (e.g., for TOC
+generation), then it should not be cached. Always check that your modified/customized widget is cached correctly.
 
 ### Social Widget: custom links
 
@@ -185,6 +255,72 @@ custom SVG icon needs these attributes:
 ```html
 <svg class="{{ with .class }}{{ . }} {{ end }} icon" width="24" height="24">...</svg>
 ```
+
+You can also specify the `rel` attribute for the link. By default, the attribute value is `"noopener noreferrer"`. You can remove the attribute completely by setting its value to `false`.
+
+```toml
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "https://example.com"
+  rel = "me"
+
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+  rel = false
+```
+
+### Search box widget
+
+The search box widget can refer to the results of Google, Bing, and DuckDuckGo searches. By default, Mainroad uses
+Google search if no additional configuration options are specified.
+
+To use a different search engine, first of all, check that the search widget is enabled. Then set the search parameters
+(`Site.Params.widgets.search` section) according to the data below.
+
+**Google (default)**:
+
+```toml
+[Params.widgets.search]
+  url = "https://google.com/search"
+  [Params.widgets.search.input]
+    name = "sitesearch"
+    pre = ""
+```
+
+**DuckDuckGo**:
+
+```toml
+[Params.widgets.search]
+  url = "https://duckduckgo.com/"
+  [Params.widgets.search.input]
+    name = "sites"
+    pre = ""
+```
+
+**Bing**:
+
+```toml
+[Params.widgets.search]
+  url = "https://www.bing.com/search"
+  [Params.widgets.search.input]
+    name = "q1"
+    pre = "site:"
+```
+
+**Google PSE**:
+
+```toml
+[Params.widgets.search]
+  url = "/search/"
+  [Params.widgets.search.input]
+    name = false
+    pre = ""
+```
+
+Note that Google PSE requires additional steps to work correctly.
+See [Creating a Programmable Search Engine](https://developers.google.com/custom-search/docs/tutorial/creatingcse) and
+especially our [FAQ]({{< relref "/docs/faq.md" >}} "Mainroad FAQ") for more instructions.
 
 ### Menus
 

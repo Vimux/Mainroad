@@ -89,7 +89,7 @@ comments and it may take some time to complete.
   * Be less than 2048 bytes
   * Be minified to a single line with no formatting
   * Not contain any JS or CSS section inside it
-  * Not contain any additional transformations (matrix, translate, scale)
+  * Not contain any additional transformations (matrix, translate, scale) or negative viewBox position values
   * Сompatible with [GPLv2 License](LICENSE.md)
 * Maintain clean commit history and use meaningful commit messages. Pull Requests with messy commit history (with
 commit messages like "update", "another update", etc) are difficult to review and won't be merged, even if the changes
