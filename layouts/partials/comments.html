@@ -1,5 +1,0 @@
-{{ if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not .Site.IsServer) }}
-<section class="comments">
-	{{ template "_internal/disqus.html" . }}
-</section>
-{{ end }}

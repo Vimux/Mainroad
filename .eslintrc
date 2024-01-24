@@ -1,9 +1,0 @@
-{
-  "extends": "airbnb-base/legacy",
-  "rules": {
-    "indent": [2, "tab"],
-    "no-tabs": 0,
-    "no-unused-vars": 0,
-    "no-shadow-restricted-names": 0
-  }
-}

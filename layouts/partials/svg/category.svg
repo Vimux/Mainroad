@@ -1,1 +1,0 @@
-<svg class="{{ with .class }}{{ . }} {{ end }}icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
