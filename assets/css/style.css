@@ -53,10 +53,10 @@ body {
 	font-family: {{ $fontFamilyPrimary }};
 	font-size: 14px;
 	font-size: .875rem;
-	color: #fff;
+	color: #cbcbd3;
 	line-height: 1.6;
 	word-wrap: break-word;
-	background: #000;
+	background: #29292c;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .wrapper {
 	padding: 25px;
-	background: #000;
+	background: #29292c;
 }
 
 .flex {
@@ -387,7 +387,7 @@ select {
 
 /* Header */
 .header {
-	background: #000;
+	background: #29292c;
 }
 
 .logo {
@@ -1076,8 +1076,7 @@ textarea {
 
 .widget__item {
 	display: block;
-	padding: 5px 0;
-	border-bottom: 1px dotted #ebebeb;
+	padding: 5px 0
 }
 
 .widget__item:first-child {
