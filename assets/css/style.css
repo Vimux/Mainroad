@@ -53,7 +53,7 @@ body {
 	font-family: {{ $fontFamilyPrimary }};
 	font-size: 14px;
 	font-size: .875rem;
-	color: #cbcbd3;
+color: #cbcbd3;
 	line-height: 1.6;
 	word-wrap: break-word;
 	background: #29292c;
@@ -107,7 +107,7 @@ body {
 
 .clearfix {
 	display: block;
-	color: #fff
+color: #fff
 }
 
 .clearfix::after {
@@ -405,7 +405,7 @@ select {
 
 .logo__img {
 	max-height: 256px;
-	border: 2px solid #fff;
+border: 2px solid #fff;
 }
 
 .logo__text {
