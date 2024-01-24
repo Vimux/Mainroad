@@ -39,7 +39,7 @@
 
 # Search widget
 - id: search_placeholder
-  translation: "SEARCH…"
+  translation: "Search…"
 
 # Languages widget
 - id: languages_title
