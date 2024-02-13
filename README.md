@@ -121,6 +121,7 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+  tags_min_counter = 1 # Display only tags with a greater value
 
 [Params.widgets.social]
   cached = false # activate cache if true
