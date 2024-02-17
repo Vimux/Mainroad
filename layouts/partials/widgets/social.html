@@ -10,11 +10,11 @@
 			</a>
 		</div>
 		{{- end }}
-		{{- with .Site.Params.widgets.social.twitter }}
+		{{- with or .Site.Params.widgets.social.x .Site.Params.widgets.social.twitter }}
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/{{ . }}" target="_blank">
-				{{ partial "svg/twitter.svg" (dict "class" "widget-social__link-icon") }}
-				<span>Twitter</span>
+			<a class="widget-social__link widget__link btn" title="X" rel="noopener noreferrer" href="https://x.com/{{ . }}" target="_blank">
+				{{ partial "svg/x.svg" (dict "class" "widget-social__link-icon") }}
+				<span>X</span>
 			</a>
 		</div>
 		{{- end }}
