@@ -126,7 +126,8 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   cached = false # activate cache if true
   # Enable parts of social widget
   facebook = "username"
-  twitter = "username"
+  x = "username" 
+  # twitter = "username" supported for backwards compatibility, precedence given to x = "username" if both used
   instagram = "username"
   linkedin = "username"
   telegram = "username"
