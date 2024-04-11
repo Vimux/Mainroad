@@ -43,6 +43,7 @@ jobs:
           # - '0.80.0' # https://github.com/gohugoio/hugo/issues/8340
           - '0.86.1' # https://github.com/gohugoio/hugo/issues/9150
           - '0.93.3' # https://github.com/gohugoio/hugo/commit/837fdfdf45014e3d5ef3b00b01548b68a4489c5f
+          - '0.123.8' # https://github.com/gohugoio/hugo/issues/12080
           - 'latest'
       fail-fast: true
 
