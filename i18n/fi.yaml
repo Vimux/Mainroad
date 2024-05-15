@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "Lue enemmän…"
+
+- id: menu_label
+  translation: "Valikko"
+
+- id: sidemenu_title
+  translation: "Valikko"
+
+# Post meta
+- id: meta_lastmod
+  translation: "Viimeksi muutettu"
+
+- id: meta_translations
+  translation: "Käännökset"
+
+# Table of Contents
+- id: toc_title
+  translation: "Sisältöluettelo"
+
+# Post nav
+- id: post_nav_prev
+  translation: "Edellinen"
+
+- id: post_nav_next
+  translation: "Seuraava"
+
+# Authorbox
+- id: authorbox_name
+  translation: "Kirjoittaja {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "VAROITUS"
+
+- id: sidebar_recommendation
+  translation: "Ystävällisesti aktivoi ainakin yksi sidebar widget."
+
+# Search widget
+- id: search_placeholder
+  translation: "Etsi…"
+
+# Languages widget
+- id: languages_title
+  translation: "Kieli"
+
+# Categories widget
+- id: categories_title
+  translation: "Kategoriat"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "Viimeisimmät kirjoitukset"
+
+# Social widget
+- id: social_title
+  translation: "Sosiaalinen media"
+
+# Tags List widget
+- id: tags_title
+  translation: "Tagit"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Generoitu <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> och \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> teemalla."
+
+# 404
+- id: 404_title
+  translation: "404. Sivua ei löytynyt"
+
+- id: 404_text
+  translation:
+    "Etsimäsi sivu näyttää olevan siirretty, poistettu tai sitä ei ole olemassa. Käytä hakua tai mene osoitteeseen"
+
+- id: 404_linktext
+  translation: "etusivulle"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "Sinulla ei ole kirjoituksia vielä"
+
+- id: noposts_warning_description
+  translation:
+    "Kun julkistat jotain mihin tahansa hakemistoon (sektio) <b>content</b> hakemiston alle niin se näkyy täällä. Vain yksi \
+    sektio (eniten kirjoituksia) näkyy pääsivulle vakiona."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Vihje:</b> Voit näyttää niin monta sektiota kuin haluat \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    konfiguraatioparametrilla."
