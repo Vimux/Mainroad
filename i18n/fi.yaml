@@ -3,10 +3,10 @@
   translation: "Lue enemmän…"
 
 - id: menu_label
-  translation: "Päävalikko"
+  translation: "Valikko"
 
 - id: sidemenu_title
-  translation: "Sivuvalikko"
+  translation: "Valikko"
 
 # Post meta
 - id: meta_lastmod
@@ -35,7 +35,7 @@
   translation: "VAROITUS"
 
 - id: sidebar_recommendation
-  translation: "Ystävällisesti aktivoi ainakin yksi Sivuvalikko widget."
+  translation: "Ystävällisesti aktivoi ainakin yksi sidebar widget."
 
 # Search widget
 - id: search_placeholder
