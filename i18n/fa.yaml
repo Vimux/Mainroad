@@ -1,0 +1,93 @@
+# General
+- id: read_more
+  translation: "ادامه مطلب…"
+
+- id: menu_label
+  translation: "منو"
+
+- id: sidemenu_title
+  translation: "منو"
+
+# Post meta
+- id: meta_lastmod
+  translation: "آخرین تغییرات"
+
+- id: meta_translations
+  translation: "ترجمه"
+
+# Table of Contents
+- id: toc_title
+  translation: "محتوای صفحه"
+
+# Post nav
+- id: post_nav_prev
+  translation: "قبلی"
+
+- id: post_nav_next
+  translation: "بعدی"
+
+# Authorbox
+- id: authorbox_name
+  translation: "درباره ی {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "هشدار"
+
+- id: sidebar_recommendation
+  translation: "لطفا حداقل یک ویجت کناری را فعال کنید."
+
+# Search widget
+- id: search_placeholder
+  translation: "جستجو…"
+
+# Languages widget
+- id: languages_title
+  translation: "زبان ها"
+
+# Categories widget
+- id: categories_title
+  translation: "گروه ها"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "پست های اخیرا منتشر شده"
+
+# Social widget
+- id: social_title
+  translation: "شبکه های اجتماعی"
+
+# Tags List widget
+- id: tags_title
+  translation: "تگ ها"
+
+# Footer
+- id: footer_credits
+  translation:
+    "قدرت گرفته با <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+
+# 404
+- id: 404_title
+  translation: "404. صفحه پیدا نشد"
+
+- id: 404_text
+  translation:
+    "به نظر می رسد صفحه ای که به دنبال آن بودید منتقل شده، حذف شده یا وجود ندارد. لطفا از جستجو استفاده کنید یا بروید به"
+
+- id: 404_linktext
+  translation: "صفحه اصلی"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "هیچ پستی منتشر نشده!"
+
+- id: noposts_warning_description
+  translation:
+    "هنگامی که چیزی را در هر پوشه (بخش) زیر فهرست <b>content</b> پست کنید، در اینجا ظاهر می شود. فقط یک \ بخش (با بیشترین پست) به طور پیش فرض در صفحه اصلی نمایش داده می شود."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>نکته:</b> می توانید هر تعداد بخش را که دوست دارید نشان دهید \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">قسمت اصلی</a></b> \
+    پارامتر های تنظیمات."
