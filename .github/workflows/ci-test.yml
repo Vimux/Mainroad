@@ -35,7 +35,7 @@ jobs:
     strategy:
       matrix:
         hugo:
-          - '0.48' # min version
+          - '0.54.0' # min version
           - '0.58.2' # https://github.com/gohugoio/hugoThemes/issues/682
           - '0.59.1' # last major version without goldmark renderer
           - '0.60.1' # first major version with goldmark renderer
@@ -44,6 +44,7 @@ jobs:
           - '0.86.1' # https://github.com/gohugoio/hugo/issues/9150
           - '0.93.3' # https://github.com/gohugoio/hugo/commit/837fdfdf45014e3d5ef3b00b01548b68a4489c5f
           - '0.123.8' # https://github.com/gohugoio/hugo/issues/12080
+          - '0.132.2' # .Site.IsServer deprecation ERROR
           - 'latest'
       fail-fast: true
 

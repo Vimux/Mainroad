@@ -100,7 +100,7 @@ to those feedback, otherwise the PR will be closed after 2-4 weeks of inactivity
 ### Pull Request Contribution Prerequisites
 
 * You have Node & npm installed
-* You have Hugo installed at v0.48.0+
+* You have Hugo installed at v0.54.0+
 * You are familiar with Git
 
 ### Pull Request Process

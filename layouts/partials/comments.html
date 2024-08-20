@@ -1,5 +1,11 @@
-{{ if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not .Site.IsServer) }}
+{{- $server := "" }}
+{{- if ge (int (index (split hugo.Version ".") 1)) "120" }}
+	{{- $server = hugo.IsServer }}
+{{- else }}
+	{{- $server = .Site.IsServer }}
+{{- end }}
+{{- if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not $server) }}
 <section class="comments">
 	{{ template "_internal/disqus.html" . }}
 </section>
-{{ end }}
+{{- end }}
