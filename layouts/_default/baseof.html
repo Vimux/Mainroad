@@ -35,7 +35,13 @@
 	{{- end }}
 
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
-	{{- if not .Site.IsServer }}
+	{{- $server := "" }}
+	{{- if gt (int (index (split hugo.Version ".") 1)) "120" }}
+		{{ $server = hugo.IsServer }}
+	{{- else }}
+		{{ $server = .Site.IsServer }}
+	{{- end -}}
+	{{- if not $server }}
 		{{ template "_internal/google_analytics.html" . }}
 	{{- end }}
 </head>
