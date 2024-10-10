@@ -54,10 +54,12 @@ theme = "mainroad"
 baseurl = "/"
 title = "Mainroad"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # DEPRECATED! Use .Services.Disqus.Shortname
 googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
+
+[Pagination]
+  pagerSize = 10 # Number of posts per page
 
 [services.disqus]
   shortname = "" # Enable Disqus by entering your Disqus shortname
