@@ -16,12 +16,16 @@
 		{{ template "_internal/twitter_cards.html" . }}
 	{{- end }}
 
-	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
-	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
+	{{- $googleFontsLinks := .Site.Params.googleFontsLinks | default (slice "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700") }}
+	{{- if $googleFontsLinks }}
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
+		{{- range $googleFontsLinks }}
+			{{- if hasPrefix . "https://fonts.googleapis.com/" }}
+	<link rel="stylesheet" {{ printf `href="%s"` . | safeHTMLAttr }}>
+			{{- end }}
+		{{- end }}
 	{{- end }}
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}

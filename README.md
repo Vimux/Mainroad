@@ -85,7 +85,9 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  googleFontsLinks = [
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  ]
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
 
