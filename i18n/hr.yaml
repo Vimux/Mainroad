@@ -3,10 +3,10 @@
   translation: "Više…"
 
 - id: menu_label
-  translation: "Meni"
+  translation: "Glavni izbornik"
 
 - id: sidemenu_title
-  translation: "Meni"
+  translation: "Glavni izbornik"
 
 # Post meta
 - id: meta_lastmod
